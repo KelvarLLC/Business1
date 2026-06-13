@@ -11,6 +11,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active operating guide: `agency-ops/ops/agency-operating-system.md`
 - Active 30-day launch plan: `agency-ops/ops/30-day-launch-command-plan.md`
 - Active ecosystem strategy: `agency-ops/ops/ai-galactic-empire-ecosystem-strategy.md`
+- Active brand doctrine: `agency-ops/ops/brand-doctrine-and-public-voice.md`
 - Active website foundation: `agency-ops/website/`
 - Active website brief: `agency-ops/website/content/website-brief.md`
 - Active website deployment checklist: `agency-ops/ops/website-deployment-readiness.md`
@@ -33,6 +34,8 @@ Internal ambition: build an Armada of AI Galactic Empire ecosystems.
 Operational translation: build a modular AI automation ecosystem where the website, offer library, lead pipeline, proposal assets, delivery plans, workflow specs, and operating docs reinforce each other instead of existing as scattered one-off materials.
 
 Public translation: Kelvar builds practical AI automation ecosystems for service businesses that need faster follow-up, cleaner handoffs, fewer missed leads, and less manual admin work.
+
+Public voice rule: make the ambition visible through concrete systems, narrow first steps, useful proof, and human approval where judgment matters. Keep the empire language mostly internal unless it is deliberately polished for a specific public asset.
 
 ## Current Offer Library
 
@@ -74,7 +77,7 @@ No outreach has been sent. Sending still requires explicit approval.
 
 Goal: make the agency easy to understand, sell, and operate from the repository.
 
-Status: core offer packaging complete; maintain and improve as evidence arrives.
+Status: core offer packaging and brand voice foundation complete; maintain and improve as evidence arrives.
 
 Completed:
 
@@ -82,6 +85,7 @@ Completed:
 - Created `agency-ops/offers/lead-intake-scope-menu.md` to package the strongest offer into a blueprint, single-source build, and follow-up visibility upgrade.
 - Created reusable proposal and delivery starter assets for all four current offers.
 - Captured the AI ecosystem strategy and synchronized it with the website and offer library.
+- Created `agency-ops/ops/brand-doctrine-and-public-voice.md` to translate the user's high-ambition AI ecosystem language into practical public copy rules.
 - Created reusable operating checklists for qualification, proposal readiness, delivery planning, and closeout.
 - Created `agency-ops/ops/30-day-launch-command-plan.md` to tie website launch, outreach approval, pipeline handling, proposal readiness, and delivery packaging into one 30-day operating cadence.
 
@@ -89,23 +93,24 @@ Next actions:
 
 - Use the 30-day launch command plan as the top-level execution cadence until the first qualified opportunity or won project changes priorities.
 - Use the Lead Intake scope menu when a prospect asks about price, package shape, or implementation size.
-- Keep operating docs synchronized with new offers, templates, and delivery patterns.
+- Keep operating docs synchronized with new offers, templates, delivery patterns, and public brand language.
 - Update offer language based on actual lead objections, discovery calls, and delivery evidence.
 
 ### Stage 2: Website Flagship
 
 Goal: turn the business website into the public command center for the automation ecosystem.
 
-Status: website foundation and structured intake console exist; deployment/build verification and permanent hosted capture remain next.
+Status: website foundation, structured intake console, offer proof/FAQ, and About page ambition section exist; deployment/build verification and permanent hosted capture remain next.
 
 Completed:
 
 - Created a Vercel-friendly Next.js website foundation under `agency-ops/website/`.
 - Added home, services, lead-intake, about, contact, and start pages.
-- Added a content brief for positioning, visual direction, CTA strategy, and next website improvements.
+- Added a content brief for positioning, visual direction, CTA strategy, brand doctrine, and next website improvements.
 - Connected the public message to the current service packages.
 - Routed primary website CTAs to `/start` and the Lead Intake service CTA to `/lead-intake`.
 - Upgraded `/start` from a plain email CTA into a structured intake console that captures contact, workflow, tools, manual steps, missed items, first win, urgency, and consent before opening a formatted email.
+- Upgraded `agency-ops/website/app/about/page.tsx` with an ambition and principles section aligned to the brand doctrine.
 - Documented the website lead intake workflow in `agency-ops/workflows/website-lead-intake-workflow.md`.
 - Added `agency-ops/ops/website-deployment-readiness.md` to define Vercel setup, build verification, content QA, lead-capture QA, launch checks, and known blockers.
 - Added `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md` to define the staged path from structured mailto to hosted form, sheet, or CRM capture.
@@ -115,6 +120,7 @@ Next actions:
 - Run `npm install` and `npm run build` in an environment with npm registry access.
 - Deploy from `agency-ops/website/` as the Vercel project root.
 - Replace the structured mailto intake with a hosted form-to-email endpoint when the first permanent capture destination is chosen.
+- Keep About, offer, FAQ, and demo-proof language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md`.
 - Add proof, case study, or demo evidence once a real client result or internal demo exists.
 
 ### Stage 3: Pipeline Activation
@@ -222,9 +228,14 @@ Next actions:
 8. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
 9. Replace the structured mailto intake with a hosted form-to-email endpoint once a capture vendor or handler is chosen.
 10. Add proof, case study, or internal demo evidence to strengthen the public site.
+11. Keep public site language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` as offers and proof evolve.
 
 ## Recently Completed
 
+- Added `agency-ops/ops/brand-doctrine-and-public-voice.md` as the public voice guide for translating high-ambition AI ecosystem strategy into practical buyer-facing language.
+- Upgraded `agency-ops/website/app/about/page.tsx` with an ambition and principles section aligned to the brand doctrine.
+- Updated `agency-ops/website/app/armada.css` with ambition-band and principle-list styling for the About page.
+- Updated `agency-ops/website/content/website-brief.md` to include the current brand doctrine and About page implementation.
 - Added `agency-ops/offers/lead-intake-scope-menu.md` as the scope packaging layer for blueprint, single-source build, and follow-up visibility upgrade options.
 - Added `agency-ops/workflows/lead-intake-reply-response-kit.md` as the response handling layer for interested, call-request, pricing, CRM/tool, not-interested, referral, and sensitive-data replies.
 - Added `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` as the reusable implementation pattern for capture, normalization, qualification, routing, follow-up, reporting, QA, and demo explanation.
