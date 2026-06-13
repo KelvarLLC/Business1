@@ -23,6 +23,10 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
   - `agency-ops/delivery/lead-intake-follow-up-delivery-plan-starter.md`
   - `agency-ops/proposals/client-onboarding-handoff-proposal-starter.md`
   - `agency-ops/delivery/client-onboarding-handoff-delivery-plan-starter.md`
+  - `agency-ops/proposals/appointment-reminder-proposal-starter.md`
+  - `agency-ops/delivery/appointment-reminder-delivery-plan-starter.md`
+  - `agency-ops/proposals/lightweight-reporting-dashboard-proposal-starter.md`
+  - `agency-ops/delivery/lightweight-reporting-dashboard-delivery-plan-starter.md`
 
 ## Strategic North Star
 
@@ -38,15 +42,20 @@ Public translation: Kelvar builds practical AI automation ecosystems for service
 
 Goal: make the agency easy to understand, sell, and operate from the repository.
 
-Status: in progress
+Status: core offer packaging complete; maintain and improve as evidence arrives
+
+Completed:
+
+- Created a focused offer library with four narrow automation services.
+- Created reusable proposal and delivery starter assets for all four current offers.
+- Captured the AI ecosystem strategy and synchronized it with the website and offer library.
+- Created reusable operating checklists for qualification, proposal readiness, delivery planning, and closeout.
 
 Next actions:
 
-- Maintain a focused offer library with narrow, sellable automation services.
-- Keep the AI ecosystem strategy synchronized with the offer library and website direction.
 - Create one example lead record when a real or sample prospect is available.
-- Create reusable proposal and delivery starter artifacts for the remaining strong offers.
 - Keep operating docs synchronized with new offers, templates, and delivery patterns.
+- Update offer language based on actual lead objections, discovery calls, and delivery evidence.
 
 ### Stage 2: Website Flagship
 
@@ -81,16 +90,17 @@ Next actions:
 - Classify each opportunity into the clearest pipeline stage.
 - Draft discovery questions and follow-up copy for qualified or nurture leads.
 - Move proposal-ready leads into `agency-ops/proposals/` with bounded scopes and client inputs.
+- Build the first small outbound list around appointment-based service businesses, local service operators, or spreadsheet-heavy admin teams.
 
 ### Stage 4: Delivery Factory
 
 Goal: make accepted work repeatable and easier to hand off.
 
-Status: pending won or implementation-ready engagement
+Status: starter delivery plans created; pending won or implementation-ready engagement
 
 Next actions:
 
-- Create delivery plans under `agency-ops/delivery/` for active engagements.
+- Create client-specific delivery plans under `agency-ops/delivery/` for active engagements.
 - Build workflow specs under `agency-ops/workflows/` for repeated automation patterns.
 - Document trigger, inputs, outputs, failure paths, testing data, owner, and maintenance rules.
 - Capture closeout notes and expansion opportunities after each delivery.
@@ -138,13 +148,15 @@ Next actions:
 
 1. Deploy the website from `agency-ops/website/` once npm build access and Vercel setup are available.
 2. Replace the email-only contact CTA with the chosen scheduling or lead capture workflow.
-3. Create proposal and delivery starter sets for the appointment reminder automation offer.
-4. Create proposal and delivery starter sets for the lightweight reporting dashboard automation offer.
-5. Add the first real lead record when a prospect is identified.
+3. Add the first real lead record when a prospect is identified.
+4. Create a small outbound prospecting list and outreach angle for the strongest first offer.
+5. Add an offer-specific landing page for the strongest converting package.
 6. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
 
 ## Recently Completed
 
+- Created proposal and delivery starter files for the appointment reminder automation offer.
+- Created proposal and delivery starter files for the lightweight reporting dashboard automation offer.
 - Built the first Vercel-friendly website foundation under `agency-ops/website/`.
 - Added the website content brief in `agency-ops/website/content/website-brief.md`.
 - Captured the AI Galactic Empire ecosystem strategy in `agency-ops/ops/ai-galactic-empire-ecosystem-strategy.md`.
