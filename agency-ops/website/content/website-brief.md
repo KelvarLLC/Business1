@@ -2,40 +2,32 @@
 
 ## Purpose
 
-Create the first public-facing website for Kelvar LLC's automation agency offer. The site should position the business as a practical automation partner for small service businesses with recurring intake, follow-up, onboarding, reminder, and reporting friction.
+Create the first public-facing website for Kelvar LLC's automation agency offer. The site positions the business as a practical automation partner for small service businesses with recurring intake, follow-up, onboarding, reminder, reporting, and delivery friction.
 
 ## Visual Thesis
 
-Quietly premium operations workspace: grounded dark hero, clean neutral surface, and one green operational accent that signals workflow clarity.
+Command-center galactic armada: a dark full-bleed systems-map hero, grounded neutral content sections, restrained motion, and one green operational accent that keeps the cosmic direction tied to practical workflow clarity.
 
 ## Content Plan
 
-- Home: brand, promise, core automation offers, business outcomes, delivery process, and intake CTA.
-- Services: four narrow service packages with problem, included scope, best fit, expected outcome, and scope-this-workflow CTA.
-- About: operating philosophy and agency focus.
-- Contact: discovery prompt, guided intake CTA, and direct email fallback.
-- Start: guided intake path that helps a prospect identify the workflow type, answer discovery questions, and send a cleaner review request.
+- Home: brand, ecosystem promise, service fleet, command-layer model, business outcomes, delivery process, and discovery CTA.
+- Services: five narrow automation modules with problem, included scope, best fit, and expected outcome.
+- About: operating philosophy and translation of the armada idea into practical modular systems.
+- Contact: discovery prompt and direct email CTA.
 
 ## Interaction Thesis
 
-- Hero content enters with a restrained lift animation.
-- Links and CTAs use small hover lift transitions to keep the interface tactile.
-- Long service rows and process steps create a scannable editorial rhythm instead of dashboard-card clutter.
+- Hero content enters with a restrained lift animation while the background system map drifts slowly.
+- Orbit, route, and fleet-node animations create the sense of a living AI ecosystem without distracting from the offer.
+- CTAs and service rows use small hover transitions to make the site feel responsive and tactile.
 
 ## Primary CTA
 
-Start an automation review through `/start`, using a guided prefilled email intake until a permanent form, scheduler, or CRM capture path is selected.
-
-## Current Lead Capture Path
-
-- Public CTAs now route to `/start`.
-- `/start` groups prospects into lead follow-up, client handoff, appointment reminder, or reporting workflow needs.
-- The page asks for the workflow type, current tools, manual steps, missed/delayed work, best first win, and urgency.
-- The supporting workflow spec lives at `agency-ops/workflows/website-lead-intake-workflow.md`.
+Map the first workflow through a practical automation review by email.
 
 ## Next Website Improvements
 
-1. Add a real scheduling or form link once the agency chooses its booking or capture tool.
+1. Add a real scheduling link once the agency chooses its booking tool.
 2. Add proof once the first case study or internal demo result exists.
 3. Add an offer-specific landing page for the strongest converting service.
 4. Connect deployment to Vercel from `agency-ops/website/`.
