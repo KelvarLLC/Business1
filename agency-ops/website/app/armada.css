@@ -363,6 +363,199 @@
   line-height: 1.5;
 }
 
+.start-page {
+  background: var(--paper);
+}
+
+.start-hero {
+  background:
+    linear-gradient(90deg, rgba(17, 19, 21, 0.94), rgba(17, 19, 21, 0.72), rgba(17, 19, 21, 0.9)),
+    radial-gradient(circle at 72% 32%, rgba(142, 224, 203, 0.32), transparent 31%),
+    linear-gradient(135deg, #111315, #202522);
+  color: white;
+}
+
+.start-hero p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.intake-console {
+  background: var(--ink);
+  color: white;
+  display: grid;
+  gap: 64px;
+  grid-template-columns: minmax(0, 0.82fr) minmax(320px, 1.18fr);
+  padding: 96px;
+}
+
+.intake-copy {
+  align-self: start;
+  position: sticky;
+  top: 118px;
+}
+
+.intake-copy p:not(.section-kicker) {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 1.08rem;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+.intake-copy ol {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  counter-reset: intake;
+  list-style: none;
+  margin: 38px 0 0;
+  padding: 0;
+}
+
+.intake-copy li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.78);
+  counter-increment: intake;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 34px minmax(0, 1fr);
+  line-height: 1.45;
+  padding: 18px 0;
+}
+
+.intake-copy li::before {
+  color: #8ee0cb;
+  content: counter(intake, decimal-leading-zero);
+  font-weight: 800;
+}
+
+.intake-form {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  display: grid;
+  gap: 26px;
+  padding: 28px;
+}
+
+.workflow-picker {
+  border: 0;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+}
+
+.workflow-picker legend {
+  color: rgba(255, 255, 255, 0.72);
+  float: left;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.workflow-option {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  display: grid;
+  font: inherit;
+  gap: 10px;
+  grid-template-columns: 22px minmax(0, 1fr) 18px;
+  min-height: 58px;
+  padding: 14px;
+  text-align: left;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.workflow-option:hover,
+.workflow-option.active {
+  background: rgba(142, 224, 203, 0.12);
+  border-color: rgba(142, 224, 203, 0.58);
+  transform: translateY(-1px);
+}
+
+.workflow-option svg {
+  color: #8ee0cb;
+}
+
+.intake-fields {
+  display: grid;
+  gap: 16px;
+}
+
+.intake-fields.two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.full-span {
+  grid-column: 1 / -1;
+}
+
+.intake-form label {
+  color: rgba(255, 255, 255, 0.76);
+  display: grid;
+  font-size: 0.88rem;
+  font-weight: 800;
+  gap: 8px;
+}
+
+.intake-form input,
+.intake-form textarea {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--ink);
+  font: inherit;
+  min-height: 46px;
+  padding: 12px 13px;
+  width: 100%;
+}
+
+.intake-form textarea {
+  min-height: 104px;
+  resize: vertical;
+}
+
+.intake-form input:focus,
+.intake-form textarea:focus {
+  border-color: #8ee0cb;
+  box-shadow: 0 0 0 3px rgba(142, 224, 203, 0.2);
+  outline: 0;
+}
+
+.consent-row {
+  align-items: start;
+  display: grid !important;
+  font-weight: 600 !important;
+  gap: 10px !important;
+  grid-template-columns: 18px minmax(0, 1fr);
+  line-height: 1.45;
+}
+
+.consent-row input {
+  min-height: 18px;
+  margin-top: 2px;
+  padding: 0;
+}
+
+.submit-intake {
+  border: 0;
+  cursor: pointer;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-status {
+  color: #8ee0cb;
+  font-weight: 800;
+  margin: 0;
+}
+
 @media (max-width: 980px) {
   .offer-hero {
     min-height: 92svh;
@@ -379,13 +572,24 @@
   }
 
   .offer-signal,
-  .offer-outcomes {
+  .offer-outcomes,
+  .intake-console {
     gap: 28px;
     grid-template-columns: 1fr;
   }
 
+  .intake-console {
+    padding: 72px 22px;
+  }
+
+  .intake-copy {
+    position: static;
+  }
+
   .build-rail,
-  .outcome-grid {
+  .outcome-grid,
+  .workflow-picker,
+  .intake-fields.two-column {
     grid-template-columns: 1fr;
   }
 
