@@ -3,28 +3,35 @@ import { ArrowRight } from "lucide-react";
 
 const services = [
   {
-    name: "Lead Intake and Follow-Up Automation",
+    name: "Lead Intake Command System",
     problem: "New inquiries arrive through scattered forms, email, calls, and spreadsheets.",
-    included: "Intake routing, qualification prompts, follow-up reminders, owner assignment, and pipeline status tracking.",
+    included: "Intake routing, qualification prompts, owner assignment, follow-up timing, and pipeline status tracking.",
     bestFit: "Service businesses that lose time responding manually or miss qualified leads.",
     outcome: "A tighter path from inquiry to booked discovery or clear disqualification."
   },
   {
-    name: "Client Onboarding Handoff Automation",
+    name: "Follow-Up Engine",
+    problem: "Promising prospects and active clients go quiet because every check-in depends on memory.",
+    included: "Timed reminders, response prompts, stalled-thread flags, prepared draft language, and status visibility.",
+    bestFit: "Teams with sales or client success work that depends on consistent human follow-through.",
+    outcome: "Fewer dropped conversations and a more reliable path to the next decision."
+  },
+  {
+    name: "Client Onboarding Dock",
     problem: "Sold work stalls because intake, files, expectations, and next steps are handled by memory.",
     included: "Client intake forms, internal handoff notes, milestone reminders, kickoff checklists, and delivery-start tracking.",
     bestFit: "Teams that sell successfully but feel friction between close and delivery.",
     outcome: "New clients enter delivery with the right context already organized."
   },
   {
-    name: "Appointment Reminder Automation",
+    name: "Appointment Reminder Beacon",
     problem: "Appointments, consultations, or service windows get missed because reminders are inconsistent.",
     included: "Reminder timing, confirmation tracking, reschedule prompts, no-show flags, and owner notifications.",
     bestFit: "Local and service operators where each missed slot has real revenue cost.",
     outcome: "Fewer manual check-ins and clearer visibility into who is confirmed."
   },
   {
-    name: "Lightweight Reporting Dashboard Automation",
+    name: "Reporting Signal Grid",
     problem: "Recurring numbers are copied manually and key issues are noticed late.",
     included: "Data refresh workflow, dashboard structure, exception flags, and owner-ready summary updates.",
     bestFit: "Small teams that need simple operational visibility without a heavy analytics project.",
@@ -37,14 +44,11 @@ export default function ServicesPage() {
     <main className="page-shell">
       <section className="page-hero">
         <p className="eyebrow">Services</p>
-        <h1>Automation packages built around one expensive manual workflow at a time.</h1>
+        <h1>Automation modules built around one expensive manual workflow at a time.</h1>
         <p>
-          Each service starts with a narrow operational problem, then ships a working system with documentation,
-          testing, and practical handoff notes.
+          Each service starts with a narrow operational problem, then ships a working system with testing,
+          documentation, and handoff notes. Add modules over time until the business has a coordinated AI ecosystem.
         </p>
-        <Link className="primary-action dark" href="/start">
-          Start with your workflow <ArrowRight size={18} />
-        </Link>
       </section>
 
       <section className="service-detail-list">
@@ -69,8 +73,8 @@ export default function ServicesPage() {
                 <dd>{service.outcome}</dd>
               </div>
             </dl>
-            <Link className="text-link" href="/start">
-              Scope this workflow <ArrowRight size={17} />
+            <Link className="text-link" href="/contact">
+              Scope this module <ArrowRight size={17} />
             </Link>
           </article>
         ))}
