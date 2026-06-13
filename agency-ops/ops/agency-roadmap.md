@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This roadmap turns the standing master instruction set and the user's AI ecosystem ambition into concrete repo-scoped workstreams for the automation agency. It should guide autonomous scheduled runs, manual follow-up, website work, and any future specialist agents working inside `KelvarLLC/Business1`.
+This roadmap turns the standing master instruction set and the user's AI ecosystem ambition into concrete repo-scoped workstreams for the automation agency. It guides autonomous scheduled runs, manual follow-up, website work, pipeline activation, and future specialist agents working inside `KelvarLLC/Business1`.
 
 ## Current Baseline
 
@@ -12,34 +12,12 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active ecosystem strategy: `agency-ops/ops/ai-galactic-empire-ecosystem-strategy.md`
 - Active website foundation: `agency-ops/website/`
 - Active website brief: `agency-ops/website/content/website-brief.md`
-- Active checklists: `agency-ops/ops/qualification-proposal-delivery-checklists.md`
+- Active website deployment checklist: `agency-ops/ops/website-deployment-readiness.md`
 - Active website intake workflow: `agency-ops/workflows/website-lead-intake-workflow.md`
+- Active intake upgrade plan: `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
 - Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
+- Active outreach review packet: `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md`
 - Active prospect list: `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md`
-- Active outreach drafts:
-  - `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md`
-  - `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts-batch-2.md`
-- Current offer library:
-  - `agency-ops/offers/lead-intake-follow-up-automation.md`
-  - `agency-ops/offers/client-onboarding-handoff-automation.md`
-  - `agency-ops/offers/appointment-reminder-automation.md`
-  - `agency-ops/offers/lightweight-reporting-dashboard-automation.md`
-- Current Dallas lead records:
-  - `agency-ops/leads/2026-06-13-dfw-hvac.md`
-  - `agency-ops/leads/2026-06-13-cool-tech.md`
-  - `agency-ops/leads/2026-06-13-lone-star-roof-systems.md`
-  - `agency-ops/leads/2026-06-13-southern-botanical.md`
-  - `agency-ops/leads/2026-06-13-prestonwood-landscape-services.md`
-  - `agency-ops/leads/2026-06-13-dane-roofing.md`
-- Current starter assets:
-  - `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md`
-  - `agency-ops/delivery/lead-intake-follow-up-delivery-plan-starter.md`
-  - `agency-ops/proposals/client-onboarding-handoff-proposal-starter.md`
-  - `agency-ops/delivery/client-onboarding-handoff-delivery-plan-starter.md`
-  - `agency-ops/proposals/appointment-reminder-proposal-starter.md`
-  - `agency-ops/delivery/appointment-reminder-delivery-plan-starter.md`
-  - `agency-ops/proposals/lightweight-reporting-dashboard-proposal-starter.md`
-  - `agency-ops/delivery/lightweight-reporting-dashboard-delivery-plan-starter.md`
 
 ## Strategic North Star
 
@@ -47,7 +25,33 @@ Internal ambition: build an Armada of AI Galactic Empire ecosystems.
 
 Operational translation: build a modular AI automation ecosystem where the website, offer library, lead pipeline, proposal assets, delivery plans, workflow specs, and operating docs reinforce each other instead of existing as scattered one-off materials.
 
-Public translation: Kelvar builds practical AI automation ecosystems for service businesses that need faster follow-up, cleaner handoffs, and less manual admin work.
+Public translation: Kelvar builds practical AI automation ecosystems for service businesses that need faster follow-up, cleaner handoffs, fewer missed leads, and less manual admin work.
+
+## Current Offer Library
+
+- `agency-ops/offers/lead-intake-follow-up-automation.md`
+- `agency-ops/offers/client-onboarding-handoff-automation.md`
+- `agency-ops/offers/appointment-reminder-automation.md`
+- `agency-ops/offers/lightweight-reporting-dashboard-automation.md`
+
+## Current Lead And Outreach Assets
+
+Dallas lead records:
+
+- `agency-ops/leads/2026-06-13-dfw-hvac.md`
+- `agency-ops/leads/2026-06-13-cool-tech.md`
+- `agency-ops/leads/2026-06-13-lone-star-roof-systems.md`
+- `agency-ops/leads/2026-06-13-southern-botanical.md`
+- `agency-ops/leads/2026-06-13-prestonwood-landscape-services.md`
+- `agency-ops/leads/2026-06-13-dane-roofing.md`
+
+Draft-only outreach assets:
+
+- `agency-ops/leads/h-med-spa-outreach-draft.md`
+- `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md`
+- `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts-batch-2.md`
+
+No outreach has been sent. Sending still requires explicit approval.
 
 ## Roadmap Stages
 
@@ -55,7 +59,7 @@ Public translation: Kelvar builds practical AI automation ecosystems for service
 
 Goal: make the agency easy to understand, sell, and operate from the repository.
 
-Status: core offer packaging complete; maintain and improve as evidence arrives
+Status: core offer packaging complete; maintain and improve as evidence arrives.
 
 Completed:
 
@@ -73,30 +77,31 @@ Next actions:
 
 Goal: turn the business website into the public command center for the automation ecosystem.
 
-Status: intake path added; deployment and permanent capture plumbing next
+Status: website foundation and intake path exist; deployment/build verification and permanent capture plumbing remain next.
 
 Completed:
 
 - Created a Vercel-friendly Next.js website foundation under `agency-ops/website/`.
-- Added home, services, about, contact, and start pages.
+- Added home, services, lead-intake, about, contact, and start pages.
 - Added a content brief for positioning, visual direction, CTA strategy, and next website improvements.
-- Connected the public message to the four current service packages.
-- Routed primary website CTAs to `/start`.
+- Connected the public message to the current service packages.
+- Routed primary website CTAs to `/start` and the Lead Intake service CTA to `/lead-intake`.
 - Documented the website lead intake workflow in `agency-ops/workflows/website-lead-intake-workflow.md`.
+- Added `agency-ops/ops/website-deployment-readiness.md` to define Vercel setup, build verification, content QA, lead-capture QA, launch checks, and known blockers.
+- Added `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md` to replace the current email-only intake with a staged form, sheet, or CRM path.
 
 Next actions:
 
 - Run `npm install` and `npm run build` in an environment with npm registry access.
 - Deploy from `agency-ops/website/` as the Vercel project root.
-- Replace the prefilled email CTA with the chosen scheduling, form, or CRM capture path.
+- Replace the prefilled email CTA with the selected first capture path. Recommended: form-to-email first.
 - Add proof, case study, or demo evidence once a real client result or internal demo exists.
-- Create an offer-specific landing page for the strongest converting package.
 
 ### Stage 3: Pipeline Activation
 
 Goal: turn prospects into qualified opportunities and proposal-ready work.
 
-Status: six Dallas lead records and two outreach draft batches created; pending user approval before sending
+Status: six Dallas lead records and two outreach draft batches created; pending user approval before any sending.
 
 Completed:
 
@@ -105,20 +110,21 @@ Completed:
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` with Dallas/Fort Worth home-service candidates, intake signals, likely pain, fit rating, and recommended next action.
 - Created individual lead records for DFW HVAC, Cool Tech, Lone-Star Roof Systems, Southern Botanical, Prestonwood Landscape Services, and Dane Roofing.
 - Created two draft-only outreach files for the six Dallas leads.
+- Created `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md` recommending a controlled first draft batch.
 
 Next actions:
 
 - Review and approve, revise, or reject the six Dallas outreach drafts before any sending.
+- Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 - Confirm sender mailbox and outreach batch size if sending is approved.
 - Track replies and move leads to `discovery-needed`, `qualified`, `nurture`, or `closed-lost` as evidence arrives.
 - Add more lead records from the Dallas prospect list only after the first batch is reviewed.
-- Move proposal-ready leads into `agency-ops/proposals/` with bounded scopes and client inputs.
 
 ### Stage 4: Delivery Factory
 
 Goal: make accepted work repeatable and easier to hand off.
 
-Status: starter delivery plans created; pending won or implementation-ready engagement
+Status: starter delivery plans created; pending won or implementation-ready engagement.
 
 Next actions:
 
@@ -131,7 +137,7 @@ Next actions:
 
 Goal: turn repeated work into a smarter agency operating system.
 
-Status: emerging
+Status: emerging.
 
 Next actions:
 
@@ -144,7 +150,7 @@ Next actions:
 
 Goal: keep business artifacts, workflows, and code safe, clear, and maintainable.
 
-Status: ongoing
+Status: ongoing.
 
 Next actions:
 
@@ -157,7 +163,7 @@ Next actions:
 
 Goal: keep parallel agent work aligned and strictly repo-contained.
 
-Status: ready when additional agents join
+Status: ready when additional agents join.
 
 Next actions:
 
@@ -170,29 +176,25 @@ Next actions:
 
 1. Review the six Dallas outreach drafts and approve, revise, or reject before sending.
 2. Confirm sender mailbox and outreach batch size if outreach is approved.
-3. Deploy the website from `agency-ops/website/` once npm build access and Vercel setup are available.
-4. Replace the prefilled email intake with the chosen scheduling, form, or CRM capture workflow.
-5. Add an offer-specific landing page for the strongest converting package.
-6. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
+3. Run the website build check in an environment with npm registry access.
+4. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
+5. Replace the prefilled email intake with the selected capture path. Recommended: form-to-email first.
+6. Add proof, case study, or internal demo evidence to strengthen the public site.
+7. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
 
 ## Recently Completed
 
+- Added `agency-ops/ops/website-deployment-readiness.md` as the deployment, build verification, Vercel setup, QA, and launch checklist.
+- Added `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md` as the staged plan for moving from prefilled email to form, sheet, or CRM capture.
+- Created `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md` with approval choices and the recommended first controlled outreach batch.
 - Created individual lead records for Southern Botanical, Prestonwood Landscape Services, and Dane Roofing.
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts-batch-2.md` with draft outreach for those three leads.
 - Created individual lead records for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md` with draft outreach for the first three leads.
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` as the first real prospect list for Dallas/Fort Worth home-service businesses.
 - Added `agency-ops/website/app/start/page.tsx` as the guided website intake path.
-- Routed primary website CTAs to `/start` from the header, homepage, services page, contact page, and footer.
-- Created `agency-ops/workflows/website-lead-intake-workflow.md` as the inbound website lead qualification workflow.
-- Updated `agency-ops/website/content/website-brief.md` with the new intake route and capture strategy.
-- Created `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md` as the first reusable outbound workflow for the lead intake and follow-up automation offer.
-- Created proposal and delivery starter files for the appointment reminder automation offer.
-- Created proposal and delivery starter files for the lightweight reporting dashboard automation offer.
-- Built the first Vercel-friendly website foundation under `agency-ops/website/`.
-- Captured the AI Galactic Empire ecosystem strategy in `agency-ops/ops/ai-galactic-empire-ecosystem-strategy.md`.
-- Created proposal and delivery starter files for the lead intake/follow-up automation offer.
-- Created proposal and delivery starter files for the client onboarding handoff automation offer.
+- Routed primary website CTAs to `/start` and created `agency-ops/workflows/website-lead-intake-workflow.md` as the inbound website lead qualification workflow.
+- Added `agency-ops/website/app/lead-intake/page.tsx` as the first offer-specific landing page.
 
 ## Operating Notes
 
