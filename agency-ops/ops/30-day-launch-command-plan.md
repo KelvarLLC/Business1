@@ -13,6 +13,7 @@ The goal is simple: create real discovery conversations for the Lead Intake Comm
 - Website deployment readiness is documented in `agency-ops/ops/website-deployment-readiness.md`.
 - Inbound capture upgrade path is documented in `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`.
 - Hosted form-to-email implementation is specified in `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`.
+- Stage 1 hosted intake work order is documented in `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md`.
 - Lead Intake / Follow-Up offer is packaged in `agency-ops/offers/lead-intake-follow-up-automation.md`.
 - Lead Intake scope menu is documented in `agency-ops/offers/lead-intake-scope-menu.md`.
 - Lead Intake reusable implementation spec is documented in `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`.
@@ -43,6 +44,7 @@ These targets are operational, not guaranteed business outcomes.
 - Every sent outreach item logged against a lead record with follow-up due date.
 - Any reply converted into a structured lead update within one business day.
 - Any website inquiry can move from Stage 0 mailto to Stage 1 hosted form-to-email when a handler or vendor is chosen.
+- Stage 1 hosted intake implementation ticket is ready for a builder to execute once provider/deployment decisions are available.
 - Any reply handled through the reply response kit before discovery or closeout.
 - Pricing or scope questions routed through the Lead Intake scope menu instead of improvised numbers.
 - At least one discovery-ready opportunity has a discovery outline prepared.
@@ -99,6 +101,7 @@ Recommended next upgrade after deployment:
 
 - Stage 1: hosted form-to-email.
 - Implementation spec: `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`.
+- Implementation ticket: `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md`.
 - Destination: `Kelvarllc.com@outlook.com`.
 - Human review remains required before any sales reply.
 - Repository lead records remain the system of record for qualified or meaningful inquiries.
@@ -166,7 +169,7 @@ When a project is won:
 - Use the proposal assembly kit to draft client-specific proposal outlines for qualified replies.
 - Prepare one scoped implementation path per qualified prospect.
 - Upgrade website intake only if deployment is ready or inbound volume justifies it.
-- Use the hosted form-to-email implementation spec if the Stage 1 capture handler or vendor is selected.
+- Use the hosted form-to-email implementation spec and implementation ticket if the Stage 1 capture handler or vendor is selected.
 
 ### Week 4: Close And Compound
 
