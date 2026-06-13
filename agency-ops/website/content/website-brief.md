@@ -34,6 +34,18 @@ Map the first workflow through the structured `/start` automation review console
 - Purpose: collect enough contact, workflow, tool, pain, first-win, and urgency detail to qualify the lead manually.
 - Limitation: still mailto-based; no hosted form endpoint, CRM, sheet queue, or auto-response is connected yet.
 
+## Stage 1 Hosted Intake Path
+
+- Artifact: `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
+- Purpose: replace the mailto behavior with a hosted form-to-email endpoint while preserving human review.
+- Destination: `Kelvarllc.com@outlook.com`
+- Required behavior: validate fields, require consent, send one internal notification, show success or failure state, keep direct email fallback, and avoid auto-sent sales replies.
+- Deployment dependency: form handler, vendor, or server-backed email provider plus required environment variables.
+
+Website-safe summary:
+
+"The current intake console is ready to become a hosted form-to-email workflow when the deployment environment and form handler are selected. Until then, the mailto path remains the safe fallback."
+
 ## Current Offer-Specific Landing Page
 
 - Route: `/lead-intake`
@@ -87,7 +99,7 @@ Proof ladder:
 
 1. Run a full build check in an environment with npm registry access.
 2. Connect deployment to Vercel from `agency-ops/website/`.
-3. Replace the mailto-based structured intake with a hosted form, sheet queue, or CRM capture path.
+3. Replace the mailto-based structured intake with the Stage 1 hosted form-to-email path from `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`.
 4. Add a real scheduling link once the agency chooses its booking tool.
 5. Add true case-study proof once the first client result exists and the proof-capture workflow records approval.
 6. Tune demo proof, FAQ copy, and About page brand-language intensity based on actual prospect questions and objections.
