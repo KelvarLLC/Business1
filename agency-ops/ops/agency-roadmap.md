@@ -15,6 +15,9 @@ This roadmap turns the standing master instruction set into concrete repo-scoped
   - `agency-ops/offers/client-onboarding-handoff-automation.md`
   - `agency-ops/offers/appointment-reminder-automation.md`
   - `agency-ops/offers/lightweight-reporting-dashboard-automation.md`
+- Current starter assets:
+  - `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md`
+  - `agency-ops/delivery/lead-intake-follow-up-delivery-plan-starter.md`
 
 ## Roadmap Stages
 
@@ -28,7 +31,7 @@ Next actions:
 
 - Maintain a focused offer library with narrow, sellable automation services.
 - Create one example lead record when a real or sample prospect is available.
-- Create reusable proposal and delivery starter artifacts for the strongest current offer.
+- Create reusable proposal and delivery starter artifacts for the strongest current offers.
 - Keep operating docs synchronized with new offers, templates, and delivery patterns.
 
 ### Stage 2: Pipeline Activation
@@ -98,10 +101,15 @@ Next actions:
 
 ## Current Priority Queue
 
-1. Create a proposal and delivery starter set for the lead intake/follow-up automation offer.
-2. Add a public website skeleton only if a public web presence becomes the next chosen priority.
-3. Add the first real lead record when a prospect is identified.
+1. Add the first real lead record when a prospect is identified.
+2. Create proposal and delivery starter sets for the next strongest offer when useful.
+3. Add a public website skeleton only if a public web presence becomes the next chosen priority.
 4. Expand workflow specs for repeatable automations after a qualified engagement exists.
+
+## Recently Completed
+
+- Created the agency roadmap.
+- Created proposal and delivery starter files for the lead intake/follow-up automation offer.
 
 ## Operating Notes
 
