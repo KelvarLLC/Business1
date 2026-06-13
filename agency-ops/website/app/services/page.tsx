@@ -49,6 +49,9 @@ export default function ServicesPage() {
           Each service starts with a narrow operational problem, then ships a working system with testing,
           documentation, and handoff notes. Add modules over time until the business has a coordinated AI ecosystem.
         </p>
+        <Link className="primary-action dark" href="/start">
+          Start with your workflow <ArrowRight size={18} />
+        </Link>
       </section>
 
       <section className="service-detail-list">
@@ -73,7 +76,7 @@ export default function ServicesPage() {
                 <dd>{service.outcome}</dd>
               </div>
             </dl>
-            <Link className="text-link" href="/contact">
+            <Link className="text-link" href="/start">
               Scope this module <ArrowRight size={17} />
             </Link>
           </article>
