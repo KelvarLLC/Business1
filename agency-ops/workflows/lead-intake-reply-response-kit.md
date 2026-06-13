@@ -7,6 +7,7 @@ Use this kit when a prospect replies to lead intake / follow-up outreach or subm
 This kit supports the Lead Intake Command System / Follow-Up Engine offer and should be used with:
 
 - `agency-ops/workflows/outreach-execution-control-sheet.md`
+- `agency-ops/offers/lead-intake-scope-menu.md`
 - `agency-ops/workflows/lead-intake-discovery-outline.md`
 - `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`
 - `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md`
@@ -119,7 +120,7 @@ Hi [Name],
 
 Good question. I would want to avoid guessing before I understand the workflow.
 
-For this kind of project, price depends mostly on the number of intake sources, where the lead tracker should live, and whether follow-up starts as internal reminders, draft messages, or approved automated messages.
+For this kind of project, price depends mostly on whether we are mapping the process, building one intake path, or adding a follow-up layer around a tracker you already use.
 
 The smallest useful version is usually one primary lead source, one tracker, and one follow-up rhythm. If you can tell me where requests come in today and what tool you use to track them, I can give you a more realistic scope.
 
@@ -131,7 +132,9 @@ Kelvar LLC
 Next internal action:
 
 - Capture pricing interest as a buying signal.
+- Use `agency-ops/offers/lead-intake-scope-menu.md` to classify the likely package path.
 - Ask for missing scope inputs before drafting a proposal.
+- Do not quote final pricing until the user approves pricing defaults or the client-specific scope is known.
 
 ### Category 4: Already Has CRM / Tool
 
@@ -166,6 +169,7 @@ Kelvar LLC
 Next internal action:
 
 - Record the named tool.
+- Use the scope menu to decide whether Package 3, Follow-Up And Owner Visibility Upgrade, is the best fit.
 - Note whether the lead is a nurture candidate or poor fit.
 
 ### Category 5: Not Interested
@@ -282,6 +286,7 @@ Use this after any meaningful reply:
 - Pain confirmed:
 - Missing information:
 - Recommended response:
+- Likely scope-menu path:
 - Next action:
 - Follow-up due:
 ```
@@ -301,6 +306,7 @@ Use this when the lead moves to discovery:
 - First response owner:
 - Follow-up timing mentioned:
 - Best first win:
+- Likely scope-menu path:
 - Open questions:
 - Proposal likely: yes/no/unknown
 ```
@@ -319,4 +325,4 @@ Use this when the lead moves to discovery:
 - Use after any reply to the Dallas home-services outreach batch.
 - Use after any `/start` submission that asks about lead intake or follow-up.
 - Use before moving a lead to discovery or proposal.
-- Use with the discovery outline and workflow spec to keep the first project bounded.
+- Use with the scope menu, discovery outline, and workflow spec to keep the first project bounded.
