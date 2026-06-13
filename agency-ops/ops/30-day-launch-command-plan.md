@@ -17,6 +17,7 @@ The goal is simple: create real discovery conversations for the Lead Intake Comm
 - Lead Intake reusable implementation spec is documented in `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`.
 - Lead Intake discovery outline is documented in `agency-ops/workflows/lead-intake-discovery-outline.md`.
 - Lead Intake reply response kit is documented in `agency-ops/workflows/lead-intake-reply-response-kit.md`.
+- Lead Intake proposal assembly kit is documented in `agency-ops/proposals/lead-intake-proposal-assembly-kit.md`.
 - Proposal and delivery starter files exist for the lead intake offer.
 - Dallas/Fort Worth home-services prospects and draft-only outreach batches exist.
 - Outreach execution is controlled by `agency-ops/workflows/outreach-execution-control-sheet.md`.
@@ -41,7 +42,7 @@ These targets are operational, not guaranteed business outcomes.
 - Any reply handled through the reply response kit before discovery or closeout.
 - Pricing or scope questions routed through the Lead Intake scope menu instead of improvised numbers.
 - At least one discovery-ready opportunity has a discovery outline prepared.
-- Lead Intake proposal starter is ready to customize within 30 minutes of a qualified reply.
+- Lead Intake proposal assembly kit is ready to customize a scoped proposal quickly after a qualified reply.
 - Delivery plan starter is ready to convert into a client-specific implementation plan once work is won.
 - Reusable workflow spec is available to keep phase-one scope bounded.
 
@@ -109,8 +110,9 @@ When a prospect responds:
 6. Capture the current tools, intake source, follow-up timing, owner, and first win.
 7. Use `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` to keep implementation scope bounded.
 8. Use `agency-ops/offers/lead-intake-scope-menu.md` to choose the right package path: blueprint, single-source build, or follow-up visibility upgrade.
-9. Use `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md` as the proposal base.
-10. Keep scope to one primary intake path unless discovery proves a broader need.
+9. Use `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` to assemble a scoped proposal without improvising.
+10. Use `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md` as the proposal base.
+11. Keep scope to one primary intake path unless discovery proves a broader need.
 
 ### Priority 5: Delivery Readiness
 
@@ -132,7 +134,7 @@ When a project is won:
 - Confirm first outreach path.
 - Create approved mailbox drafts if authorized.
 - Run website build check when possible.
-- Use the reply response kit, discovery outline, workflow spec, and scope menu as the ready kit for any response.
+- Use the reply response kit, discovery outline, workflow spec, scope menu, and proposal assembly kit as the ready kit for any response.
 - Do not expand prospecting until first-batch readiness is complete.
 
 ### Week 2: Send And Learn
@@ -148,7 +150,7 @@ When a project is won:
 
 - Move interested leads to discovery.
 - Use the scope menu to choose blueprint, single-source build, or follow-up visibility upgrade.
-- Draft client-specific proposal outlines for qualified replies.
+- Use the proposal assembly kit to draft client-specific proposal outlines for qualified replies.
 - Prepare one scoped implementation path per qualified prospect.
 - Upgrade website intake only if deployment is ready or inbound volume justifies it.
 
