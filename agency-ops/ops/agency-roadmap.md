@@ -18,6 +18,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active website intake workflow: `agency-ops/workflows/website-lead-intake-workflow.md`
 - Active intake upgrade plan: `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
 - Active hosted form-to-email implementation spec: `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
+- Active Stage 1 intake handler decision scorecard: `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`
 - Active Stage 1 hosted intake implementation ticket: `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md`
 - Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
 - Active Lead Intake offer: `agency-ops/offers/lead-intake-follow-up-automation.md`
@@ -44,7 +45,7 @@ Public voice rule: make the ambition visible through concrete systems, narrow fi
 
 Proof rule: demo proof stays labeled as demo proof; client results become public only after measurement status and client approval are recorded.
 
-Intake rule: Stage 0 mailto remains the safe fallback until Stage 1 hosted form-to-email has a selected handler or vendor, tested notification delivery, tested visitor states, and documented environment setup.
+Intake rule: Stage 0 mailto remains the safe fallback until Stage 1 hosted form-to-email has a scored handler/vendor decision, selected handler or vendor, tested notification delivery, tested visitor states, and documented environment setup.
 
 ## Current Offer Library
 
@@ -78,6 +79,7 @@ Execution control:
 - `agency-ops/workflows/website-lead-intake-workflow.md`
 - `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
 - `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
+- `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`
 - `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md`
 - `agency-ops/workflows/lead-intake-reply-response-kit.md`
 - `agency-ops/offers/lead-intake-scope-menu.md`
@@ -103,6 +105,7 @@ Completed:
 - Created `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` to decide whether Lead Intake opportunities are proposal-ready, outline-ready, discovery-needed, or nurture/close.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` to turn qualified Lead Intake replies into bounded proposal drafts without improvising.
 - Created `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` to define the Stage 1 permanent intake capture path after deployment.
+- Created `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` to choose between server-backed route, hosted form vendor, or remaining Stage 0 before implementation.
 - Created `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` to turn the Stage 1 hosted capture spec into an executable builder work order.
 - Created `agency-ops/workflows/client-proof-and-case-study-capture-system.md` to turn delivery evidence into safe, approval-based proof and case-study material.
 - Captured the AI ecosystem strategy and synchronized it with the website and offer library.
@@ -116,6 +119,7 @@ Next actions:
 - Use the Lead Intake scope menu when a prospect asks about price, package shape, or implementation size.
 - Use the Lead Intake proposal decision scorecard before assembling a proposal draft.
 - Use the Lead Intake proposal assembly kit when a prospect is qualified enough for a proposal outline or proposal draft.
+- Use the Stage 1 intake handler decision scorecard before choosing a form handler or vendor.
 - Use the hosted form-to-email implementation spec and implementation ticket when a Stage 1 form handler or vendor is chosen.
 - Use the proof capture system during delivery closeout before adding real client proof to the website, outreach, or proposals.
 - Keep operating docs synchronized with new offers, templates, intake capture choices, delivery patterns, public brand language, and client-approved proof.
@@ -125,7 +129,7 @@ Next actions:
 
 Goal: turn the business website into the public command center for the automation ecosystem.
 
-Status: website foundation, structured intake console, Stage 1 hosted intake spec/ticket, offer proof/FAQ, About page ambition section, and proof-capture rules exist; deployment/build verification and actual hosted capture implementation remain next.
+Status: website foundation, structured intake console, Stage 1 hosted intake spec/ticket/scorecard, offer proof/FAQ, About page ambition section, and proof-capture rules exist; deployment/build verification and actual hosted capture implementation remain next.
 
 Completed:
 
@@ -136,6 +140,7 @@ Completed:
 - Routed primary website CTAs to `/start` and the Lead Intake service CTA to `/lead-intake`.
 - Upgraded `/start` from a plain email CTA into a structured intake console that captures contact, workflow, tools, manual steps, missed items, first win, urgency, and consent before opening a formatted email.
 - Added `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` as the Stage 1 path from mailto to hosted form-to-email.
+- Added `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` as the handler/vendor decision gate.
 - Added `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` as the execution ticket for a future builder.
 - Upgraded `agency-ops/website/app/about/page.tsx` with an ambition and principles section aligned to the brand doctrine.
 - Documented the website lead intake workflow in `agency-ops/workflows/website-lead-intake-workflow.md`.
@@ -147,6 +152,7 @@ Next actions:
 
 - Run `npm install` and `npm run build` in an environment with npm registry access.
 - Deploy from `agency-ops/website/` as the Vercel project root.
+- Use `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` before choosing server-backed route, hosted form vendor, or staying Stage 0.
 - Replace the structured mailto intake with a hosted form-to-email endpoint when the first permanent capture handler or vendor is chosen.
 - Use `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` as the builder handoff for that work.
 - Keep About, offer, FAQ, demo-proof, and future case-study language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` and `agency-ops/workflows/client-proof-and-case-study-capture-system.md`.
@@ -178,7 +184,7 @@ Next actions:
 - Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 - Use `agency-ops/workflows/outreach-execution-control-sheet.md` as the operating checklist for draft creation, send approval, reply handling, and lead-record updates.
 - Use `agency-ops/workflows/lead-intake-reply-response-kit.md` after any positive, negative, pricing, CRM/tool, referral, or sensitive-data reply.
-- Use `agency-ops/workflows/website-lead-intake-workflow.md`, `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`, and `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` for inbound website inquiries and Stage 1 capture handling.
+- Use `agency-ops/workflows/website-lead-intake-workflow.md`, `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`, `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`, and `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` for inbound website inquiries and Stage 1 capture handling.
 - Use `agency-ops/offers/lead-intake-scope-menu.md` when a prospect asks about pricing, implementation size, or what the first package includes.
 - Use `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` before moving a lead into proposal drafting.
 - Use `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` when a lead is ready for proposal outline or proposal draft assembly.
@@ -193,7 +199,7 @@ Next actions:
 
 Goal: make accepted work repeatable, easier to hand off, and easier to convert into safe proof.
 
-Status: first reusable Lead Intake implementation spec, scope menu, proposal scorecard, proposal assembly kit, hosted intake spec/ticket, and proof-capture system exist; pending won or implementation-ready engagement.
+Status: first reusable Lead Intake implementation spec, scope menu, proposal scorecard, proposal assembly kit, hosted intake spec/ticket/scorecard, and proof-capture system exist; pending won or implementation-ready engagement.
 
 Completed:
 
@@ -204,6 +210,7 @@ Completed:
 - Created `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` as the proposal-readiness gate before proposal assembly.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` as the proposal bridge from qualified discovery to client-specific proposal draft.
 - Created `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` as the first permanent website intake implementation spec.
+- Created `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` as the Stage 1 handler/vendor decision tool.
 - Created `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` as the implementation work order for the first permanent website intake path.
 - Created `agency-ops/workflows/client-proof-and-case-study-capture-system.md` as the delivery-closeout bridge from real work to approved public proof.
 
@@ -214,7 +221,7 @@ Next actions:
 - Use the Lead Intake proposal decision scorecard before creating client-specific proposal files.
 - Use the Lead Intake proposal assembly kit before creating client-specific proposal files.
 - Use the Lead Intake workflow spec with the lead intake delivery starter when the first project is won.
-- Use the hosted form-to-email spec and Stage 1 implementation ticket when implementing the website's first permanent capture path.
+- Use the Stage 1 intake handler decision scorecard, hosted form-to-email spec, and Stage 1 implementation ticket when implementing the website's first permanent capture path.
 - Use the proof capture system before adding real client proof to website, outreach, or proposal assets.
 - Build additional workflow specs only after a repeated delivery or sales pattern is clear.
 - Document trigger, inputs, outputs, failure paths, testing data, owner, and maintenance rules.
@@ -272,14 +279,18 @@ Next actions:
 6. Confirm sender mailbox and outreach batch size if outreach is approved.
 7. Run the website build check in an environment with npm registry access.
 8. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
-9. Use `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` when a Stage 1 capture handler or vendor is selected.
-10. Replace the structured mailto intake with the Stage 1 hosted form-to-email path once a capture handler or vendor is chosen.
-11. Use `agency-ops/workflows/client-proof-and-case-study-capture-system.md` before adding real client proof or case-study language to public assets.
-12. Add proof, case study, or internal demo evidence to strengthen the public site only when evidence level and approval status are clear.
-13. Keep public site language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` as offers and proof evolve.
+9. Use `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` before choosing a Stage 1 handler or vendor.
+10. Use `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` when a Stage 1 capture handler or vendor is selected.
+11. Replace the structured mailto intake with the Stage 1 hosted form-to-email path once a capture handler or vendor is chosen.
+12. Use `agency-ops/workflows/client-proof-and-case-study-capture-system.md` before adding real client proof or case-study language to public assets.
+13. Add proof, case study, or internal demo evidence to strengthen the public site only when evidence level and approval status are clear.
+14. Keep public site language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` as offers and proof evolve.
 
 ## Recently Completed
 
+- Added `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` as the decision tool for choosing server-backed route, hosted form vendor, or remaining Stage 0.
+- Updated `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` so handler/vendor scoring is required before coding.
+- Updated `agency-ops/ops/30-day-launch-command-plan.md` so the intake handler scorecard is part of current launch position, success targets, intake priority, weekly cadence, and metrics.
 - Added `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` as the builder-ready work order for implementing the hosted form-to-email path.
 - Updated `agency-ops/ops/30-day-launch-command-plan.md` so the Stage 1 hosted intake ticket is part of current launch position, success targets, intake upgrade priority, and weekly cadence.
 - Added `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` as the Stage 1 implementation spec for replacing the `/start` mailto path with a hosted form-to-email capture flow.
