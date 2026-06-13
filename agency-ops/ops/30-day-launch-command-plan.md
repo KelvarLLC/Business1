@@ -13,6 +13,7 @@ The goal is simple: create real discovery conversations for the Lead Intake Comm
 - Website deployment readiness is documented in `agency-ops/ops/website-deployment-readiness.md`.
 - Inbound capture upgrade path is documented in `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`.
 - Lead Intake / Follow-Up offer is packaged in `agency-ops/offers/lead-intake-follow-up-automation.md`.
+- Lead Intake scope menu is documented in `agency-ops/offers/lead-intake-scope-menu.md`.
 - Lead Intake reusable implementation spec is documented in `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`.
 - Lead Intake discovery outline is documented in `agency-ops/workflows/lead-intake-discovery-outline.md`.
 - Lead Intake reply response kit is documented in `agency-ops/workflows/lead-intake-reply-response-kit.md`.
@@ -38,6 +39,7 @@ These targets are operational, not guaranteed business outcomes.
 - Every sent outreach item logged against a lead record with follow-up due date.
 - Any reply converted into a structured lead update within one business day.
 - Any reply handled through the reply response kit before discovery or closeout.
+- Pricing or scope questions routed through the Lead Intake scope menu instead of improvised numbers.
 - At least one discovery-ready opportunity has a discovery outline prepared.
 - Lead Intake proposal starter is ready to customize within 30 minutes of a qualified reply.
 - Delivery plan starter is ready to convert into a client-specific implementation plan once work is won.
@@ -105,9 +107,10 @@ When a prospect responds:
 4. If interested, move to `qualification-in-progress` or `discovery-needed`.
 5. Use `agency-ops/workflows/lead-intake-discovery-outline.md` to guide the discovery call or async review.
 6. Capture the current tools, intake source, follow-up timing, owner, and first win.
-7. Use `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` to keep scope bounded.
-8. Use `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md` as the proposal base.
-9. Keep scope to one primary intake path unless discovery proves a broader need.
+7. Use `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` to keep implementation scope bounded.
+8. Use `agency-ops/offers/lead-intake-scope-menu.md` to choose the right package path: blueprint, single-source build, or follow-up visibility upgrade.
+9. Use `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md` as the proposal base.
+10. Keep scope to one primary intake path unless discovery proves a broader need.
 
 ### Priority 5: Delivery Readiness
 
@@ -118,8 +121,9 @@ When a project is won:
 1. Create a client-specific delivery plan under `agency-ops/delivery/`.
 2. Use `agency-ops/delivery/lead-intake-follow-up-delivery-plan-starter.md` as the base.
 3. Use `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` as the implementation pattern.
-4. Start with one intake source, one tracker destination, and one follow-up mechanism.
-5. Launch with reminders or draft responses unless auto-send is explicitly approved.
+4. Use `agency-ops/offers/lead-intake-scope-menu.md` to verify that the delivery plan matches the sold package.
+5. Start with one intake source, one tracker destination, and one follow-up mechanism.
+6. Launch with reminders or draft responses unless auto-send is explicitly approved.
 
 ## Weekly Cadence
 
@@ -128,7 +132,7 @@ When a project is won:
 - Confirm first outreach path.
 - Create approved mailbox drafts if authorized.
 - Run website build check when possible.
-- Use the reply response kit, discovery outline, and workflow spec as the ready kit for any response.
+- Use the reply response kit, discovery outline, workflow spec, and scope menu as the ready kit for any response.
 - Do not expand prospecting until first-batch readiness is complete.
 
 ### Week 2: Send And Learn
@@ -137,11 +141,13 @@ When a project is won:
 - Track send dates and follow-up due dates in lead records.
 - Review any replies within one business day.
 - Classify replies before drafting a response.
+- Route pricing or scope questions through the scope menu.
 - Adjust outreach language only from actual signal, not guessing.
 
 ### Week 3: Convert
 
 - Move interested leads to discovery.
+- Use the scope menu to choose blueprint, single-source build, or follow-up visibility upgrade.
 - Draft client-specific proposal outlines for qualified replies.
 - Prepare one scoped implementation path per qualified prospect.
 - Upgrade website intake only if deployment is ready or inbound volume justifies it.
@@ -185,6 +191,16 @@ Requires explicit user approval before:
 - Offering a call time on behalf of the user.
 - Contacting a referred person.
 
+### Scope Gate
+
+Requires user review before:
+
+- Publishing package pricing.
+- Quoting a final price.
+- Expanding beyond one intake source in phase one.
+- Offering auto-send as part of the initial package.
+- Selling a full CRM migration.
+
 ### Deployment Gate
 
 Requires build verification or an accepted deployment environment before:
@@ -211,6 +227,7 @@ Track these manually until a dashboard exists:
 - Emails sent after approval.
 - Replies received.
 - Reply categories.
+- Scope-menu path selected.
 - Leads moved to discovery.
 - Proposals drafted.
 - Projects won.
