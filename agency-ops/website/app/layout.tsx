@@ -3,16 +3,16 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kelvar LLC | AI Automation Ecosystems",
+  title: "Kelvar LLC | AI Ecosystem Armada",
   description:
-    "Practical AI automation ecosystems for service businesses that need faster follow-up, cleaner handoffs, and less manual admin work."
+    "A connected fleet of practical AI automation systems for lead intake, follow-up, onboarding, reminders, reporting, and delivery operations."
 };
 
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
-  { href: "/start", label: "Start" }
+  { href: "/contact", label: "Contact" }
 ];
 
 export default function RootLayout({
@@ -35,8 +35,8 @@ export default function RootLayout({
               </Link>
             ))}
           </nav>
-          <Link className="header-cta" href="/start">
-            Start review
+          <Link className="header-cta" href="/contact">
+            Map a workflow
           </Link>
         </header>
         {children}
@@ -45,7 +45,7 @@ export default function RootLayout({
             <strong>Kelvar LLC</strong>
             <p>AI automation ecosystems for cleaner intake, follow-up, and delivery operations.</p>
           </div>
-          <Link href="/start">Start an automation review</Link>
+          <Link href="/contact">Request an automation audit</Link>
         </footer>
       </body>
     </html>
