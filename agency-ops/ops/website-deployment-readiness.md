@@ -13,7 +13,7 @@ Prepare the Kelvar LLC website in `agency-ops/website/` for a clean Vercel deplo
 - Current public positioning: practical AI automation ecosystems for service businesses
 - Current primary CTA: `/start`
 - Current offer-specific landing page: `/lead-intake`
-- Current capture method: prefilled email to `Kelvarllc.com@outlook.com`
+- Current capture method: structured `/start` intake console that opens a prefilled email to `Kelvarllc.com@outlook.com`
 
 ## Known Blockers
 
@@ -61,16 +61,19 @@ Review the deployed preview for:
 - AI ecosystem and armada language supports the offer without making vague promises.
 - Primary CTAs point to `/start` or `/lead-intake` intentionally.
 - Direct email fallback is visible where useful.
-- Mobile layout has no overlapping nav, hero text, CTA buttons, or service rows.
+- Mobile layout has no overlapping nav, hero text, CTA buttons, workflow choices, form fields, or service rows.
 - The `/start` page explains the review request clearly enough for a prospect to act.
 
 ### Lead Capture QA
 
 Until a permanent capture tool is selected:
 
-- Test the `/start` prefilled email link.
-- Confirm recipient is `Kelvarllc.com@outlook.com`.
-- Confirm the email body requests workflow type, current tools, manual steps, missed or delayed items, best first win, and urgency.
+- Test the `/start` intake console.
+- Confirm workflow category selection changes the selected state.
+- Confirm required fields prevent incomplete submission.
+- Confirm consent is required before submission.
+- Confirm the submit action opens an email addressed to `Kelvarllc.com@outlook.com`.
+- Confirm the email body includes name, business, email, phone, website, workflow type, current tools, manual steps, missed or delayed items, best first win, urgency, and the non-commitment review note.
 - Confirm received website inquiries can be converted into lead records under `agency-ops/leads/`.
 
 When a permanent capture path is selected, update this checklist and `agency-ops/workflows/website-lead-intake-workflow.md`.
@@ -84,7 +87,7 @@ Recommended initial Vercel settings:
 - Production branch: `main`.
 - Build command: `npm run build`.
 - Install command: `npm install`.
-- Environment variables: none required for the current static/prefilled-email version.
+- Environment variables: none required for the current static and mailto-based version.
 
 Do not connect auto-sending email, CRM writes, or paid scheduling workflows until the capture workflow is explicitly chosen and reviewed.
 
@@ -95,6 +98,7 @@ Before marking the website launched:
 - Build passes.
 - Vercel preview renders all core routes.
 - Primary CTA path works.
+- Structured `/start` intake opens a correctly formatted email.
 - Contact fallback works.
 - Website brief reflects the deployed state.
 - Roadmap marks deployment complete and moves the next priority to lead capture upgrade or outreach approval.
@@ -104,7 +108,7 @@ Before marking the website launched:
 
 Within the next operating cycle after deployment:
 
-- Add a permanent form, scheduler, or CRM-backed intake path.
+- Replace the mailto-based intake with a permanent form, scheduler, or CRM-backed intake path.
 - Add simple analytics or conversion tracking if available.
 - Create one internal demo or mini case study that can become proof on the website.
 - Review outreach replies and website inquiries together so offer language improves from real signals.
