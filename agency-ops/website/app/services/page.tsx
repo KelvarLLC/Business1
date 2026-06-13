@@ -17,8 +17,8 @@ const services = [
     included: "Timed reminders, response prompts, stalled-thread flags, prepared draft language, and status visibility.",
     bestFit: "Teams with sales or client success work that depends on consistent human follow-through.",
     outcome: "Fewer dropped conversations and a more reliable path to the next decision.",
-    href: "/contact",
-    cta: "Scope this module"
+    href: "/start",
+    cta: "Start intake"
   },
   {
     name: "Client Onboarding Dock",
@@ -26,8 +26,8 @@ const services = [
     included: "Client intake forms, internal handoff notes, milestone reminders, kickoff checklists, and delivery-start tracking.",
     bestFit: "Teams that sell successfully but feel friction between close and delivery.",
     outcome: "New clients enter delivery with the right context already organized.",
-    href: "/contact",
-    cta: "Scope this module"
+    href: "/start",
+    cta: "Start intake"
   },
   {
     name: "Appointment Reminder Beacon",
@@ -35,8 +35,8 @@ const services = [
     included: "Reminder timing, confirmation tracking, reschedule prompts, no-show flags, and owner notifications.",
     bestFit: "Local and service operators where each missed slot has real revenue cost.",
     outcome: "Fewer manual check-ins and clearer visibility into who is confirmed.",
-    href: "/contact",
-    cta: "Scope this module"
+    href: "/start",
+    cta: "Start intake"
   },
   {
     name: "Reporting Signal Grid",
@@ -44,8 +44,8 @@ const services = [
     included: "Data refresh workflow, dashboard structure, exception flags, and owner-ready summary updates.",
     bestFit: "Small teams that need simple operational visibility without a heavy analytics project.",
     outcome: "A repeatable reporting rhythm that shows what changed and what needs action.",
-    href: "/contact",
-    cta: "Scope this module"
+    href: "/start",
+    cta: "Start intake"
   }
 ];
 
