@@ -50,8 +50,8 @@ export default function Home() {
             Build a connected fleet of intake, follow-up, onboarding, reminder, reporting, and delivery systems for your service business.
           </p>
           <div className="hero-actions">
-            <Link className="primary-action" href="/contact">
-              Request an audit <ArrowRight size={18} />
+            <Link className="primary-action" href="/start">
+              Start a review <ArrowRight size={18} />
             </Link>
             <Link className="secondary-action" href="/services">
               View service fleet
@@ -139,8 +139,8 @@ export default function Home() {
           <p className="section-kicker">Ready when the workflow is costing you time</p>
           <h2>Bring one messy process. Leave with a scoped automation plan.</h2>
         </div>
-        <Link className="primary-action dark" href="/contact">
-          Request a review <ArrowRight size={18} />
+        <Link className="primary-action dark" href="/start">
+          Start the review <ArrowRight size={18} />
         </Link>
         <Orbit aria-hidden="true" className="cta-orbit" />
       </section>
