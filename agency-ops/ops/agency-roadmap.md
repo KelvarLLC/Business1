@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This roadmap turns the standing master instruction set and the user's AI ecosystem ambition into concrete repo-scoped workstreams for the automation agency. It guides autonomous scheduled runs, manual follow-up, website work, pipeline activation, and future specialist agents working inside `KelvarLLC/Business1`.
+This roadmap turns the standing master instruction set and the user's AI ecosystem ambition into concrete repo-scoped workstreams for the automation agency. It guides autonomous scheduled runs, manual follow-up, website work, pipeline activation, proof capture, and future specialist agents working inside `KelvarLLC/Business1`.
 
 ## Current Baseline
 
@@ -24,6 +24,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active Lead Intake discovery outline: `agency-ops/workflows/lead-intake-discovery-outline.md`
 - Active Lead Intake reply response kit: `agency-ops/workflows/lead-intake-reply-response-kit.md`
 - Active Lead Intake proposal assembly kit: `agency-ops/proposals/lead-intake-proposal-assembly-kit.md`
+- Active proof and case-study capture system: `agency-ops/workflows/client-proof-and-case-study-capture-system.md`
 - Active outreach review packet: `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md`
 - Active outreach execution control sheet: `agency-ops/workflows/outreach-execution-control-sheet.md`
 - Active prospect list: `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md`
@@ -32,11 +33,13 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 
 Internal ambition: build an Armada of AI Galactic Empire ecosystems.
 
-Operational translation: build a modular AI automation ecosystem where the website, offer library, lead pipeline, proposal assets, delivery plans, workflow specs, and operating docs reinforce each other instead of existing as scattered one-off materials.
+Operational translation: build a modular AI automation ecosystem where the website, offer library, lead pipeline, proposal assets, delivery plans, workflow specs, proof capture, and operating docs reinforce each other instead of existing as scattered one-off materials.
 
 Public translation: Kelvar builds practical AI automation ecosystems for service businesses that need faster follow-up, cleaner handoffs, fewer missed leads, and less manual admin work.
 
 Public voice rule: make the ambition visible through concrete systems, narrow first steps, useful proof, and human approval where judgment matters. Keep the empire language mostly internal unless it is deliberately polished for a specific public asset.
+
+Proof rule: demo proof stays labeled as demo proof; client results become public only after measurement status and client approval are recorded.
 
 ## Current Offer Library
 
@@ -70,6 +73,7 @@ Execution control:
 - `agency-ops/workflows/lead-intake-reply-response-kit.md`
 - `agency-ops/offers/lead-intake-scope-menu.md`
 - `agency-ops/proposals/lead-intake-proposal-assembly-kit.md`
+- `agency-ops/workflows/client-proof-and-case-study-capture-system.md`
 
 No outreach has been sent. Sending still requires explicit approval.
 
@@ -79,7 +83,7 @@ No outreach has been sent. Sending still requires explicit approval.
 
 Goal: make the agency easy to understand, sell, and operate from the repository.
 
-Status: core offer packaging and brand voice foundation complete; maintain and improve as evidence arrives.
+Status: core offer packaging, brand voice foundation, and proof discipline complete; maintain and improve as evidence arrives.
 
 Completed:
 
@@ -87,30 +91,32 @@ Completed:
 - Created `agency-ops/offers/lead-intake-scope-menu.md` to package the strongest offer into a blueprint, single-source build, and follow-up visibility upgrade.
 - Created reusable proposal and delivery starter assets for all four current offers.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` to turn qualified Lead Intake replies into bounded proposal drafts without improvising.
+- Created `agency-ops/workflows/client-proof-and-case-study-capture-system.md` to turn delivery evidence into safe, approval-based proof and case-study material.
 - Captured the AI ecosystem strategy and synchronized it with the website and offer library.
 - Created `agency-ops/ops/brand-doctrine-and-public-voice.md` to translate the user's high-ambition AI ecosystem language into practical public copy rules.
 - Created reusable operating checklists for qualification, proposal readiness, delivery planning, and closeout.
-- Created `agency-ops/ops/30-day-launch-command-plan.md` to tie website launch, outreach approval, pipeline handling, proposal readiness, and delivery packaging into one 30-day operating cadence.
+- Created `agency-ops/ops/30-day-launch-command-plan.md` to tie website launch, outreach approval, pipeline handling, proposal readiness, proof capture, and delivery packaging into one 30-day operating cadence.
 
 Next actions:
 
 - Use the 30-day launch command plan as the top-level execution cadence until the first qualified opportunity or won project changes priorities.
 - Use the Lead Intake scope menu when a prospect asks about price, package shape, or implementation size.
 - Use the Lead Intake proposal assembly kit when a prospect is qualified enough for a proposal outline or proposal draft.
-- Keep operating docs synchronized with new offers, templates, delivery patterns, and public brand language.
+- Use the proof capture system during delivery closeout before adding real client proof to the website, outreach, or proposals.
+- Keep operating docs synchronized with new offers, templates, delivery patterns, public brand language, and client-approved proof.
 - Update offer language based on actual lead objections, discovery calls, and delivery evidence.
 
 ### Stage 2: Website Flagship
 
 Goal: turn the business website into the public command center for the automation ecosystem.
 
-Status: website foundation, structured intake console, offer proof/FAQ, and About page ambition section exist; deployment/build verification and permanent hosted capture remain next.
+Status: website foundation, structured intake console, offer proof/FAQ, About page ambition section, and proof-capture rules exist; deployment/build verification and permanent hosted capture remain next.
 
 Completed:
 
 - Created a Vercel-friendly Next.js website foundation under `agency-ops/website/`.
 - Added home, services, lead-intake, about, contact, and start pages.
-- Added a content brief for positioning, visual direction, CTA strategy, brand doctrine, and next website improvements.
+- Added a content brief for positioning, visual direction, CTA strategy, brand doctrine, proof capture, and next website improvements.
 - Connected the public message to the current service packages.
 - Routed primary website CTAs to `/start` and the Lead Intake service CTA to `/lead-intake`.
 - Upgraded `/start` from a plain email CTA into a structured intake console that captures contact, workflow, tools, manual steps, missed items, first win, urgency, and consent before opening a formatted email.
@@ -118,14 +124,15 @@ Completed:
 - Documented the website lead intake workflow in `agency-ops/workflows/website-lead-intake-workflow.md`.
 - Added `agency-ops/ops/website-deployment-readiness.md` to define Vercel setup, build verification, content QA, lead-capture QA, launch checks, and known blockers.
 - Added `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md` to define the staged path from structured mailto to hosted form, sheet, or CRM capture.
+- Added `agency-ops/workflows/client-proof-and-case-study-capture-system.md` to define how demo proof becomes delivery artifact proof, approved process proof, approved result proof, or a public case study.
 
 Next actions:
 
 - Run `npm install` and `npm run build` in an environment with npm registry access.
 - Deploy from `agency-ops/website/` as the Vercel project root.
 - Replace the structured mailto intake with a hosted form-to-email endpoint when the first permanent capture destination is chosen.
-- Keep About, offer, FAQ, and demo-proof language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md`.
-- Add proof, case study, or internal demo evidence once a real client result or internal demo exists.
+- Keep About, offer, FAQ, demo-proof, and future case-study language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` and `agency-ops/workflows/client-proof-and-case-study-capture-system.md`.
+- Add proof, case study, or internal demo evidence only when approval and evidence level are clear.
 
 ### Stage 3: Pipeline Activation
 
@@ -163,9 +170,9 @@ Next actions:
 
 ### Stage 4: Delivery Factory
 
-Goal: make accepted work repeatable and easier to hand off.
+Goal: make accepted work repeatable, easier to hand off, and easier to convert into safe proof.
 
-Status: first reusable Lead Intake implementation spec, scope menu, and proposal assembly kit exist; pending won or implementation-ready engagement.
+Status: first reusable Lead Intake implementation spec, scope menu, proposal assembly kit, and proof-capture system exist; pending won or implementation-ready engagement.
 
 Completed:
 
@@ -174,6 +181,7 @@ Completed:
 - Created `agency-ops/workflows/lead-intake-reply-response-kit.md` as the safe response bridge from reply to discovery or closeout.
 - Created `agency-ops/offers/lead-intake-scope-menu.md` as the packaging bridge from discovery to proposal and delivery plan.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` as the proposal bridge from qualified discovery to client-specific proposal draft.
+- Created `agency-ops/workflows/client-proof-and-case-study-capture-system.md` as the delivery-closeout bridge from real work to approved public proof.
 
 Next actions:
 
@@ -181,9 +189,10 @@ Next actions:
 - Use the Lead Intake scope menu before turning any qualified opportunity into a proposal.
 - Use the Lead Intake proposal assembly kit before creating client-specific proposal files.
 - Use the Lead Intake workflow spec with the lead intake delivery starter when the first project is won.
+- Use the proof capture system before adding real client proof to website, outreach, or proposal assets.
 - Build additional workflow specs only after a repeated delivery or sales pattern is clear.
 - Document trigger, inputs, outputs, failure paths, testing data, owner, and maintenance rules.
-- Capture closeout notes and expansion opportunities after each delivery.
+- Capture closeout notes, proof permission status, and expansion opportunities after each delivery.
 
 ### Stage 5: Intelligence And Compounding
 
@@ -196,6 +205,7 @@ Next actions:
 - Track common client pains, requested automations, and delivery blockers.
 - Identify which offers convert, deliver cleanly, and create expansion opportunities.
 - Build reusable scripts, templates, and internal workflows only when patterns repeat.
+- Turn approved delivery evidence into website proof, proposal snippets, and offer improvements.
 - Update the website and offer library based on actual pipeline evidence.
 
 ### Stage 6: QA, Security, And Optimization
@@ -207,6 +217,7 @@ Status: ongoing.
 Next actions:
 
 - Review new repo artifacts for scope creep, unclear promises, missing assumptions, and unsafe automation behavior.
+- Review proof artifacts for consent, measurement clarity, privacy, and overclaim risk before public use.
 - Add simple validation checks or review checklists when workflows become code-backed.
 - Improve duplicated docs or templates only when the change makes future execution easier.
 - Maintain a rolling opportunities list for concrete upgrades.
@@ -221,7 +232,7 @@ Next actions:
 
 - Use this roadmap and the 30-day launch command plan as the coordination baseline.
 - Assign each agent a clear repo-contained workstream.
-- Track blockers, duplicated effort, unresolved handoffs, and open approvals in operating notes.
+- Track blockers, duplicated effort, unresolved handoffs, open approvals, and proof-permission status in operating notes.
 - Preserve a single source of truth for pipeline status and delivery state.
 
 ## Current Priority Queue
@@ -235,11 +246,15 @@ Next actions:
 7. Run the website build check in an environment with npm registry access.
 8. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
 9. Replace the structured mailto intake with a hosted form-to-email endpoint once a capture vendor or handler is chosen.
-10. Add proof, case study, or internal demo evidence to strengthen the public site.
-11. Keep public site language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` as offers and proof evolve.
+10. Use `agency-ops/workflows/client-proof-and-case-study-capture-system.md` before adding real client proof or case-study language to public assets.
+11. Add proof, case study, or internal demo evidence to strengthen the public site only when evidence level and approval status are clear.
+12. Keep public site language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` as offers and proof evolve.
 
 ## Recently Completed
 
+- Added `agency-ops/workflows/client-proof-and-case-study-capture-system.md` as the proof ladder and closeout system for turning delivery evidence into safe website, proposal, outreach, and case-study proof.
+- Updated `agency-ops/website/content/website-brief.md` to include the proof capture system and current public proof level.
+- Updated `agency-ops/ops/30-day-launch-command-plan.md` so proof capture is part of delivery readiness, decision gates, metrics, and the 30-day cadence.
 - Added `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` as the proposal bridge from qualified Lead Intake replies to bounded proposal drafts.
 - Updated `agency-ops/ops/30-day-launch-command-plan.md` so the proposal assembly kit is part of reply, discovery, proposal, and weekly conversion handling.
 - Added `agency-ops/ops/brand-doctrine-and-public-voice.md` as the public voice guide for translating high-ambition AI ecosystem strategy into practical buyer-facing language.
@@ -270,5 +285,5 @@ Next actions:
 - Keep all durable work inside `agency-ops/`.
 - Prefer practical assets that support revenue, delivery, or continuity.
 - Use the empire language internally as a strategic metaphor; keep public-facing copy professional and outcome-focused unless the user explicitly wants a more thematic brand.
-- Do not fabricate leads, client commitments, deployment status, or outreach results.
-- Ask for approval before sending outreach, changing deployment settings, or making high-risk operational changes.
+- Do not fabricate leads, client commitments, deployment status, outreach results, testimonials, or case-study outcomes.
+- Ask for approval before sending outreach, changing deployment settings, publishing client proof, or making high-risk operational changes.
