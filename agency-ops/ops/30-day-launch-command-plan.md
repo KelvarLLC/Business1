@@ -12,6 +12,7 @@ The goal is simple: create real discovery conversations for the Lead Intake Comm
 - `/start` now functions as a structured intake console that opens a formatted email request.
 - Website deployment readiness is documented in `agency-ops/ops/website-deployment-readiness.md`.
 - Website deployment handoff ticket is documented in `agency-ops/ops/website-vercel-deployment-handoff-ticket.md`.
+- Website launch decision record template is documented in `agency-ops/ops/website-launch-decision-record-template.md`.
 - Inbound capture upgrade path is documented in `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`.
 - Hosted form-to-email implementation is specified in `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`.
 - Stage 1 intake handler decision scorecard is documented in `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`.
@@ -43,6 +44,7 @@ These targets are operational, not guaranteed business outcomes.
 
 - Website build verified and deployment path ready.
 - Website deployment handoff ticket is ready for an operator with npm registry and Vercel access.
+- Website launch decision record template is ready to capture preview-ready, production-ready, public-launch-approved, or launch-hold outcomes.
 - First outbound batch approved, drafted, and sent if the user gives explicit approval.
 - Every sent outreach item logged against a lead record with follow-up due date.
 - Any reply converted into a structured lead update within one business day.
@@ -85,6 +87,7 @@ Use:
 
 - `agency-ops/ops/website-deployment-readiness.md`
 - `agency-ops/ops/website-vercel-deployment-handoff-ticket.md`
+- `agency-ops/ops/website-launch-decision-record-template.md`
 
 Required check:
 
@@ -101,6 +104,8 @@ agency-ops/website
 ```
 
 Website launch is valuable, but it should not block the first controlled outbound test. Outbound can point to the lead-intake offer concept first and the site second.
+
+Before marking the website preview-ready, production-ready, or publicly launched, complete a launch decision record with build status, preview QA, intake QA, proof status, user approval status, known issues, and follow-up actions.
 
 ### Priority 3: Inbound Capture Upgrade
 
@@ -160,6 +165,7 @@ When a project is won:
 - Create approved mailbox drafts if authorized.
 - Run website build check when possible.
 - Use the website deployment handoff ticket when Vercel and registry access are available.
+- Use the website launch decision record template before marking preview-ready, production-ready, public-launch-approved, or launch-hold status.
 - Use the reply response kit, discovery outline, workflow spec, scope menu, proposal scorecard, and proposal assembly kit as the ready kit for any response.
 - Do not expand prospecting until first-batch readiness is complete.
 
@@ -201,7 +207,8 @@ Use this during active launch periods.
 4. Move each active lead to the clearest pipeline stage.
 5. Score proposal readiness before drafting proposal materials.
 6. Capture one useful learning in the relevant lead, offer, or workflow file.
-7. Avoid creating new assets unless they reduce friction in outreach, discovery, proposal, delivery, intake capture, deployment, or proof capture.
+7. Record launch decision status when build, preview, intake, production, or public-launch evidence changes.
+8. Avoid creating new assets unless they reduce friction in outreach, discovery, proposal, delivery, intake capture, deployment, launch decisioning, or proof capture.
 
 ## Decision Gates
 
@@ -250,6 +257,13 @@ Requires build verification or an accepted deployment environment before:
 - Treating Vercel deployment as complete.
 - Claiming public availability.
 
+Requires a completed launch decision record before:
+
+- Marking the website preview-ready.
+- Marking the website production-ready.
+- Marking the website publicly launched.
+- Recording a launch hold as the current status.
+
 ### Intake Capture Gate
 
 Requires selected handler or vendor and successful QA before:
@@ -278,6 +292,7 @@ Track these manually until a dashboard exists:
 - Website inquiries received.
 - Website build status.
 - Website deployment status.
+- Website launch decision outcome.
 - Intake handler score.
 - Intake capture stage: Stage 0 mailto, Stage 1 hosted form-to-email, Stage 2 sheet queue, or Stage 3 CRM.
 - Replies received.
@@ -300,4 +315,4 @@ Recommended choice:
 
 > Approve Outlook draft creation for DFW HVAC, Cool Tech, and Lone-Star Roof Systems. Drafts should be created for review only, not sent until a second explicit approval.
 
-If outreach remains unapproved, continue only with non-destructive work: website build/deployment readiness, hosted intake capture preparation, proposal readiness, proof capture, and delivery packaging.
+If outreach remains unapproved, continue only with non-destructive work: website build/deployment readiness, launch decision records, hosted intake capture preparation, proposal readiness, proof capture, and delivery packaging.
