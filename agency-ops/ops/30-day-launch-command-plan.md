@@ -15,6 +15,7 @@ The goal is simple: create real discovery conversations for the Lead Intake Comm
 - Lead Intake / Follow-Up offer is packaged in `agency-ops/offers/lead-intake-follow-up-automation.md`.
 - Lead Intake reusable implementation spec is documented in `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`.
 - Lead Intake discovery outline is documented in `agency-ops/workflows/lead-intake-discovery-outline.md`.
+- Lead Intake reply response kit is documented in `agency-ops/workflows/lead-intake-reply-response-kit.md`.
 - Proposal and delivery starter files exist for the lead intake offer.
 - Dallas/Fort Worth home-services prospects and draft-only outreach batches exist.
 - Outreach execution is controlled by `agency-ops/workflows/outreach-execution-control-sheet.md`.
@@ -36,6 +37,7 @@ These targets are operational, not guaranteed business outcomes.
 - First outbound batch approved, drafted, and sent if the user gives explicit approval.
 - Every sent outreach item logged against a lead record with follow-up due date.
 - Any reply converted into a structured lead update within one business day.
+- Any reply handled through the reply response kit before discovery or closeout.
 - At least one discovery-ready opportunity has a discovery outline prepared.
 - Lead Intake proposal starter is ready to customize within 30 minutes of a qualified reply.
 - Delivery plan starter is ready to convert into a client-specific implementation plan once work is won.
@@ -91,18 +93,21 @@ Recommended next upgrade after deployment:
 - Human review remains required before any sales reply.
 - Repository lead records remain the system of record for qualified or meaningful inquiries.
 
-### Priority 4: Discovery And Proposal Readiness
+### Priority 4: Reply, Discovery, And Proposal Readiness
 
 Primary move: prepare the first qualified reply to move fast without improvising.
 
-When a prospect responds positively:
+When a prospect responds:
 
-1. Update the lead record to `qualification-in-progress` or `discovery-needed`.
-2. Use `agency-ops/workflows/lead-intake-discovery-outline.md` to guide the discovery call or async review.
-3. Capture the current tools, intake source, follow-up timing, owner, and first win.
-4. Use `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` to keep scope bounded.
-5. Use `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md` as the proposal base.
-6. Keep scope to one primary intake path unless discovery proves a broader need.
+1. Classify the reply using `agency-ops/workflows/lead-intake-reply-response-kit.md`.
+2. Update the lead record with the reply category, summary, buying signal, missing information, and next action.
+3. Draft a response from the kit and seek approval before sending unless the user has already approved that exact response path.
+4. If interested, move to `qualification-in-progress` or `discovery-needed`.
+5. Use `agency-ops/workflows/lead-intake-discovery-outline.md` to guide the discovery call or async review.
+6. Capture the current tools, intake source, follow-up timing, owner, and first win.
+7. Use `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` to keep scope bounded.
+8. Use `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md` as the proposal base.
+9. Keep scope to one primary intake path unless discovery proves a broader need.
 
 ### Priority 5: Delivery Readiness
 
@@ -123,7 +128,7 @@ When a project is won:
 - Confirm first outreach path.
 - Create approved mailbox drafts if authorized.
 - Run website build check when possible.
-- Use the discovery outline and workflow spec as the ready kit for any positive reply.
+- Use the reply response kit, discovery outline, and workflow spec as the ready kit for any response.
 - Do not expand prospecting until first-batch readiness is complete.
 
 ### Week 2: Send And Learn
@@ -131,6 +136,7 @@ When a project is won:
 - Send the first batch only if explicitly approved.
 - Track send dates and follow-up due dates in lead records.
 - Review any replies within one business day.
+- Classify replies before drafting a response.
 - Adjust outreach language only from actual signal, not guessing.
 
 ### Week 3: Convert
@@ -170,6 +176,15 @@ Requires explicit user approval before:
 - Sending follow-ups.
 - Changing sender mailbox.
 
+### Reply Gate
+
+Requires explicit user approval before:
+
+- Sending any prospect reply drafted from the response kit.
+- Quoting pricing.
+- Offering a call time on behalf of the user.
+- Contacting a referred person.
+
 ### Deployment Gate
 
 Requires build verification or an accepted deployment environment before:
@@ -195,6 +210,7 @@ Track these manually until a dashboard exists:
 - Drafts created.
 - Emails sent after approval.
 - Replies received.
+- Reply categories.
 - Leads moved to discovery.
 - Proposals drafted.
 - Projects won.
