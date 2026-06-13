@@ -3,9 +3,9 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kelvar LLC | Automation Systems for Service Businesses",
+  title: "Kelvar LLC | AI Automation Ecosystems",
   description:
-    "Practical automation systems for lead intake, follow-up, onboarding, reminders, reporting, and operational handoffs."
+    "Practical AI automation ecosystems for service businesses that need faster follow-up, cleaner handoffs, and less manual admin work."
 };
 
 const navItems = [
@@ -36,16 +36,16 @@ export default function RootLayout({
             ))}
           </nav>
           <Link className="header-cta" href="/contact">
-            Start discovery
+            Request audit
           </Link>
         </header>
         {children}
         <footer className="site-footer">
           <div>
             <strong>Kelvar LLC</strong>
-            <p>Automation systems for cleaner intake, follow-up, and delivery operations.</p>
+            <p>AI automation ecosystems for cleaner intake, follow-up, and delivery operations.</p>
           </div>
-          <Link href="/contact">Book a practical automation review</Link>
+          <Link href="/contact">Request an automation audit</Link>
         </footer>
       </body>
     </html>
