@@ -34,6 +34,15 @@ const outcomes = [
   { icon: ShieldCheck, title: "Reusable system", text: "Launch with documentation, handoff notes, and a tuning path." }
 ];
 
+const demoRecord = [
+  ["Source", "Website estimate form"],
+  ["Request", "Storm-related roof leak inspection"],
+  ["Stage", "New"],
+  ["Owner", "Office manager"],
+  ["Next action", "Call or reply next business morning"],
+  ["Follow-up", "Prompt if not contacted by Monday 9:00 AM"]
+];
+
 export default function LeadIntakePage() {
   return (
     <main>
@@ -54,7 +63,7 @@ export default function LeadIntakePage() {
             next follow-up visible until the lead is booked, nurtured, or disqualified.
           </p>
           <div className="hero-actions">
-            <Link className="primary-action" href="/contact">
+            <Link className="primary-action" href="/start">
               Map this workflow <ArrowRight size={18} />
             </Link>
             <Link className="secondary-action" href="/services">
@@ -93,6 +102,35 @@ export default function LeadIntakePage() {
         </div>
       </section>
 
+      <section className="section demo-proof">
+        <div className="demo-copy">
+          <p className="section-kicker">Demo workflow</p>
+          <h2>A roofing estimate request becomes a visible next action.</h2>
+          <p>
+            This is a demo scenario, not a client case study. It shows the shape of the system: capture the request,
+            assign ownership, set the next action, and make stale follow-up visible.
+          </p>
+        </div>
+        <div className="demo-panel" aria-label="Demo lead record">
+          <div className="demo-panel-header">
+            <span>Demo lead</span>
+            <strong>Roof leak inspection</strong>
+          </div>
+          <div className="demo-record">
+            {demoRecord.map(([label, value]) => (
+              <div key={label}>
+                <span>{label}</span>
+                <strong>{value}</strong>
+              </div>
+            ))}
+          </div>
+          <p>
+            The first version does not need a full CRM rebuild. It needs one reliable path from inquiry to owner,
+            status, and follow-up.
+          </p>
+        </div>
+      </section>
+
       <section className="section offer-outcomes">
         <div>
           <p className="section-kicker">Launch outcome</p>
@@ -117,7 +155,7 @@ export default function LeadIntakePage() {
           <p className="section-kicker">First fleet module</p>
           <h2>Bring the current lead path. Leave with the first automation scope.</h2>
         </div>
-        <Link className="primary-action dark" href="/contact">
+        <Link className="primary-action dark" href="/start">
           Request a lead workflow review <ArrowRight size={18} />
         </Link>
       </section>
