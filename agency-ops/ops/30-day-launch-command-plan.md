@@ -12,6 +12,7 @@ The goal is simple: create real discovery conversations for the Lead Intake Comm
 - `/start` now functions as a structured intake console that opens a formatted email request.
 - Website deployment readiness is documented in `agency-ops/ops/website-deployment-readiness.md`.
 - Inbound capture upgrade path is documented in `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`.
+- Hosted form-to-email implementation is specified in `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`.
 - Lead Intake / Follow-Up offer is packaged in `agency-ops/offers/lead-intake-follow-up-automation.md`.
 - Lead Intake scope menu is documented in `agency-ops/offers/lead-intake-scope-menu.md`.
 - Lead Intake reusable implementation spec is documented in `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`.
@@ -41,6 +42,7 @@ These targets are operational, not guaranteed business outcomes.
 - First outbound batch approved, drafted, and sent if the user gives explicit approval.
 - Every sent outreach item logged against a lead record with follow-up due date.
 - Any reply converted into a structured lead update within one business day.
+- Any website inquiry can move from Stage 0 mailto to Stage 1 hosted form-to-email when a handler or vendor is chosen.
 - Any reply handled through the reply response kit before discovery or closeout.
 - Pricing or scope questions routed through the Lead Intake scope menu instead of improvised numbers.
 - At least one discovery-ready opportunity has a discovery outline prepared.
@@ -96,9 +98,12 @@ Primary move: keep `/start` as the structured intake console until a hosted form
 Recommended next upgrade after deployment:
 
 - Stage 1: hosted form-to-email.
+- Implementation spec: `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`.
 - Destination: `Kelvarllc.com@outlook.com`.
 - Human review remains required before any sales reply.
 - Repository lead records remain the system of record for qualified or meaningful inquiries.
+
+Do not mark Stage 1 complete until the form handler or vendor, required environment variables, submission notification, visitor confirmation state, failure state, and direct email fallback are tested.
 
 ### Priority 4: Reply, Discovery, And Proposal Readiness
 
@@ -161,6 +166,7 @@ When a project is won:
 - Use the proposal assembly kit to draft client-specific proposal outlines for qualified replies.
 - Prepare one scoped implementation path per qualified prospect.
 - Upgrade website intake only if deployment is ready or inbound volume justifies it.
+- Use the hosted form-to-email implementation spec if the Stage 1 capture handler or vendor is selected.
 
 ### Week 4: Close And Compound
 
@@ -181,7 +187,7 @@ Use this during active launch periods.
 4. Move each active lead to the clearest pipeline stage.
 5. Score proposal readiness before drafting proposal materials.
 6. Capture one useful learning in the relevant lead, offer, or workflow file.
-7. Avoid creating new assets unless they reduce friction in outreach, discovery, proposal, delivery, or proof capture.
+7. Avoid creating new assets unless they reduce friction in outreach, discovery, proposal, delivery, intake capture, or proof capture.
 
 ## Decision Gates
 
@@ -230,6 +236,15 @@ Requires build verification or an accepted deployment environment before:
 - Treating Vercel deployment as complete.
 - Claiming public availability.
 
+### Intake Capture Gate
+
+Requires selected handler or vendor and successful QA before:
+
+- Marking hosted form-to-email as live.
+- Removing the direct email fallback.
+- Claiming submissions are stored anywhere beyond internal notification email.
+- Auto-sending confirmation, sales replies, or scheduling prompts.
+
 ### Automation Gate
 
 Requires client approval before:
@@ -246,6 +261,8 @@ Track these manually until a dashboard exists:
 - Lead records created.
 - Drafts created.
 - Emails sent after approval.
+- Website inquiries received.
+- Intake capture stage: Stage 0 mailto, Stage 1 hosted form-to-email, Stage 2 sheet queue, or Stage 3 CRM.
 - Replies received.
 - Reply categories.
 - Scope-menu path selected.
@@ -266,4 +283,4 @@ Recommended choice:
 
 > Approve Outlook draft creation for DFW HVAC, Cool Tech, and Lone-Star Roof Systems. Drafts should be created for review only, not sent until a second explicit approval.
 
-If outreach remains unapproved, continue only with non-destructive work: website build/deployment readiness, intake capture preparation, proposal readiness, proof capture, and delivery packaging.
+If outreach remains unapproved, continue only with non-destructive work: website build/deployment readiness, hosted intake capture preparation, proposal readiness, proof capture, and delivery packaging.
