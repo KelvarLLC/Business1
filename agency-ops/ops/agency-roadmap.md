@@ -16,16 +16,21 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active website intake workflow: `agency-ops/workflows/website-lead-intake-workflow.md`
 - Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
 - Active prospect list: `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md`
-- Active outreach drafts: `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md`
+- Active outreach drafts:
+  - `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md`
+  - `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts-batch-2.md`
 - Current offer library:
   - `agency-ops/offers/lead-intake-follow-up-automation.md`
   - `agency-ops/offers/client-onboarding-handoff-automation.md`
   - `agency-ops/offers/appointment-reminder-automation.md`
   - `agency-ops/offers/lightweight-reporting-dashboard-automation.md`
-- Current lead records:
+- Current Dallas lead records:
   - `agency-ops/leads/2026-06-13-dfw-hvac.md`
   - `agency-ops/leads/2026-06-13-cool-tech.md`
   - `agency-ops/leads/2026-06-13-lone-star-roof-systems.md`
+  - `agency-ops/leads/2026-06-13-southern-botanical.md`
+  - `agency-ops/leads/2026-06-13-prestonwood-landscape-services.md`
+  - `agency-ops/leads/2026-06-13-dane-roofing.md`
 - Current starter assets:
   - `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md`
   - `agency-ops/delivery/lead-intake-follow-up-delivery-plan-starter.md`
@@ -91,19 +96,19 @@ Next actions:
 
 Goal: turn prospects into qualified opportunities and proposal-ready work.
 
-Status: first three lead records and outreach drafts created; pending user approval before sending
+Status: six Dallas lead records and two outreach draft batches created; pending user approval before sending
 
 Completed:
 
 - Created `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md` with target niches, qualification filters, prospect list structure, discovery trigger, outreach drafts, and lead-record creation rules.
 - Created `agency-ops/workflows/website-lead-intake-workflow.md` to translate website inquiries into structured lead qualification and next actions.
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` with Dallas/Fort Worth home-service candidates, intake signals, likely pain, fit rating, and recommended next action.
-- Created individual lead records for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
-- Created `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md` with approval-ready outreach drafts for the first three leads.
+- Created individual lead records for DFW HVAC, Cool Tech, Lone-Star Roof Systems, Southern Botanical, Prestonwood Landscape Services, and Dane Roofing.
+- Created two draft-only outreach files for the six Dallas leads.
 
 Next actions:
 
-- Review and approve, revise, or reject the three outreach drafts before any sending.
+- Review and approve, revise, or reject the six Dallas outreach drafts before any sending.
 - Confirm sender mailbox and outreach batch size if sending is approved.
 - Track replies and move leads to `discovery-needed`, `qualified`, `nurture`, or `closed-lost` as evidence arrives.
 - Add more lead records from the Dallas prospect list only after the first batch is reviewed.
@@ -163,7 +168,7 @@ Next actions:
 
 ## Current Priority Queue
 
-1. Review the three drafted outreach emails and approve, revise, or reject before sending.
+1. Review the six Dallas outreach drafts and approve, revise, or reject before sending.
 2. Confirm sender mailbox and outreach batch size if outreach is approved.
 3. Deploy the website from `agency-ops/website/` once npm build access and Vercel setup are available.
 4. Replace the prefilled email intake with the chosen scheduling, form, or CRM capture workflow.
@@ -172,6 +177,8 @@ Next actions:
 
 ## Recently Completed
 
+- Created individual lead records for Southern Botanical, Prestonwood Landscape Services, and Dane Roofing.
+- Created `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts-batch-2.md` with draft outreach for those three leads.
 - Created individual lead records for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md` with draft outreach for the first three leads.
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` as the first real prospect list for Dallas/Fort Worth home-service businesses.
