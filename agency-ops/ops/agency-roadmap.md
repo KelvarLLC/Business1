@@ -16,11 +16,16 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active website intake workflow: `agency-ops/workflows/website-lead-intake-workflow.md`
 - Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
 - Active prospect list: `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md`
+- Active outreach drafts: `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md`
 - Current offer library:
   - `agency-ops/offers/lead-intake-follow-up-automation.md`
   - `agency-ops/offers/client-onboarding-handoff-automation.md`
   - `agency-ops/offers/appointment-reminder-automation.md`
   - `agency-ops/offers/lightweight-reporting-dashboard-automation.md`
+- Current lead records:
+  - `agency-ops/leads/2026-06-13-dfw-hvac.md`
+  - `agency-ops/leads/2026-06-13-cool-tech.md`
+  - `agency-ops/leads/2026-06-13-lone-star-roof-systems.md`
 - Current starter assets:
   - `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md`
   - `agency-ops/delivery/lead-intake-follow-up-delivery-plan-starter.md`
@@ -56,7 +61,6 @@ Completed:
 
 Next actions:
 
-- Create individual lead records when real prospects are selected for outreach.
 - Keep operating docs synchronized with new offers, templates, and delivery patterns.
 - Update offer language based on actual lead objections, discovery calls, and delivery evidence.
 
@@ -87,20 +91,22 @@ Next actions:
 
 Goal: turn prospects into qualified opportunities and proposal-ready work.
 
-Status: first real prospect list created; pending selected leads and outreach approval
+Status: first three lead records and outreach drafts created; pending user approval before sending
 
 Completed:
 
 - Created `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md` with target niches, qualification filters, prospect list structure, discovery trigger, outreach drafts, and lead-record creation rules.
 - Created `agency-ops/workflows/website-lead-intake-workflow.md` to translate website inquiries into structured lead qualification and next actions.
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` with Dallas/Fort Worth home-service candidates, intake signals, likely pain, fit rating, and recommended next action.
+- Created individual lead records for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
+- Created `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md` with approval-ready outreach drafts for the first three leads.
 
 Next actions:
 
-- Pick 3 to 5 prospects from the Dallas home-services prospect list for deeper manual review.
-- Create individual lead records under `agency-ops/leads/` only for prospects selected for pursuit.
-- Draft tailored outreach for selected prospects and wait for user approval before sending.
-- Classify each selected opportunity into the clearest pipeline stage.
+- Review and approve, revise, or reject the three outreach drafts before any sending.
+- Confirm sender mailbox and outreach batch size if sending is approved.
+- Track replies and move leads to `discovery-needed`, `qualified`, `nurture`, or `closed-lost` as evidence arrives.
+- Add more lead records from the Dallas prospect list only after the first batch is reviewed.
 - Move proposal-ready leads into `agency-ops/proposals/` with bounded scopes and client inputs.
 
 ### Stage 4: Delivery Factory
@@ -157,15 +163,17 @@ Next actions:
 
 ## Current Priority Queue
 
-1. Deploy the website from `agency-ops/website/` once npm build access and Vercel setup are available.
-2. Replace the prefilled email intake with the chosen scheduling, form, or CRM capture workflow.
-3. Pick 3 to 5 prospects from `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` for deeper review.
-4. Create individual lead records for selected prospects and draft tailored outreach for approval.
+1. Review the three drafted outreach emails and approve, revise, or reject before sending.
+2. Confirm sender mailbox and outreach batch size if outreach is approved.
+3. Deploy the website from `agency-ops/website/` once npm build access and Vercel setup are available.
+4. Replace the prefilled email intake with the chosen scheduling, form, or CRM capture workflow.
 5. Add an offer-specific landing page for the strongest converting package.
 6. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
 
 ## Recently Completed
 
+- Created individual lead records for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
+- Created `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md` with draft outreach for the first three leads.
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` as the first real prospect list for Dallas/Fort Worth home-service businesses.
 - Added `agency-ops/website/app/start/page.tsx` as the guided website intake path.
 - Routed primary website CTAs to `/start` from the header, homepage, services page, contact page, and footer.
