@@ -2,17 +2,17 @@
 
 ## Purpose
 
-Upgrade the website's current prefilled-email intake into a cleaner inbound lead capture system that still fits the agency's current stage: small, controlled, easy to review, and connected to the `agency-ops/` pipeline.
+Upgrade the website's current intake into a cleaner inbound lead capture system that still fits the agency's current stage: small, controlled, easy to review, and connected to the `agency-ops/` pipeline.
 
 ## Current Intake Baseline
 
 - Website entry route: `/start`
 - Offer landing route: `/lead-intake`
-- Current capture method: prefilled email to `Kelvarllc.com@outlook.com`
+- Current capture method: structured form UI that opens a prefilled email to `Kelvarllc.com@outlook.com`
 - Current qualification destination: lead record under `agency-ops/leads/`
 - Current workflow reference: `agency-ops/workflows/website-lead-intake-workflow.md`
 
-The current email-first setup is acceptable for a pre-launch or early-launch site, but it should be upgraded before meaningful paid traffic or broad outreach points prospects at the website.
+The first no-vendor intake upgrade is complete: `/start` now collects structured fields before opening the email request. This is better than a plain email CTA, but it is still not a true hosted form endpoint, sheet queue, CRM entry, or automated confirmation workflow.
 
 ## Upgrade Goals
 
@@ -48,21 +48,44 @@ Recommended hidden or operational fields:
 - Owner or reviewer
 - Follow-up deadline
 
-## Recommended Implementation Options
+## Upgrade Stages
 
-### Option 1: Form-To-Email First
+### Stage 0: Structured Mailto Console
 
-Best fit: fastest low-risk launch.
+Status: complete.
 
 How it works:
 
-- Replace the `mailto:` CTA with a hosted form or simple website form endpoint.
+- `/start` presents a structured intake form.
+- The visitor chooses a workflow category and fills required details.
+- Submission opens a formatted email to `Kelvarllc.com@outlook.com`.
+- Human review turns the inquiry into a lead record and next action.
+
+Best fit:
+
+- Current pre-deployment or earliest live website state.
+- No vendor setup required.
+- Works as a low-risk bridge before a hosted capture path is chosen.
+
+Tradeoffs:
+
+- The visitor still needs an email client.
+- Submissions are not automatically stored in a queue.
+- No automatic acknowledgement is sent.
+
+### Stage 1: Form-To-Email First
+
+Best fit: fastest low-risk launch after deployment.
+
+How it works:
+
+- Replace the mailto submit behavior with a hosted form endpoint or simple server-backed form handler.
 - Send formatted submissions to `Kelvarllc.com@outlook.com`.
 - Manually create or update lead records in `agency-ops/leads/` after review.
 
 Pros:
 
-- Fastest setup.
+- Removes dependence on the visitor's email client.
 - Low operational complexity.
 - Keeps human review in place.
 
@@ -75,7 +98,7 @@ Recommended use:
 
 - Use this for the first live website version if no CRM or sheet destination has been chosen.
 
-### Option 2: Form-To-Sheet Lead Queue
+### Stage 2: Form-To-Sheet Lead Queue
 
 Best fit: early pipeline tracking.
 
@@ -100,7 +123,7 @@ Recommended use:
 
 - Use this after the website is live and outbound starts producing enough replies or inquiries to need a queue.
 
-### Option 3: Form-To-CRM With Drafted Replies
+### Stage 3: Form-To-CRM With Drafted Replies
 
 Best fit: after repeatable lead flow exists.
 
@@ -128,19 +151,19 @@ Recommended use:
 
 ## Recommended Next Choice
 
-Start with Option 1: form-to-email first.
+After deployment, move from Stage 0 to Stage 1: hosted form-to-email.
 
-Reason: it removes the awkward `mailto:` dependency while preserving manual review and avoiding premature CRM complexity. Once the agency has a handful of real inquiries, upgrade to Option 2 or Option 3 based on volume and follow-up needs.
+Reason: Stage 0 is enough to launch carefully, but Stage 1 removes the visitor email-client dependency while preserving manual review and avoiding premature CRM complexity. Once the agency has a handful of real inquiries, upgrade to Stage 2 or Stage 3 based on volume and follow-up needs.
 
-## First Implementation Scope
+## First Permanent Implementation Scope
 
-When approved, update the website so `/start` uses a real form flow.
+When approved, update the website so `/start` uses a real form endpoint.
 
 Initial scope:
 
-- Replace prefilled email CTA with a structured form UI or hosted form embed.
+- Keep the current structured form UI.
+- Replace mailto submission with a hosted form endpoint or server-backed handler.
 - Keep direct email available as a fallback on the contact page.
-- Preserve the existing `/start` page logic and copy structure where possible.
 - Route submissions to `Kelvarllc.com@outlook.com` until a sheet or CRM is chosen.
 - Add a short confirmation state that sets expectations for response timing.
 - Update `agency-ops/workflows/website-lead-intake-workflow.md` with the selected capture path.
@@ -165,9 +188,9 @@ For each website inquiry:
 - Nurture lead: reply with a narrowing question or useful next step within 2 business days.
 - Poor-fit lead: send a polite decline or redirect when appropriate.
 
-## Success Criteria
+## Success Criteria For Stage 1
 
-The upgrade is successful when:
+The next upgrade is successful when:
 
 - Prospects can submit without opening an email client.
 - The agency receives complete enough details to qualify the lead.
@@ -177,4 +200,4 @@ The upgrade is successful when:
 
 ## Current Next Step
 
-Choose the permanent first capture path. Recommended: form-to-email first, then sheet or CRM after lead volume justifies it.
+Run the website build check, deploy the current Stage 0 intake carefully, then choose the Stage 1 form endpoint or vendor.
