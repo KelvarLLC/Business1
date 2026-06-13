@@ -23,6 +23,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active Lead Intake workflow spec: `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`
 - Active Lead Intake discovery outline: `agency-ops/workflows/lead-intake-discovery-outline.md`
 - Active Lead Intake reply response kit: `agency-ops/workflows/lead-intake-reply-response-kit.md`
+- Active Lead Intake proposal decision scorecard: `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md`
 - Active Lead Intake proposal assembly kit: `agency-ops/proposals/lead-intake-proposal-assembly-kit.md`
 - Active proof and case-study capture system: `agency-ops/workflows/client-proof-and-case-study-capture-system.md`
 - Active outreach review packet: `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md`
@@ -72,6 +73,7 @@ Execution control:
 - `agency-ops/ops/30-day-launch-command-plan.md`
 - `agency-ops/workflows/lead-intake-reply-response-kit.md`
 - `agency-ops/offers/lead-intake-scope-menu.md`
+- `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md`
 - `agency-ops/proposals/lead-intake-proposal-assembly-kit.md`
 - `agency-ops/workflows/client-proof-and-case-study-capture-system.md`
 
@@ -90,6 +92,7 @@ Completed:
 - Created a focused offer library with four narrow automation services.
 - Created `agency-ops/offers/lead-intake-scope-menu.md` to package the strongest offer into a blueprint, single-source build, and follow-up visibility upgrade.
 - Created reusable proposal and delivery starter assets for all four current offers.
+- Created `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` to decide whether Lead Intake opportunities are proposal-ready, outline-ready, discovery-needed, or nurture/close.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` to turn qualified Lead Intake replies into bounded proposal drafts without improvising.
 - Created `agency-ops/workflows/client-proof-and-case-study-capture-system.md` to turn delivery evidence into safe, approval-based proof and case-study material.
 - Captured the AI ecosystem strategy and synchronized it with the website and offer library.
@@ -101,6 +104,7 @@ Next actions:
 
 - Use the 30-day launch command plan as the top-level execution cadence until the first qualified opportunity or won project changes priorities.
 - Use the Lead Intake scope menu when a prospect asks about price, package shape, or implementation size.
+- Use the Lead Intake proposal decision scorecard before assembling a proposal draft.
 - Use the Lead Intake proposal assembly kit when a prospect is qualified enough for a proposal outline or proposal draft.
 - Use the proof capture system during delivery closeout before adding real client proof to the website, outreach, or proposals.
 - Keep operating docs synchronized with new offers, templates, delivery patterns, public brand language, and client-approved proof.
@@ -151,6 +155,7 @@ Completed:
 - Created `agency-ops/workflows/outreach-execution-control-sheet.md` to define draft creation, send approval, reply handling, and follow-up rules.
 - Created `agency-ops/workflows/lead-intake-reply-response-kit.md` to classify prospect replies and draft safe next-step responses.
 - Created `agency-ops/offers/lead-intake-scope-menu.md` to route discovery and pricing questions into bounded package options.
+- Created `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` to score proposal readiness after a positive reply or inquiry.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` to assemble scoped proposals once a reply or inquiry is qualified.
 
 Next actions:
@@ -160,6 +165,7 @@ Next actions:
 - Use `agency-ops/workflows/outreach-execution-control-sheet.md` as the operating checklist for draft creation, send approval, reply handling, and lead-record updates.
 - Use `agency-ops/workflows/lead-intake-reply-response-kit.md` after any positive, negative, pricing, CRM/tool, referral, or sensitive-data reply.
 - Use `agency-ops/offers/lead-intake-scope-menu.md` when a prospect asks about pricing, implementation size, or what the first package includes.
+- Use `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` before moving a lead into proposal drafting.
 - Use `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` when a lead is ready for proposal outline or proposal draft assembly.
 - Use `agency-ops/ops/30-day-launch-command-plan.md` as the launch cadence for weekly priorities, daily checks, and decision gates.
 - Use `agency-ops/workflows/lead-intake-discovery-outline.md` for any positive reply or website inquiry that fits the lead intake offer.
@@ -172,7 +178,7 @@ Next actions:
 
 Goal: make accepted work repeatable, easier to hand off, and easier to convert into safe proof.
 
-Status: first reusable Lead Intake implementation spec, scope menu, proposal assembly kit, and proof-capture system exist; pending won or implementation-ready engagement.
+Status: first reusable Lead Intake implementation spec, scope menu, proposal scorecard, proposal assembly kit, and proof-capture system exist; pending won or implementation-ready engagement.
 
 Completed:
 
@@ -180,6 +186,7 @@ Completed:
 - Created `agency-ops/workflows/lead-intake-discovery-outline.md` as the ready-to-use discovery structure for positive replies and website inquiries.
 - Created `agency-ops/workflows/lead-intake-reply-response-kit.md` as the safe response bridge from reply to discovery or closeout.
 - Created `agency-ops/offers/lead-intake-scope-menu.md` as the packaging bridge from discovery to proposal and delivery plan.
+- Created `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` as the proposal-readiness gate before proposal assembly.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` as the proposal bridge from qualified discovery to client-specific proposal draft.
 - Created `agency-ops/workflows/client-proof-and-case-study-capture-system.md` as the delivery-closeout bridge from real work to approved public proof.
 
@@ -187,6 +194,7 @@ Next actions:
 
 - Create client-specific delivery plans under `agency-ops/delivery/` for active engagements.
 - Use the Lead Intake scope menu before turning any qualified opportunity into a proposal.
+- Use the Lead Intake proposal decision scorecard before creating client-specific proposal files.
 - Use the Lead Intake proposal assembly kit before creating client-specific proposal files.
 - Use the Lead Intake workflow spec with the lead intake delivery starter when the first project is won.
 - Use the proof capture system before adding real client proof to website, outreach, or proposal assets.
@@ -241,7 +249,7 @@ Next actions:
 2. Choose the first outreach path using `agency-ops/workflows/outreach-execution-control-sheet.md`.
 3. Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 4. Review the six Dallas outreach drafts and approve, revise, or reject before sending.
-5. Use the Lead Intake reply response kit, discovery outline, workflow spec, scope menu, and proposal assembly kit for any positive reply or inbound inquiry.
+5. Use the Lead Intake reply response kit, discovery outline, workflow spec, scope menu, proposal scorecard, and proposal assembly kit for any positive reply or inbound inquiry.
 6. Confirm sender mailbox and outreach batch size if outreach is approved.
 7. Run the website build check in an environment with npm registry access.
 8. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
@@ -252,6 +260,9 @@ Next actions:
 
 ## Recently Completed
 
+- Added `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` as the proposal-readiness scorecard for positive Lead Intake replies and inquiries.
+- Updated `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` so proposal assembly starts with the scorecard gate.
+- Updated `agency-ops/ops/30-day-launch-command-plan.md` so the scorecard is part of proposal readiness, weekly conversion handling, daily checks, and metrics.
 - Added `agency-ops/workflows/client-proof-and-case-study-capture-system.md` as the proof ladder and closeout system for turning delivery evidence into safe website, proposal, outreach, and case-study proof.
 - Updated `agency-ops/website/content/website-brief.md` to include the proof capture system and current public proof level.
 - Updated `agency-ops/ops/30-day-launch-command-plan.md` so proof capture is part of delivery readiness, decision gates, metrics, and the 30-day cadence.
