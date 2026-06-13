@@ -13,15 +13,15 @@ Command-center galactic armada: a dark full-bleed systems-map hero, grounded neu
 - Home: brand, ecosystem promise, service fleet, command-layer model, business outcomes, delivery process, and discovery CTA.
 - Services: five narrow automation modules with problem, included scope, best fit, and expected outcome.
 - Start: structured intake console for routing a prospect's first workflow pain into an automation review request.
-- Lead Intake landing page: focused conversion path for the first strongest offer, including best-fit signals, build scope, launch outcomes, and CTA.
+- Lead Intake landing page: focused conversion path for the first strongest offer, including best-fit signals, build scope, demo workflow proof, launch outcomes, and CTA.
 - About: operating philosophy and translation of the armada idea into practical modular systems.
 - Contact: discovery prompt and direct email fallback.
 
 ## Interaction Thesis
 
 - Hero content enters with a restrained lift animation while the background system map drifts slowly.
-- Orbit, route, fleet-node, offer-node, and intake-console visuals create the sense of a living AI ecosystem without distracting from the offer.
-- CTAs, service rows, workflow choices, and form states use small hover and layout transitions to make the site feel responsive and tactile.
+- Orbit, route, fleet-node, offer-node, intake-console, and demo-record visuals create the sense of a living AI ecosystem without distracting from the offer.
+- CTAs, service rows, workflow choices, form states, and demo rows use small hover and layout transitions to make the site feel responsive and tactile.
 
 ## Primary CTA
 
@@ -40,10 +40,12 @@ Map the first workflow through the structured `/start` automation review console
 - Offer: Lead Intake Command System
 - Purpose: convert service-business visitors who recognize missed lead, slow follow-up, scattered intake, or unclear owner/status pain.
 - Connected from: Services page primary CTA and first service module CTA.
+- Current proof section: includes a clearly labeled demo workflow showing a roofing estimate request becoming a structured lead record with owner, next action, and follow-up timing.
 
 ## Current Demo Proof
 
 - Artifact: `agency-ops/website/content/lead-intake-demo-proof.md`
+- Website implementation: `agency-ops/website/app/lead-intake/page.tsx`
 - Demo: Roofing estimate request becomes a structured lead record with owner, next action, follow-up timing, and owner visibility.
 - Use: internal demo, proposal explanation, and website-safe proof copy.
 - Limitation: this is not a client case study and must not be described as a real customer result.
@@ -57,6 +59,6 @@ Website-safe summary:
 1. Run a full build check in an environment with npm registry access.
 2. Connect deployment to Vercel from `agency-ops/website/`.
 3. Replace the mailto-based structured intake with a hosted form, sheet queue, or CRM capture path.
-4. Add the Lead Intake demo proof to the public site as a clearly labeled demo, not a client case study.
-5. Add a real scheduling link once the agency chooses its booking tool.
-6. Add true case-study proof once the first client result exists.
+4. Add a real scheduling link once the agency chooses its booking tool.
+5. Add true case-study proof once the first client result exists.
+6. Tune demo proof copy based on actual prospect questions and objections.
