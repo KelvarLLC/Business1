@@ -11,6 +11,7 @@ This ticket is for a builder working inside `agency-ops/website/`. It should not
 Use these files as the operating context:
 
 - `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
+- `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`
 - `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
 - `agency-ops/workflows/website-lead-intake-workflow.md`
 - `agency-ops/ops/website-deployment-readiness.md`
@@ -30,15 +31,17 @@ A deployed visitor can submit the `/start` form without opening their email clie
 
 ## Implementation Decision Needed
 
-Before coding, choose one Stage 1 path:
+Before coding, choose one Stage 1 path using `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`:
 
 1. Server-backed route inside the Next.js app.
 2. Hosted form vendor that forwards to `Kelvarllc.com@outlook.com`.
+3. Remain at Stage 0 until build/deployment/provider access is available.
 
 Recommended default:
 
-- Use a server-backed route if the deployment environment supports the chosen email provider cleanly.
-- Use a hosted vendor only if it is faster, lower-risk, and easier to test.
+- Use a server-backed route if the deployment environment supports the chosen email provider cleanly and the scorecard supports it.
+- Use a hosted vendor only if it is faster, lower-risk, easier to test, and passes cost, privacy, spam, and rollback checks.
+- Stay at Stage 0 if neither option clears the scorecard.
 
 Do not choose a paid service, change live deployment settings, or create provider credentials without user approval.
 
@@ -177,6 +180,7 @@ Rules:
 
 Stage 1 can be considered implemented only when:
 
+- Handler/vendor decision scorecard is completed.
 - `/start` submits without opening an email client.
 - Required field validation works.
 - Consent is required.
@@ -231,4 +235,4 @@ After implementation, record:
 
 ## Current Status
 
-Ticket ready. Implementation still requires a chosen handler or vendor, build access, deployment preview, and approval for any provider setup or environment changes.
+Ticket ready. Handler/vendor choice should be scored before implementation. Implementation still requires a chosen handler or vendor, build access, deployment preview, and approval for any provider setup or environment changes.
