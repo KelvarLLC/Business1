@@ -17,6 +17,8 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active website intake workflow: `agency-ops/workflows/website-lead-intake-workflow.md`
 - Active intake upgrade plan: `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
 - Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
+- Active Lead Intake workflow spec: `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`
+- Active Lead Intake discovery outline: `agency-ops/workflows/lead-intake-discovery-outline.md`
 - Active outreach review packet: `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md`
 - Active outreach execution control sheet: `agency-ops/workflows/outreach-execution-control-sheet.md`
 - Active prospect list: `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md`
@@ -129,6 +131,8 @@ Next actions:
 - Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 - Use `agency-ops/workflows/outreach-execution-control-sheet.md` as the operating checklist for draft creation, send approval, reply handling, and lead-record updates.
 - Use `agency-ops/ops/30-day-launch-command-plan.md` as the launch cadence for weekly priorities, daily checks, and decision gates.
+- Use `agency-ops/workflows/lead-intake-discovery-outline.md` for any positive reply or website inquiry that fits the lead intake offer.
+- Use `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` to keep proposals and delivery scopes bounded.
 - Confirm sender mailbox and outreach batch size if sending is approved.
 - Track replies and move leads to `discovery-needed`, `qualified`, `nurture`, or `closed-lost` as evidence arrives.
 - Add more lead records from the Dallas prospect list only after the first batch is reviewed.
@@ -137,12 +141,18 @@ Next actions:
 
 Goal: make accepted work repeatable and easier to hand off.
 
-Status: starter delivery plans created; pending won or implementation-ready engagement.
+Status: first reusable Lead Intake implementation spec exists; pending won or implementation-ready engagement.
+
+Completed:
+
+- Created `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` as the reusable implementation pattern for the strongest current offer.
+- Created `agency-ops/workflows/lead-intake-discovery-outline.md` as the ready-to-use discovery structure for positive replies and website inquiries.
 
 Next actions:
 
 - Create client-specific delivery plans under `agency-ops/delivery/` for active engagements.
-- Build workflow specs under `agency-ops/workflows/` for repeated automation patterns.
+- Use the Lead Intake workflow spec with the lead intake delivery starter when the first project is won.
+- Build additional workflow specs only after a repeated delivery or sales pattern is clear.
 - Document trigger, inputs, outputs, failure paths, testing data, owner, and maintenance rules.
 - Capture closeout notes and expansion opportunities after each delivery.
 
@@ -191,15 +201,17 @@ Next actions:
 2. Choose the first outreach path using `agency-ops/workflows/outreach-execution-control-sheet.md`.
 3. Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 4. Review the six Dallas outreach drafts and approve, revise, or reject before sending.
-5. Confirm sender mailbox and outreach batch size if outreach is approved.
-6. Run the website build check in an environment with npm registry access.
-7. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
-8. Replace the structured mailto intake with a hosted form-to-email endpoint once a capture vendor or handler is chosen.
-9. Add proof, case study, or internal demo evidence to strengthen the public site.
-10. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
+5. Use the Lead Intake discovery outline and workflow spec for any positive reply or inbound inquiry.
+6. Confirm sender mailbox and outreach batch size if outreach is approved.
+7. Run the website build check in an environment with npm registry access.
+8. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
+9. Replace the structured mailto intake with a hosted form-to-email endpoint once a capture vendor or handler is chosen.
+10. Add proof, case study, or internal demo evidence to strengthen the public site.
 
 ## Recently Completed
 
+- Added `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` as the reusable implementation pattern for capture, normalization, qualification, routing, follow-up, reporting, QA, and demo explanation.
+- Added `agency-ops/workflows/lead-intake-discovery-outline.md` as the qualification and discovery structure for positive replies and website inquiries.
 - Added `agency-ops/ops/30-day-launch-command-plan.md` to define the 30-day launch thesis, success targets, execution priorities, weekly cadence, daily operating checklist, decision gates, and metrics.
 - Upgraded `agency-ops/website/app/start/page.tsx` into a structured intake console that formats review requests before opening email.
 - Updated `agency-ops/website/app/armada.css` with intake-console styling, workflow choices, responsive form layout, and submission status styles.
