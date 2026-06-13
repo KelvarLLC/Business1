@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ClipboardCheck, Clock3, Gauge, MailCheck } from "lucide-react";
+import { ArrowRight, ClipboardCheck, Clock, Gauge, MailCheck } from "lucide-react";
 
 const workflowTypes = [
   {
@@ -13,7 +13,7 @@ const workflowTypes = [
     text: "Sold work needs cleaner intake, owner assignment, kickoff prep, and delivery context."
   },
   {
-    icon: Clock3,
+    icon: Clock,
     title: "Appointment reminders",
     text: "Bookings need confirmations, reminders, exception alerts, or reschedule tracking."
   },
