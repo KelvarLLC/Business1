@@ -17,6 +17,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active intake upgrade plan: `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
 - Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
 - Active outreach review packet: `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md`
+- Active outreach execution control sheet: `agency-ops/workflows/outreach-execution-control-sheet.md`
 - Active prospect list: `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md`
 
 ## Strategic North Star
@@ -50,6 +51,10 @@ Draft-only outreach assets:
 - `agency-ops/leads/h-med-spa-outreach-draft.md`
 - `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md`
 - `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts-batch-2.md`
+
+Execution control:
+
+- `agency-ops/workflows/outreach-execution-control-sheet.md`
 
 No outreach has been sent. Sending still requires explicit approval.
 
@@ -101,7 +106,7 @@ Next actions:
 
 Goal: turn prospects into qualified opportunities and proposal-ready work.
 
-Status: six Dallas lead records and two outreach draft batches created; pending user approval before any sending.
+Status: six Dallas lead records, two outreach draft batches, and a first-batch execution control sheet exist; pending user approval before any sending.
 
 Completed:
 
@@ -111,11 +116,13 @@ Completed:
 - Created individual lead records for DFW HVAC, Cool Tech, Lone-Star Roof Systems, Southern Botanical, Prestonwood Landscape Services, and Dane Roofing.
 - Created two draft-only outreach files for the six Dallas leads.
 - Created `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md` recommending a controlled first draft batch.
+- Created `agency-ops/workflows/outreach-execution-control-sheet.md` to define draft creation, send approval, reply handling, and follow-up rules.
 
 Next actions:
 
 - Review and approve, revise, or reject the six Dallas outreach drafts before any sending.
 - Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
+- Use `agency-ops/workflows/outreach-execution-control-sheet.md` as the operating checklist for draft creation, send approval, reply handling, and lead-record updates.
 - Confirm sender mailbox and outreach batch size if sending is approved.
 - Track replies and move leads to `discovery-needed`, `qualified`, `nurture`, or `closed-lost` as evidence arrives.
 - Add more lead records from the Dallas prospect list only after the first batch is reviewed.
@@ -174,16 +181,19 @@ Next actions:
 
 ## Current Priority Queue
 
-1. Review the six Dallas outreach drafts and approve, revise, or reject before sending.
-2. Confirm sender mailbox and outreach batch size if outreach is approved.
-3. Run the website build check in an environment with npm registry access.
-4. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
-5. Replace the prefilled email intake with the selected capture path. Recommended: form-to-email first.
-6. Add proof, case study, or internal demo evidence to strengthen the public site.
-7. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
+1. Choose the first outreach path using `agency-ops/workflows/outreach-execution-control-sheet.md`.
+2. Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
+3. Review the six Dallas outreach drafts and approve, revise, or reject before sending.
+4. Confirm sender mailbox and outreach batch size if outreach is approved.
+5. Run the website build check in an environment with npm registry access.
+6. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
+7. Replace the prefilled email intake with the selected capture path. Recommended: form-to-email first.
+8. Add proof, case study, or internal demo evidence to strengthen the public site.
+9. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
 
 ## Recently Completed
 
+- Added `agency-ops/workflows/outreach-execution-control-sheet.md` as the first-batch control sheet for draft creation, send approval, reply handling, follow-up timing, and lead-record updates.
 - Added `agency-ops/ops/website-deployment-readiness.md` as the deployment, build verification, Vercel setup, QA, and launch checklist.
 - Added `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md` as the staged plan for moving from prefilled email to form, sheet, or CRM capture.
 - Created `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md` with approval choices and the recommended first controlled outreach batch.
