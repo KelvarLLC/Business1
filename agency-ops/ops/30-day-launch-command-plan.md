@@ -13,6 +13,8 @@ The goal is simple: create real discovery conversations for the Lead Intake Comm
 - Website deployment readiness is documented in `agency-ops/ops/website-deployment-readiness.md`.
 - Inbound capture upgrade path is documented in `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`.
 - Lead Intake / Follow-Up offer is packaged in `agency-ops/offers/lead-intake-follow-up-automation.md`.
+- Lead Intake reusable implementation spec is documented in `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`.
+- Lead Intake discovery outline is documented in `agency-ops/workflows/lead-intake-discovery-outline.md`.
 - Proposal and delivery starter files exist for the lead intake offer.
 - Dallas/Fort Worth home-services prospects and draft-only outreach batches exist.
 - Outreach execution is controlled by `agency-ops/workflows/outreach-execution-control-sheet.md`.
@@ -37,6 +39,7 @@ These targets are operational, not guaranteed business outcomes.
 - At least one discovery-ready opportunity has a discovery outline prepared.
 - Lead Intake proposal starter is ready to customize within 30 minutes of a qualified reply.
 - Delivery plan starter is ready to convert into a client-specific implementation plan once work is won.
+- Reusable workflow spec is available to keep phase-one scope bounded.
 
 ## Execution Priorities
 
@@ -95,9 +98,11 @@ Primary move: prepare the first qualified reply to move fast without improvising
 When a prospect responds positively:
 
 1. Update the lead record to `qualification-in-progress` or `discovery-needed`.
-2. Capture the current tools, intake source, follow-up timing, owner, and first win.
-3. Use `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md` as the proposal base.
-4. Keep scope to one primary intake path unless discovery proves a broader need.
+2. Use `agency-ops/workflows/lead-intake-discovery-outline.md` to guide the discovery call or async review.
+3. Capture the current tools, intake source, follow-up timing, owner, and first win.
+4. Use `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` to keep scope bounded.
+5. Use `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md` as the proposal base.
+6. Keep scope to one primary intake path unless discovery proves a broader need.
 
 ### Priority 5: Delivery Readiness
 
@@ -107,8 +112,9 @@ When a project is won:
 
 1. Create a client-specific delivery plan under `agency-ops/delivery/`.
 2. Use `agency-ops/delivery/lead-intake-follow-up-delivery-plan-starter.md` as the base.
-3. Start with one intake source, one tracker destination, and one follow-up mechanism.
-4. Launch with reminders or draft responses unless auto-send is explicitly approved.
+3. Use `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` as the implementation pattern.
+4. Start with one intake source, one tracker destination, and one follow-up mechanism.
+5. Launch with reminders or draft responses unless auto-send is explicitly approved.
 
 ## Weekly Cadence
 
@@ -117,7 +123,7 @@ When a project is won:
 - Confirm first outreach path.
 - Create approved mailbox drafts if authorized.
 - Run website build check when possible.
-- Prepare the first discovery outline for the lead intake offer.
+- Use the discovery outline and workflow spec as the ready kit for any positive reply.
 - Do not expand prospecting until first-batch readiness is complete.
 
 ### Week 2: Send And Learn
