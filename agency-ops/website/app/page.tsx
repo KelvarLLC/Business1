@@ -1,31 +1,50 @@
 import Link from "next/link";
-import { ArrowRight, Check, Clock, FileCheck2, Gauge, MailCheck, Orbit } from "lucide-react";
+import {
+  ArrowRight,
+  Bot,
+  Check,
+  Clock,
+  DatabaseZap,
+  FileCheck2,
+  Gauge,
+  MailCheck,
+  Orbit,
+  Radar,
+  Route
+} from "lucide-react";
 
-const services = [
+const fleet = [
   {
-    title: "Lead intake and follow-up",
-    text: "Capture inquiries, qualify the right ones, route next steps, and keep follow-up from slipping."
+    title: "Lead intake command",
+    text: "Capture inquiries, qualify the right ones, assign ownership, and start follow-up before momentum fades."
   },
   {
-    title: "Client onboarding handoffs",
-    text: "Turn sold work into organized intake, reminders, owner assignments, and delivery-ready context."
+    title: "Follow-up engines",
+    text: "Turn quiet prospects and pending clients into timed reminders, useful prompts, and visible next steps."
   },
   {
-    title: "Appointment reminders",
-    text: "Reduce no-shows with confirmation flows, reminder timing, and simple exception tracking."
+    title: "Onboarding docks",
+    text: "Move sold work into intake forms, file requests, kickoff context, and delivery-ready handoff notes."
   },
   {
-    title: "Lightweight reporting",
-    text: "Refresh recurring numbers, flag exceptions, and send owner-ready summaries without manual copy-paste."
+    title: "Reporting beacons",
+    text: "Refresh operating numbers, flag exceptions, and send owner-ready summaries without manual copy-paste."
   }
+];
+
+const outcomes = [
+  { icon: Clock, label: "Faster response", text: "Lead and client follow-up flows that trigger when work enters the system." },
+  { icon: FileCheck2, label: "Cleaner handoffs", text: "Intake, ownership, and delivery context packaged before work starts." },
+  { icon: Gauge, label: "Better visibility", text: "Lightweight reporting that highlights what changed and what needs attention." },
+  { icon: MailCheck, label: "Less chasing", text: "Reminder and follow-up paths that reduce manual check-ins." }
 ];
 
 const process = [
   "Map the manual workflow",
-  "Scope the smallest useful automation",
-  "Build and test the handoff",
-  "Launch with documentation",
-  "Tune after real usage"
+  "Choose the first useful AI system",
+  "Build the smallest reliable launch version",
+  "Document the handoff",
+  "Tune the fleet after real usage"
 ];
 
 export default function Home() {
@@ -34,29 +53,41 @@ export default function Home() {
       <section className="hero">
         <div className="system-map" aria-hidden="true">
           <div className="star-field" />
+          <div className="galactic-arm" />
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
+          <div className="orbit orbit-three" />
+          <div className="route route-a" />
+          <div className="route route-b" />
+          <div className="route route-c" />
           <div className="command-node">AI</div>
-          <div className="fleet-node node-a">Lead</div>
+          <div className="fleet-node node-a">Intake</div>
           <div className="fleet-node node-b">Follow-up</div>
           <div className="fleet-node node-c">Handoff</div>
           <div className="fleet-node node-d">Reports</div>
+          <div className="fleet-node node-e">Delivery</div>
         </div>
         <div className="hero-scrim" />
         <div className="hero-content">
-          <p className="eyebrow">Practical AI automation ecosystems</p>
+          <p className="eyebrow">AI ecosystem armada for service operators</p>
           <h1>Kelvar LLC</h1>
           <p className="hero-line">
-            Build a connected fleet of intake, follow-up, onboarding, reminder, reporting, and delivery systems for your service business.
+            Build a connected fleet of practical AI systems that capture leads, coordinate follow-up, launch client work,
+            surface reporting signals, and keep delivery moving.
           </p>
           <div className="hero-actions">
-            <Link className="primary-action" href="/start">
-              Start a review <ArrowRight size={18} />
+            <Link className="primary-action" href="/contact">
+              Map your first workflow <ArrowRight size={18} />
             </Link>
             <Link className="secondary-action" href="/services">
-              View service fleet
+              View the fleet
             </Link>
           </div>
+        </div>
+        <div className="hero-status" aria-label="Automation fleet status">
+          <span>Command layer online</span>
+          <span>5 launch modules</span>
+          <span>Built for small service teams</span>
         </div>
       </section>
 
@@ -65,21 +96,21 @@ export default function Home() {
         <div className="intro-grid">
           <h2>Most growth leaks through ordinary admin work.</h2>
           <p>
-            Missed follow-ups, repeated intake questions, unclear handoffs, and stale reports are not strategy problems.
-            They are workflow problems. Kelvar turns those recurring tasks into focused AI automation systems that are easy
-            to run, explain, and improve.
+            Missed follow-ups, repeated intake questions, unclear handoffs, stale reports, and scattered reminders are
+            not strategy problems. They are workflow problems. Kelvar turns those recurring tasks into a coordinated AI
+            automation ecosystem that is easy to run, explain, and improve.
           </p>
         </div>
       </section>
 
-      <section className="section services-band">
+      <section className="section fleet-band">
         <div className="section-heading">
           <p className="section-kicker">Service fleet</p>
-          <h2>Start narrow. Connect the systems. Compound the wins.</h2>
+          <h2>Start with one ship. Connect the armada as the business grows.</h2>
         </div>
-        <div className="service-list">
-          {services.map((service, index) => (
-            <article className="service-row" key={service.title}>
+        <div className="fleet-list">
+          {fleet.map((service, index) => (
+            <article className="fleet-row" key={service.title}>
               <span>{String(index + 1).padStart(2, "0")}</span>
               <div>
                 <h3>{service.title}</h3>
@@ -91,8 +122,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section proof">
-        <div className="proof-copy">
+      <section className="section command-layer">
+        <div className="command-copy">
           <p className="section-kicker">Command layer</p>
           <h2>Built for operators who need relief, not theater.</h2>
           <p>
@@ -100,27 +131,46 @@ export default function Home() {
             missed appointments, or reporting that arrives before it is requested.
           </p>
         </div>
+        <div className="system-stack" aria-label="AI ecosystem layers">
+          <div>
+            <Radar size={24} />
+            <strong>Signal</strong>
+            <span>What changed, arrived, stalled, or needs action?</span>
+          </div>
+          <div>
+            <Route size={24} />
+            <strong>Routing</strong>
+            <span>Who owns the next step, and when should it happen?</span>
+          </div>
+          <div>
+            <Bot size={24} />
+            <strong>AI assist</strong>
+            <span>What can be drafted, summarized, classified, or prepared?</span>
+          </div>
+          <div>
+            <DatabaseZap size={24} />
+            <strong>Record</strong>
+            <span>Where should the decision, status, and handoff live?</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="section proof">
+        <div className="proof-copy">
+          <p className="section-kicker">Business outcomes</p>
+          <h2>The first win should be obvious to the team using it.</h2>
+        </div>
         <div className="proof-metrics" aria-label="Business outcomes">
-          <div>
-            <Clock size={26} />
-            <strong>Faster response</strong>
-            <span>Lead and client follow-up flows that trigger when work enters the system.</span>
-          </div>
-          <div>
-            <FileCheck2 size={26} />
-            <strong>Cleaner handoffs</strong>
-            <span>Intake, ownership, and delivery context packaged before work starts.</span>
-          </div>
-          <div>
-            <Gauge size={26} />
-            <strong>Better visibility</strong>
-            <span>Lightweight reporting that highlights what needs attention.</span>
-          </div>
-          <div>
-            <MailCheck size={26} />
-            <strong>Less chasing</strong>
-            <span>Reminder and follow-up paths that reduce manual check-ins.</span>
-          </div>
+          {outcomes.map((outcome) => {
+            const Icon = outcome.icon;
+            return (
+              <div key={outcome.label}>
+                <Icon size={26} />
+                <strong>{outcome.label}</strong>
+                <span>{outcome.text}</span>
+              </div>
+            );
+          })}
         </div>
       </section>
 
@@ -139,8 +189,8 @@ export default function Home() {
           <p className="section-kicker">Ready when the workflow is costing you time</p>
           <h2>Bring one messy process. Leave with a scoped automation plan.</h2>
         </div>
-        <Link className="primary-action dark" href="/start">
-          Start the review <ArrowRight size={18} />
+        <Link className="primary-action dark" href="/contact">
+          Request a review <ArrowRight size={18} />
         </Link>
         <Orbit aria-hidden="true" className="cta-orbit" />
       </section>
