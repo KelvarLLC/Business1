@@ -14,6 +14,7 @@ Use these repo-backed assets together:
 
 - `agency-ops/offers/lead-intake-follow-up-automation.md`: offer definition and sellable problem framing.
 - `agency-ops/offers/lead-intake-scope-menu.md`: package routing for blueprint, single-source build, or follow-up visibility upgrade.
+- `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md`: proposal readiness gate before drafting.
 - `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md`: base proposal structure.
 - `agency-ops/workflows/lead-intake-discovery-outline.md`: discovery questions and qualification structure.
 - `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`: implementation pattern, fields, stages, QA rules, and delivery logic.
@@ -31,7 +32,14 @@ Assemble a proposal only when at least these facts are known:
 - The main failure pattern: missed lead, slow first response, stale follow-up, poor visibility, unclear qualification, or manual copying.
 - Whether the first useful outcome is a blueprint, a working intake workflow, or a follow-up visibility layer.
 
-If these facts are not known, use the discovery outline or reply response kit before drafting a full proposal.
+Before drafting, score the opportunity with `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md`.
+
+- Use this kit for `proposal-draft-ready` leads.
+- Use a short outline and targeted follow-up questions for `proposal-outline-ready` leads.
+- Return to discovery for `discovery-needed` leads.
+- Nurture or close weak-fit leads.
+
+If the required facts are not known, use the discovery outline or reply response kit before drafting a full proposal.
 
 ## Scope Routing
 
@@ -78,14 +86,15 @@ Avoid positioning this as a CRM replacement.
 
 ## Proposal Assembly Steps
 
-1. Copy the structure from `lead-intake-follow-up-proposal-starter.md`.
-2. Replace generic client placeholders with the prospect's known facts.
-3. Choose one scope path from the scope menu.
-4. Keep phase one bounded to one primary source, one tracker, one follow-up mechanism, one owner group, and one simple stage model.
-5. Pull field, stage, routing, reminder, and QA language from the workflow spec.
-6. Add client-specific assumptions and dependencies.
-7. Add explicit out-of-scope language for CRM migration, multi-source routing, auto-send behavior, paid ads, attribution reporting, and guaranteed revenue outcomes.
-8. End with a concrete next step: discovery call, access checklist, blueprint approval, or implementation kickoff.
+1. Score the opportunity using `lead-intake-proposal-decision-scorecard.md`.
+2. Copy the structure from `lead-intake-follow-up-proposal-starter.md` only if the scorecard outcome supports a proposal draft.
+3. Replace generic client placeholders with the prospect's known facts.
+4. Choose one scope path from the scope menu.
+5. Keep phase one bounded to one primary source, one tracker, one follow-up mechanism, one owner group, and one simple stage model.
+6. Pull field, stage, routing, reminder, and QA language from the workflow spec.
+7. Add client-specific assumptions and dependencies.
+8. Add explicit out-of-scope language for CRM migration, multi-source routing, auto-send behavior, paid ads, attribution reporting, and guaranteed revenue outcomes.
+9. End with a concrete next step: discovery call, access checklist, blueprint approval, or implementation kickoff.
 
 ## Required Proposal Sections
 
@@ -106,6 +115,7 @@ Every client-specific proposal should include:
 Optional sections:
 
 - Demo walkthrough, clearly labeled as demo proof only.
+- Client-approved proof, only when approval status and measurement status are recorded.
 - Phase-two expansion options.
 - Timeline, if the user has approved timeline defaults.
 - Pricing, only after the user has approved pricing defaults or a client-specific quote.
@@ -132,6 +142,8 @@ This can usually be built around the tools the client already uses. If the clien
 
 Before marking a proposal as ready, confirm:
 
+- Proposal decision scorecard has been completed.
+- Scorecard outcome is `proposal-outline-ready` or `proposal-draft-ready`.
 - Primary source is named.
 - Tracker destination is named.
 - Follow-up mechanism is chosen: reminder, draft response, or approved auto-send.
@@ -195,6 +207,7 @@ agency-ops/proposals/[yyyy-mm-dd]-[client-slug]-lead-intake-proposal.md
 Then update the related lead record with:
 
 - Current pipeline stage.
+- Proposal decision score.
 - Proposal path selected.
 - Open questions.
 - Client-specific dependencies.
