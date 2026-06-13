@@ -43,6 +43,29 @@ const demoRecord = [
   ["Follow-up", "Prompt if not contacted by Monday 9:00 AM"]
 ];
 
+const questions = [
+  {
+    question: "Is this a full CRM rebuild?",
+    answer:
+      "No. The first version is intentionally smaller: one lead source, one tracker or CRM destination, one owner path, and one follow-up rhythm."
+  },
+  {
+    question: "Can it work with our existing tools?",
+    answer:
+      "Usually the first step is to work with the tools already in place, such as a form, inbox, spreadsheet, booking tool, or CRM, before recommending anything heavier."
+  },
+  {
+    question: "Will messages be sent automatically?",
+    answer:
+      "Not by default. The safer launch path is reminders or draft responses. Auto-send only belongs in scope after exact message rules, exclusions, and approvals are clear."
+  },
+  {
+    question: "What happens after the review request?",
+    answer:
+      "Kelvar maps the current intake path, identifies the first useful automation scope, and recommends whether to start with a blueprint, one-source build, or follow-up visibility layer."
+  }
+];
+
 export default function LeadIntakePage() {
   return (
     <main>
@@ -147,6 +170,21 @@ export default function LeadIntakePage() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      <section className="section offer-faq">
+        <div>
+          <p className="section-kicker">Common questions</p>
+          <h2>Built for a first useful workflow, not a sprawling rebuild.</h2>
+        </div>
+        <div className="faq-list">
+          {questions.map((item) => (
+            <article key={item.question}>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </article>
+          ))}
         </div>
       </section>
 
