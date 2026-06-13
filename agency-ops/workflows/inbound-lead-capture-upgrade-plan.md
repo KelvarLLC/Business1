@@ -11,6 +11,7 @@ Upgrade the website's current intake into a cleaner inbound lead capture system 
 - Current capture method: structured form UI that opens a prefilled email to `Kelvarllc.com@outlook.com`
 - Current qualification destination: lead record under `agency-ops/leads/`
 - Current workflow reference: `agency-ops/workflows/website-lead-intake-workflow.md`
+- Stage 1 implementation spec: `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
 
 The first no-vendor intake upgrade is complete: `/start` now collects structured fields before opening the email request. This is better than a plain email CTA, but it is still not a true hosted form endpoint, sheet queue, CRM entry, or automated confirmation workflow.
 
@@ -77,10 +78,16 @@ Tradeoffs:
 
 Best fit: fastest low-risk launch after deployment.
 
+Implementation reference:
+
+- `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
+
 How it works:
 
 - Replace the mailto submit behavior with a hosted form endpoint or simple server-backed form handler.
 - Send formatted submissions to `Kelvarllc.com@outlook.com`.
+- Show a visitor confirmation state.
+- Keep direct email available as fallback.
 - Manually create or update lead records in `agency-ops/leads/` after review.
 
 Pros:
@@ -93,6 +100,7 @@ Tradeoffs:
 
 - Lead records are still manual.
 - Reporting remains limited.
+- Requires a form handler, vendor, or email provider configuration.
 
 Recommended use:
 
@@ -163,9 +171,10 @@ Initial scope:
 
 - Keep the current structured form UI.
 - Replace mailto submission with a hosted form endpoint or server-backed handler.
+- Follow `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` for fields, validation, email format, confirmation state, QA, rollback, and environment variables.
 - Keep direct email available as a fallback on the contact page.
 - Route submissions to `Kelvarllc.com@outlook.com` until a sheet or CRM is chosen.
-- Add a short confirmation state that sets expectations for response timing.
+- Add a short confirmation state that sets expectations without promising unapproved response timing.
 - Update `agency-ops/workflows/website-lead-intake-workflow.md` with the selected capture path.
 - Update `agency-ops/ops/website-deployment-readiness.md` with any required environment variables or vendor setup.
 
@@ -197,7 +206,8 @@ The next upgrade is successful when:
 - Every inquiry can be mapped to a pipeline stage.
 - No automatic claims, promises, or sales commitments are sent without review.
 - The workflow is documented well enough for a future operator to repeat.
+- The deployment notes include the selected handler or vendor and required environment variables.
 
 ## Current Next Step
 
-Run the website build check, deploy the current Stage 0 intake carefully, then choose the Stage 1 form endpoint or vendor.
+Run the website build check, deploy the current Stage 0 intake carefully, then choose the Stage 1 form endpoint or vendor using `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` as the implementation guide.
