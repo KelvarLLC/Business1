@@ -5,7 +5,7 @@ export default function AboutPage() {
     <main className="page-shell">
       <section className="page-hero">
         <p className="eyebrow">About</p>
-        <h1>Kelvar LLC builds automation that operators can trust after launch.</h1>
+        <h1>Kelvar LLC builds AI systems operators can trust after launch.</h1>
         <p>
           The agency is focused on small service businesses that need cleaner lead handling, faster client follow-up,
           repeatable delivery workflows, and better visibility without overbuilding.
@@ -24,9 +24,9 @@ export default function AboutPage() {
             improvement over flashy one-off builds.
           </p>
           <p>
-            The work starts with the process that is already costing time: the lead that needs follow-up, the client
-            that needs onboarding, the appointment that needs confirmation, or the report that needs to arrive without
-            manual chasing.
+            The galactic armada idea is translated into something operators can actually use: a modular service fleet.
+            One system handles the first painful workflow. The next system connects to it. Over time, intake, follow-up,
+            onboarding, reminders, reporting, and delivery become one coordinated operating layer.
           </p>
           <Link className="primary-action dark" href="/contact">
             Talk through a workflow
