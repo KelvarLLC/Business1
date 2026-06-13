@@ -15,6 +15,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active website foundation: `agency-ops/website/`
 - Active website brief: `agency-ops/website/content/website-brief.md`
 - Active website deployment checklist: `agency-ops/ops/website-deployment-readiness.md`
+- Active website deployment handoff ticket: `agency-ops/ops/website-vercel-deployment-handoff-ticket.md`
 - Active website intake workflow: `agency-ops/workflows/website-lead-intake-workflow.md`
 - Active intake upgrade plan: `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
 - Active hosted form-to-email implementation spec: `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
@@ -47,6 +48,8 @@ Proof rule: demo proof stays labeled as demo proof; client results become public
 
 Intake rule: Stage 0 mailto remains the safe fallback until Stage 1 hosted form-to-email has a scored handler/vendor decision, selected handler or vendor, tested notification delivery, tested visitor states, and documented environment setup.
 
+Deployment rule: do not mark the website launched until build verification, preview QA, intake QA, deployment root, and public-launch approval are recorded.
+
 ## Current Offer Library
 
 - `agency-ops/offers/lead-intake-follow-up-automation.md`
@@ -76,6 +79,8 @@ Execution control:
 
 - `agency-ops/workflows/outreach-execution-control-sheet.md`
 - `agency-ops/ops/30-day-launch-command-plan.md`
+- `agency-ops/ops/website-deployment-readiness.md`
+- `agency-ops/ops/website-vercel-deployment-handoff-ticket.md`
 - `agency-ops/workflows/website-lead-intake-workflow.md`
 - `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
 - `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
@@ -95,7 +100,7 @@ No outreach has been sent. Sending still requires explicit approval.
 
 Goal: make the agency easy to understand, sell, and operate from the repository.
 
-Status: core offer packaging, brand voice foundation, intake capture plan, and proof discipline complete; maintain and improve as evidence arrives.
+Status: core offer packaging, brand voice foundation, intake capture plan, deployment handoff, and proof discipline complete; maintain and improve as evidence arrives.
 
 Completed:
 
@@ -104,6 +109,7 @@ Completed:
 - Created reusable proposal and delivery starter assets for all four current offers.
 - Created `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` to decide whether Lead Intake opportunities are proposal-ready, outline-ready, discovery-needed, or nurture/close.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` to turn qualified Lead Intake replies into bounded proposal drafts without improvising.
+- Created `agency-ops/ops/website-vercel-deployment-handoff-ticket.md` as the build, preview, launch, rollback, and handoff work order for the website.
 - Created `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` to define the Stage 1 permanent intake capture path after deployment.
 - Created `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` to choose between server-backed route, hosted form vendor, or remaining Stage 0 before implementation.
 - Created `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` to turn the Stage 1 hosted capture spec into an executable builder work order.
@@ -116,20 +122,21 @@ Completed:
 Next actions:
 
 - Use the 30-day launch command plan as the top-level execution cadence until the first qualified opportunity or won project changes priorities.
+- Use the website deployment handoff ticket when npm registry and Vercel access are available.
 - Use the Lead Intake scope menu when a prospect asks about price, package shape, or implementation size.
 - Use the Lead Intake proposal decision scorecard before assembling a proposal draft.
 - Use the Lead Intake proposal assembly kit when a prospect is qualified enough for a proposal outline or proposal draft.
 - Use the Stage 1 intake handler decision scorecard before choosing a form handler or vendor.
 - Use the hosted form-to-email implementation spec and implementation ticket when a Stage 1 form handler or vendor is chosen.
 - Use the proof capture system during delivery closeout before adding real client proof to the website, outreach, or proposals.
-- Keep operating docs synchronized with new offers, templates, intake capture choices, delivery patterns, public brand language, and client-approved proof.
+- Keep operating docs synchronized with new offers, templates, intake capture choices, deployment status, delivery patterns, public brand language, and client-approved proof.
 - Update offer language based on actual lead objections, discovery calls, and delivery evidence.
 
 ### Stage 2: Website Flagship
 
 Goal: turn the business website into the public command center for the automation ecosystem.
 
-Status: website foundation, structured intake console, Stage 1 hosted intake spec/ticket/scorecard, offer proof/FAQ, About page ambition section, and proof-capture rules exist; deployment/build verification and actual hosted capture implementation remain next.
+Status: website foundation, structured intake console, deployment handoff ticket, Stage 1 hosted intake spec/ticket/scorecard, offer proof/FAQ, About page ambition section, and proof-capture rules exist; deployment/build verification and actual hosted capture implementation remain next.
 
 Completed:
 
@@ -139,6 +146,7 @@ Completed:
 - Connected the public message to the current service packages.
 - Routed primary website CTAs to `/start` and the Lead Intake service CTA to `/lead-intake`.
 - Upgraded `/start` from a plain email CTA into a structured intake console that captures contact, workflow, tools, manual steps, missed items, first win, urgency, and consent before opening a formatted email.
+- Added `agency-ops/ops/website-vercel-deployment-handoff-ticket.md` as the deployment work order.
 - Added `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` as the Stage 1 path from mailto to hosted form-to-email.
 - Added `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` as the handler/vendor decision gate.
 - Added `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` as the execution ticket for a future builder.
@@ -151,7 +159,7 @@ Completed:
 Next actions:
 
 - Run `npm install` and `npm run build` in an environment with npm registry access.
-- Deploy from `agency-ops/website/` as the Vercel project root.
+- Deploy from `agency-ops/website/` as the Vercel project root using `agency-ops/ops/website-vercel-deployment-handoff-ticket.md`.
 - Use `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` before choosing server-backed route, hosted form vendor, or staying Stage 0.
 - Replace the structured mailto intake with a hosted form-to-email endpoint when the first permanent capture handler or vendor is chosen.
 - Use `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` as the builder handoff for that work.
@@ -199,7 +207,7 @@ Next actions:
 
 Goal: make accepted work repeatable, easier to hand off, and easier to convert into safe proof.
 
-Status: first reusable Lead Intake implementation spec, scope menu, proposal scorecard, proposal assembly kit, hosted intake spec/ticket/scorecard, and proof-capture system exist; pending won or implementation-ready engagement.
+Status: first reusable Lead Intake implementation spec, scope menu, proposal scorecard, proposal assembly kit, hosted intake spec/ticket/scorecard, deployment handoff, and proof-capture system exist; pending won or implementation-ready engagement.
 
 Completed:
 
@@ -209,6 +217,7 @@ Completed:
 - Created `agency-ops/offers/lead-intake-scope-menu.md` as the packaging bridge from discovery to proposal and delivery plan.
 - Created `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` as the proposal-readiness gate before proposal assembly.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` as the proposal bridge from qualified discovery to client-specific proposal draft.
+- Created `agency-ops/ops/website-vercel-deployment-handoff-ticket.md` as the deployment work order for the website.
 - Created `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` as the first permanent website intake implementation spec.
 - Created `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` as the Stage 1 handler/vendor decision tool.
 - Created `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` as the implementation work order for the first permanent website intake path.
@@ -221,6 +230,7 @@ Next actions:
 - Use the Lead Intake proposal decision scorecard before creating client-specific proposal files.
 - Use the Lead Intake proposal assembly kit before creating client-specific proposal files.
 - Use the Lead Intake workflow spec with the lead intake delivery starter when the first project is won.
+- Use the website deployment handoff ticket when build/deployment access is available.
 - Use the Stage 1 intake handler decision scorecard, hosted form-to-email spec, and Stage 1 implementation ticket when implementing the website's first permanent capture path.
 - Use the proof capture system before adding real client proof to website, outreach, or proposal assets.
 - Build additional workflow specs only after a repeated delivery or sales pattern is clear.
@@ -251,6 +261,7 @@ Next actions:
 
 - Review new repo artifacts for scope creep, unclear promises, missing assumptions, and unsafe automation behavior.
 - Review proof artifacts for consent, measurement clarity, privacy, and overclaim risk before public use.
+- Review deployment changes for build status, route rendering, intake behavior, fallback behavior, launch claims, and rollback readiness.
 - Review intake capture changes for privacy, spam handling, secret safety, fallback behavior, and premature auto-reply risk.
 - Add simple validation checks or review checklists when workflows become code-backed.
 - Improve duplicated docs or templates only when the change makes future execution easier.
@@ -266,7 +277,7 @@ Next actions:
 
 - Use this roadmap and the 30-day launch command plan as the coordination baseline.
 - Assign each agent a clear repo-contained workstream.
-- Track blockers, duplicated effort, unresolved handoffs, open approvals, intake-capture status, and proof-permission status in operating notes.
+- Track blockers, duplicated effort, unresolved handoffs, open approvals, deployment status, intake-capture status, and proof-permission status in operating notes.
 - Preserve a single source of truth for pipeline status and delivery state.
 
 ## Current Priority Queue
@@ -278,16 +289,19 @@ Next actions:
 5. Use the Lead Intake reply response kit, discovery outline, workflow spec, scope menu, proposal scorecard, and proposal assembly kit for any positive reply or inbound inquiry.
 6. Confirm sender mailbox and outreach batch size if outreach is approved.
 7. Run the website build check in an environment with npm registry access.
-8. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
-9. Use `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` before choosing a Stage 1 handler or vendor.
-10. Use `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` when a Stage 1 capture handler or vendor is selected.
-11. Replace the structured mailto intake with the Stage 1 hosted form-to-email path once a capture handler or vendor is chosen.
-12. Use `agency-ops/workflows/client-proof-and-case-study-capture-system.md` before adding real client proof or case-study language to public assets.
-13. Add proof, case study, or internal demo evidence to strengthen the public site only when evidence level and approval status are clear.
-14. Keep public site language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` as offers and proof evolve.
+8. Use `agency-ops/ops/website-vercel-deployment-handoff-ticket.md` when deploying from `agency-ops/website/` with that folder as the Vercel project root.
+9. Deploy the website from `agency-ops/website/` only after build and preview QA pass.
+10. Use `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` before choosing a Stage 1 handler or vendor.
+11. Use `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` when a Stage 1 capture handler or vendor is selected.
+12. Replace the structured mailto intake with the Stage 1 hosted form-to-email path once a capture handler or vendor is chosen.
+13. Use `agency-ops/workflows/client-proof-and-case-study-capture-system.md` before adding real client proof or case-study language to public assets.
+14. Add proof, case study, or internal demo evidence to strengthen the public site only when evidence level and approval status are clear.
+15. Keep public site language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` as offers and proof evolve.
 
 ## Recently Completed
 
+- Added `agency-ops/ops/website-vercel-deployment-handoff-ticket.md` as the Vercel deployment work order covering build, preview QA, intake QA, launch gate, rollback, and handoff records.
+- Updated `agency-ops/ops/30-day-launch-command-plan.md` so the deployment handoff ticket is part of current launch position, success targets, website launch priority, weekly cadence, and metrics.
 - Added `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md` as the decision tool for choosing server-backed route, hosted form vendor, or remaining Stage 0.
 - Updated `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md` so handler/vendor scoring is required before coding.
 - Updated `agency-ops/ops/30-day-launch-command-plan.md` so the intake handler scorecard is part of current launch position, success targets, intake priority, weekly cadence, and metrics.
@@ -335,5 +349,5 @@ Next actions:
 - Keep all durable work inside `agency-ops/`.
 - Prefer practical assets that support revenue, delivery, or continuity.
 - Use the empire language internally as a strategic metaphor; keep public-facing copy professional and outcome-focused unless the user explicitly wants a more thematic brand.
-- Do not fabricate leads, client commitments, deployment status, outreach results, testimonials, or case-study outcomes.
-- Ask for approval before sending outreach, changing deployment settings, publishing client proof, changing live intake handlers, or making high-risk operational changes.
+- Do not fabricate leads, client commitments, deployment status, outreach results, testimonials, case-study outcomes, or launch status.
+- Ask for approval before sending outreach, changing deployment settings, publishing client proof, changing live intake handlers, marking the website publicly launched, or making high-risk operational changes.
