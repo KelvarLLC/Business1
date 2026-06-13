@@ -67,11 +67,27 @@ Website-safe summary:
 
 "Demo workflow: a roofing estimate request becomes a structured lead record with an owner, next action, and follow-up reminder so the team can see what needs attention before the lead goes cold."
 
+## Proof And Case Study Capture
+
+- Artifact: `agency-ops/workflows/client-proof-and-case-study-capture-system.md`
+- Purpose: turn real delivery work into trustworthy website, proposal, outreach, and case-study proof without fabricating outcomes or exposing client information.
+- Current public proof level: demo proof only.
+- Next public proof level: anonymized process proof after a real client delivery and explicit client approval.
+- Website rule: do not add client names, testimonials, measured results, screenshots, or public case studies until approval and measurement status are recorded.
+
+Proof ladder:
+
+1. Internal demo proof.
+2. Delivery artifact proof.
+3. Client-approved process proof.
+4. Client-approved result proof.
+5. Public case study.
+
 ## Next Website Improvements
 
 1. Run a full build check in an environment with npm registry access.
 2. Connect deployment to Vercel from `agency-ops/website/`.
 3. Replace the mailto-based structured intake with a hosted form, sheet queue, or CRM capture path.
 4. Add a real scheduling link once the agency chooses its booking tool.
-5. Add true case-study proof once the first client result exists.
+5. Add true case-study proof once the first client result exists and the proof-capture workflow records approval.
 6. Tune demo proof, FAQ copy, and About page brand-language intensity based on actual prospect questions and objections.
