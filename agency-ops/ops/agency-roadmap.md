@@ -17,6 +17,8 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active website intake workflow: `agency-ops/workflows/website-lead-intake-workflow.md`
 - Active intake upgrade plan: `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
 - Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
+- Active Lead Intake offer: `agency-ops/offers/lead-intake-follow-up-automation.md`
+- Active Lead Intake scope menu: `agency-ops/offers/lead-intake-scope-menu.md`
 - Active Lead Intake workflow spec: `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md`
 - Active Lead Intake discovery outline: `agency-ops/workflows/lead-intake-discovery-outline.md`
 - Active Lead Intake reply response kit: `agency-ops/workflows/lead-intake-reply-response-kit.md`
@@ -35,6 +37,7 @@ Public translation: Kelvar builds practical AI automation ecosystems for service
 ## Current Offer Library
 
 - `agency-ops/offers/lead-intake-follow-up-automation.md`
+- `agency-ops/offers/lead-intake-scope-menu.md`
 - `agency-ops/offers/client-onboarding-handoff-automation.md`
 - `agency-ops/offers/appointment-reminder-automation.md`
 - `agency-ops/offers/lightweight-reporting-dashboard-automation.md`
@@ -61,6 +64,7 @@ Execution control:
 - `agency-ops/workflows/outreach-execution-control-sheet.md`
 - `agency-ops/ops/30-day-launch-command-plan.md`
 - `agency-ops/workflows/lead-intake-reply-response-kit.md`
+- `agency-ops/offers/lead-intake-scope-menu.md`
 
 No outreach has been sent. Sending still requires explicit approval.
 
@@ -75,6 +79,7 @@ Status: core offer packaging complete; maintain and improve as evidence arrives.
 Completed:
 
 - Created a focused offer library with four narrow automation services.
+- Created `agency-ops/offers/lead-intake-scope-menu.md` to package the strongest offer into a blueprint, single-source build, and follow-up visibility upgrade.
 - Created reusable proposal and delivery starter assets for all four current offers.
 - Captured the AI ecosystem strategy and synchronized it with the website and offer library.
 - Created reusable operating checklists for qualification, proposal readiness, delivery planning, and closeout.
@@ -83,6 +88,7 @@ Completed:
 Next actions:
 
 - Use the 30-day launch command plan as the top-level execution cadence until the first qualified opportunity or won project changes priorities.
+- Use the Lead Intake scope menu when a prospect asks about price, package shape, or implementation size.
 - Keep operating docs synchronized with new offers, templates, and delivery patterns.
 - Update offer language based on actual lead objections, discovery calls, and delivery evidence.
 
@@ -115,7 +121,7 @@ Next actions:
 
 Goal: turn prospects into qualified opportunities and proposal-ready work.
 
-Status: six Dallas lead records, two outreach draft batches, and response handling assets exist; pending user approval before any sending.
+Status: six Dallas lead records, two outreach draft batches, and response/scope handling assets exist; pending user approval before any sending.
 
 Completed:
 
@@ -127,6 +133,7 @@ Completed:
 - Created `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md` recommending a controlled first draft batch.
 - Created `agency-ops/workflows/outreach-execution-control-sheet.md` to define draft creation, send approval, reply handling, and follow-up rules.
 - Created `agency-ops/workflows/lead-intake-reply-response-kit.md` to classify prospect replies and draft safe next-step responses.
+- Created `agency-ops/offers/lead-intake-scope-menu.md` to route discovery and pricing questions into bounded package options.
 
 Next actions:
 
@@ -134,6 +141,7 @@ Next actions:
 - Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 - Use `agency-ops/workflows/outreach-execution-control-sheet.md` as the operating checklist for draft creation, send approval, reply handling, and lead-record updates.
 - Use `agency-ops/workflows/lead-intake-reply-response-kit.md` after any positive, negative, pricing, CRM/tool, referral, or sensitive-data reply.
+- Use `agency-ops/offers/lead-intake-scope-menu.md` when a prospect asks about pricing, implementation size, or what the first package includes.
 - Use `agency-ops/ops/30-day-launch-command-plan.md` as the launch cadence for weekly priorities, daily checks, and decision gates.
 - Use `agency-ops/workflows/lead-intake-discovery-outline.md` for any positive reply or website inquiry that fits the lead intake offer.
 - Use `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` to keep proposals and delivery scopes bounded.
@@ -145,17 +153,19 @@ Next actions:
 
 Goal: make accepted work repeatable and easier to hand off.
 
-Status: first reusable Lead Intake implementation spec exists; pending won or implementation-ready engagement.
+Status: first reusable Lead Intake implementation spec and scope menu exist; pending won or implementation-ready engagement.
 
 Completed:
 
 - Created `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` as the reusable implementation pattern for the strongest current offer.
 - Created `agency-ops/workflows/lead-intake-discovery-outline.md` as the ready-to-use discovery structure for positive replies and website inquiries.
 - Created `agency-ops/workflows/lead-intake-reply-response-kit.md` as the safe response bridge from reply to discovery or closeout.
+- Created `agency-ops/offers/lead-intake-scope-menu.md` as the packaging bridge from discovery to proposal and delivery plan.
 
 Next actions:
 
 - Create client-specific delivery plans under `agency-ops/delivery/` for active engagements.
+- Use the Lead Intake scope menu before turning any qualified opportunity into a proposal.
 - Use the Lead Intake workflow spec with the lead intake delivery starter when the first project is won.
 - Build additional workflow specs only after a repeated delivery or sales pattern is clear.
 - Document trigger, inputs, outputs, failure paths, testing data, owner, and maintenance rules.
@@ -206,7 +216,7 @@ Next actions:
 2. Choose the first outreach path using `agency-ops/workflows/outreach-execution-control-sheet.md`.
 3. Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 4. Review the six Dallas outreach drafts and approve, revise, or reject before sending.
-5. Use the Lead Intake reply response kit, discovery outline, and workflow spec for any positive reply or inbound inquiry.
+5. Use the Lead Intake reply response kit, discovery outline, workflow spec, and scope menu for any positive reply or inbound inquiry.
 6. Confirm sender mailbox and outreach batch size if outreach is approved.
 7. Run the website build check in an environment with npm registry access.
 8. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
@@ -215,6 +225,7 @@ Next actions:
 
 ## Recently Completed
 
+- Added `agency-ops/offers/lead-intake-scope-menu.md` as the scope packaging layer for blueprint, single-source build, and follow-up visibility upgrade options.
 - Added `agency-ops/workflows/lead-intake-reply-response-kit.md` as the response handling layer for interested, call-request, pricing, CRM/tool, not-interested, referral, and sensitive-data replies.
 - Added `agency-ops/workflows/lead-intake-follow-up-workflow-spec.md` as the reusable implementation pattern for capture, normalization, qualification, routing, follow-up, reporting, QA, and demo explanation.
 - Added `agency-ops/workflows/lead-intake-discovery-outline.md` as the qualification and discovery structure for positive replies and website inquiries.
