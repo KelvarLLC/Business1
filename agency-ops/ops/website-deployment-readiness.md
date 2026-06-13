@@ -14,6 +14,7 @@ Prepare the Kelvar LLC website in `agency-ops/website/` for a clean Vercel deplo
 - Current primary CTA: `/start`
 - Current offer-specific landing page: `/lead-intake`
 - Current capture method: structured `/start` intake console that opens a prefilled email to `Kelvarllc.com@outlook.com`
+- Stage 1 hosted intake spec: `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
 
 ## Known Blockers
 
@@ -21,6 +22,7 @@ Prepare the Kelvar LLC website in `agency-ops/website/` for a clean Vercel deplo
 - Direct repository clone from the current container has also failed with a 403 CONNECT tunnel response.
 - A full `npm run build` has not yet been completed in this environment.
 - Vercel project connection, domain selection, and environment setup have not been confirmed.
+- Stage 1 hosted form-to-email is specified but not implemented; a handler, vendor, or email provider still needs to be selected.
 
 ## Pre-Deployment Checklist
 
@@ -76,7 +78,18 @@ Until a permanent capture tool is selected:
 - Confirm the email body includes name, business, email, phone, website, workflow type, current tools, manual steps, missed or delayed items, best first win, urgency, and the non-commitment review note.
 - Confirm received website inquiries can be converted into lead records under `agency-ops/leads/`.
 
-When a permanent capture path is selected, update this checklist and `agency-ops/workflows/website-lead-intake-workflow.md`.
+When Stage 1 hosted form-to-email is selected and implemented:
+
+- Follow `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`.
+- Confirm required fields are validated server-side or by the selected vendor.
+- Confirm consent is required.
+- Confirm spam protection or honeypot behavior is enabled.
+- Confirm successful submission sends one internal notification to `Kelvarllc.com@outlook.com`.
+- Confirm visitor success and failure states work.
+- Confirm direct email remains available as fallback.
+- Confirm no public auto-reply, pricing, sales promise, or project commitment is sent automatically.
+- Confirm lead records are still created manually after human review.
+- Confirm the selected handler, vendor, or email provider is documented here.
 
 ## Vercel Setup Notes
 
@@ -87,9 +100,18 @@ Recommended initial Vercel settings:
 - Production branch: `main`.
 - Build command: `npm run build`.
 - Install command: `npm install`.
-- Environment variables: none required for the current static and mailto-based version.
+- Current Stage 0 environment variables: none required for the static and mailto-based version.
 
-Do not connect auto-sending email, CRM writes, or paid scheduling workflows until the capture workflow is explicitly chosen and reviewed.
+Stage 1 hosted form-to-email may require environment variables such as:
+
+```text
+CONTACT_FORM_TO_EMAIL=Kelvarllc.com@outlook.com
+CONTACT_FORM_FROM_EMAIL=[verified sender]
+CONTACT_FORM_PROVIDER_API_KEY=[secret]
+CONTACT_FORM_PROVIDER_DOMAIN=[if required]
+```
+
+Do not commit secrets. Do not connect auto-sending email, CRM writes, or paid scheduling workflows until the capture workflow is explicitly chosen and reviewed.
 
 ## Launch Checklist
 
@@ -98,7 +120,7 @@ Before marking the website launched:
 - Build passes.
 - Vercel preview renders all core routes.
 - Primary CTA path works.
-- Structured `/start` intake opens a correctly formatted email.
+- Structured `/start` intake opens a correctly formatted email, or the Stage 1 hosted form has passed all lead capture QA.
 - Contact fallback works.
 - Website brief reflects the deployed state.
 - Roadmap marks deployment complete and moves the next priority to lead capture upgrade or outreach approval.
@@ -108,11 +130,11 @@ Before marking the website launched:
 
 Within the next operating cycle after deployment:
 
-- Replace the mailto-based intake with a permanent form, scheduler, or CRM-backed intake path.
+- Replace the mailto-based intake with the Stage 1 hosted form-to-email path if the site launched with Stage 0.
 - Add simple analytics or conversion tracking if available.
 - Create one internal demo or mini case study that can become proof on the website.
 - Review outreach replies and website inquiries together so offer language improves from real signals.
 
 ## Current Next Step
 
-Run the build in an environment with npm registry access, then connect Vercel with `agency-ops/website/` as the project root.
+Run the build in an environment with npm registry access, then connect Vercel with `agency-ops/website/` as the project root. Use `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` when choosing and implementing the Stage 1 capture handler.
