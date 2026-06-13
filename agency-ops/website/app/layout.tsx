@@ -12,7 +12,7 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
+  { href: "/start", label: "Start" }
 ];
 
 export default function RootLayout({
@@ -35,8 +35,8 @@ export default function RootLayout({
               </Link>
             ))}
           </nav>
-          <Link className="header-cta" href="/contact">
-            Request audit
+          <Link className="header-cta" href="/start">
+            Start review
           </Link>
         </header>
         {children}
@@ -45,7 +45,7 @@ export default function RootLayout({
             <strong>Kelvar LLC</strong>
             <p>AI automation ecosystems for cleaner intake, follow-up, and delivery operations.</p>
           </div>
-          <Link href="/contact">Request an automation audit</Link>
+          <Link href="/start">Start an automation review</Link>
         </footer>
       </body>
     </html>
