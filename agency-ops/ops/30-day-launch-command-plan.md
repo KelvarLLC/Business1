@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Turn Kelvar LLC's current agency foundation into a focused 30-day launch sprint. This plan connects the website, inbound intake, first outbound batch, pipeline handling, proposal readiness, and delivery packaging into one execution sequence.
+Turn Kelvar LLC's current agency foundation into a focused 30-day launch sprint. This plan connects the website, inbound intake, first outbound batch, pipeline handling, proposal readiness, delivery packaging, proof capture, and delivery learning into one execution sequence.
 
 The goal is simple: create real discovery conversations for the Lead Intake Command System / Follow-Up Engine offer while keeping the business organized enough to deliver the first qualified project cleanly.
 
@@ -18,6 +18,7 @@ The goal is simple: create real discovery conversations for the Lead Intake Comm
 - Lead Intake discovery outline is documented in `agency-ops/workflows/lead-intake-discovery-outline.md`.
 - Lead Intake reply response kit is documented in `agency-ops/workflows/lead-intake-reply-response-kit.md`.
 - Lead Intake proposal assembly kit is documented in `agency-ops/proposals/lead-intake-proposal-assembly-kit.md`.
+- Client proof and case-study capture is documented in `agency-ops/workflows/client-proof-and-case-study-capture-system.md`.
 - Proposal and delivery starter files exist for the lead intake offer.
 - Dallas/Fort Worth home-services prospects and draft-only outreach batches exist.
 - Outreach execution is controlled by `agency-ops/workflows/outreach-execution-control-sheet.md`.
@@ -45,6 +46,7 @@ These targets are operational, not guaranteed business outcomes.
 - Lead Intake proposal assembly kit is ready to customize a scoped proposal quickly after a qualified reply.
 - Delivery plan starter is ready to convert into a client-specific implementation plan once work is won.
 - Reusable workflow spec is available to keep phase-one scope bounded.
+- Proof capture system is ready to turn first delivery evidence into approved process proof, result proof, or a future case study.
 
 ## Execution Priorities
 
@@ -114,9 +116,9 @@ When a prospect responds:
 10. Use `agency-ops/proposals/lead-intake-follow-up-proposal-starter.md` as the proposal base.
 11. Keep scope to one primary intake path unless discovery proves a broader need.
 
-### Priority 5: Delivery Readiness
+### Priority 5: Delivery Readiness And Proof Capture
 
-Primary move: keep the first build bounded and operational.
+Primary move: keep the first build bounded and turn delivery learning into trustworthy future proof.
 
 When a project is won:
 
@@ -126,6 +128,8 @@ When a project is won:
 4. Use `agency-ops/offers/lead-intake-scope-menu.md` to verify that the delivery plan matches the sold package.
 5. Start with one intake source, one tracker destination, and one follow-up mechanism.
 6. Launch with reminders or draft responses unless auto-send is explicitly approved.
+7. Use `agency-ops/workflows/client-proof-and-case-study-capture-system.md` during closeout before turning any result into website, proposal, or outreach proof.
+8. Ask for proof permission only after a useful delivery outcome exists.
 
 ## Weekly Cadence
 
@@ -160,6 +164,7 @@ When a project is won:
 - Mark clear no-fit leads as closed-lost or nurture.
 - Convert any won work into a delivery plan.
 - Record objections, questions, and delivery assumptions back into offer language.
+- Use the proof capture system for any completed delivery before adding claims to public assets.
 - Decide whether to run the second Dallas batch.
 
 ## Daily Operating Checklist
@@ -171,7 +176,7 @@ Use this during active launch periods.
 3. Check whether any follow-up date is due.
 4. Move each active lead to the clearest pipeline stage.
 5. Capture one useful learning in the relevant lead, offer, or workflow file.
-6. Avoid creating new assets unless they reduce friction in outreach, discovery, proposal, or delivery.
+6. Avoid creating new assets unless they reduce friction in outreach, discovery, proposal, delivery, or proof capture.
 
 ## Decision Gates
 
@@ -202,6 +207,15 @@ Requires user review before:
 - Expanding beyond one intake source in phase one.
 - Offering auto-send as part of the initial package.
 - Selling a full CRM migration.
+
+### Proof Gate
+
+Requires explicit client approval before:
+
+- Naming a client publicly.
+- Publishing a testimonial.
+- Sharing screenshots, metrics, or case-study details.
+- Describing a client result beyond internal delivery notes.
 
 ### Deployment Gate
 
@@ -234,6 +248,8 @@ Track these manually until a dashboard exists:
 - Proposals drafted.
 - Projects won.
 - Delivery plans created.
+- Proof permission status.
+- Case-study candidates.
 - Common objections or blockers.
 
 ## Current Command Decision
@@ -244,4 +260,4 @@ Recommended choice:
 
 > Approve Outlook draft creation for DFW HVAC, Cool Tech, and Lone-Star Roof Systems. Drafts should be created for review only, not sent until a second explicit approval.
 
-If outreach remains unapproved, continue only with non-destructive work: website build/deployment readiness, intake capture preparation, proposal readiness, and delivery packaging.
+If outreach remains unapproved, continue only with non-destructive work: website build/deployment readiness, intake capture preparation, proposal readiness, proof capture, and delivery packaging.
