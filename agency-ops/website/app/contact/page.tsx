@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 const questions = [
   "Where does the workflow start?",
@@ -17,16 +16,11 @@ export default function ContactPage() {
         <h1>Bring the manual workflow that keeps stealing attention.</h1>
         <p>
           Kelvar will turn it into a scoped automation plan with the inputs, systems, risks, timeline, and first useful
-          version clearly defined.
+          module clearly defined.
         </p>
-        <div className="hero-actions contact-actions">
-          <Link className="primary-action dark" href="/start">
-            Start the intake <ArrowRight size={18} />
-          </Link>
-          <a className="text-link" href="mailto:Kelvarllc.com@outlook.com?subject=Automation%20Discovery%20Request">
-            Email directly <ArrowRight size={17} />
-          </a>
-        </div>
+        <a className="primary-action dark" href="mailto:Kelvarllc.com@outlook.com?subject=Automation%20Discovery%20Request">
+          Email Kelvar
+        </a>
       </section>
 
       <section className="contact-grid">
@@ -42,12 +36,13 @@ export default function ContactPage() {
       </section>
 
       <section className="contact-note">
-        <h2>Prefer a guided start?</h2>
+        <h2>Prefer a written start?</h2>
         <p>
-          Use the intake page to identify the workflow type, gather the right context, and send a cleaner review request.
+          Send a short description of the workflow, the tools involved, and the cost of leaving it manual. A scoped
+          recommendation can start from there.
         </p>
-        <Link className="text-link" href="/start">
-          Open the intake path <ArrowRight size={17} />
+        <Link className="text-link" href="/services">
+          Review service modules
         </Link>
       </section>
     </main>
