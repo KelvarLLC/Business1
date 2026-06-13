@@ -1,13 +1,10 @@
 import Link from "next/link";
-import { ArrowRight, Check, Clock, FileCheck2, Gauge, MailCheck } from "lucide-react";
-
-const heroImageUrl =
-  "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2200&q=86";
+import { ArrowRight, Check, Clock, FileCheck2, Gauge, MailCheck, Orbit } from "lucide-react";
 
 const services = [
   {
     title: "Lead intake and follow-up",
-    text: "Capture new inquiries, qualify the right ones, route next steps, and keep follow-up from slipping."
+    text: "Capture inquiries, qualify the right ones, route next steps, and keep follow-up from slipping."
   },
   {
     title: "Client onboarding handoffs",
@@ -35,36 +32,41 @@ export default function Home() {
   return (
     <main>
       <section className="hero">
-        <img
-          src={heroImageUrl}
-          alt="Service business team coordinating work around a laptop"
-          className="hero-image"
-        />
+        <div className="system-map" aria-hidden="true">
+          <div className="star-field" />
+          <div className="orbit orbit-one" />
+          <div className="orbit orbit-two" />
+          <div className="command-node">AI</div>
+          <div className="fleet-node node-a">Lead</div>
+          <div className="fleet-node node-b">Follow-up</div>
+          <div className="fleet-node node-c">Handoff</div>
+          <div className="fleet-node node-d">Reports</div>
+        </div>
         <div className="hero-scrim" />
         <div className="hero-content">
-          <p className="eyebrow">Practical automation for service businesses</p>
+          <p className="eyebrow">Practical AI automation ecosystems</p>
           <h1>Kelvar LLC</h1>
           <p className="hero-line">
-            We build the intake, follow-up, onboarding, reminder, and reporting systems that keep small teams moving.
+            Build a connected fleet of intake, follow-up, onboarding, reminder, reporting, and delivery systems for your service business.
           </p>
           <div className="hero-actions">
             <Link className="primary-action" href="/contact">
-              Start discovery <ArrowRight size={18} />
+              Request an audit <ArrowRight size={18} />
             </Link>
             <Link className="secondary-action" href="/services">
-              View services
+              View service fleet
             </Link>
           </div>
         </div>
       </section>
 
       <section className="section intro">
-        <div className="section-kicker">The business problem</div>
+        <div className="section-kicker">The operating problem</div>
         <div className="intro-grid">
           <h2>Most growth leaks through ordinary admin work.</h2>
           <p>
             Missed follow-ups, repeated intake questions, unclear handoffs, and stale reports are not strategy problems.
-            They are workflow problems. Kelvar turns those recurring tasks into focused automation systems that are easy
+            They are workflow problems. Kelvar turns those recurring tasks into focused AI automation systems that are easy
             to run, explain, and improve.
           </p>
         </div>
@@ -72,8 +74,8 @@ export default function Home() {
 
       <section className="section services-band">
         <div className="section-heading">
-          <p className="section-kicker">Core offers</p>
-          <h2>Start narrow. Ship something useful.</h2>
+          <p className="section-kicker">Service fleet</p>
+          <h2>Start narrow. Connect the systems. Compound the wins.</h2>
         </div>
         <div className="service-list">
           {services.map((service, index) => (
@@ -91,8 +93,8 @@ export default function Home() {
 
       <section className="section proof">
         <div className="proof-copy">
-          <p className="section-kicker">How we work</p>
-          <h2>Designed for operators who need relief, not theater.</h2>
+          <p className="section-kicker">Command layer</p>
+          <h2>Built for operators who need relief, not theater.</h2>
           <p>
             Each engagement is scoped around a visible business outcome: faster response time, cleaner handoffs, fewer
             missed appointments, or reporting that arrives before it is requested.
@@ -123,8 +125,8 @@ export default function Home() {
       </section>
 
       <section className="section process">
-        <p className="section-kicker">Delivery model</p>
-        <h2>A simple path from manual process to working system.</h2>
+        <p className="section-kicker">Delivery path</p>
+        <h2>A simple route from scattered process to working automation ecosystem.</h2>
         <ol>
           {process.map((step) => (
             <li key={step}>{step}</li>
@@ -133,11 +135,14 @@ export default function Home() {
       </section>
 
       <section className="final-cta">
-        <p className="section-kicker">Ready when the workflow is costing you time</p>
-        <h2>Bring one messy process. Leave with a scoped automation plan.</h2>
+        <div>
+          <p className="section-kicker">Ready when the workflow is costing you time</p>
+          <h2>Bring one messy process. Leave with a scoped automation plan.</h2>
+        </div>
         <Link className="primary-action dark" href="/contact">
           Request a review <ArrowRight size={18} />
         </Link>
+        <Orbit aria-hidden="true" className="cta-orbit" />
       </section>
     </main>
   );
