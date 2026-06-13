@@ -82,7 +82,7 @@ Next actions:
 
 Goal: turn the business website into the public command center for the automation ecosystem.
 
-Status: website foundation and intake path exist; deployment/build verification and permanent capture plumbing remain next.
+Status: website foundation and structured intake console exist; deployment/build verification and permanent hosted capture remain next.
 
 Completed:
 
@@ -91,15 +91,16 @@ Completed:
 - Added a content brief for positioning, visual direction, CTA strategy, and next website improvements.
 - Connected the public message to the current service packages.
 - Routed primary website CTAs to `/start` and the Lead Intake service CTA to `/lead-intake`.
+- Upgraded `/start` from a plain email CTA into a structured intake console that captures contact, workflow, tools, manual steps, missed items, first win, urgency, and consent before opening a formatted email.
 - Documented the website lead intake workflow in `agency-ops/workflows/website-lead-intake-workflow.md`.
 - Added `agency-ops/ops/website-deployment-readiness.md` to define Vercel setup, build verification, content QA, lead-capture QA, launch checks, and known blockers.
-- Added `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md` to replace the current email-only intake with a staged form, sheet, or CRM path.
+- Added `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md` to define the staged path from structured mailto to hosted form, sheet, or CRM capture.
 
 Next actions:
 
 - Run `npm install` and `npm run build` in an environment with npm registry access.
 - Deploy from `agency-ops/website/` as the Vercel project root.
-- Replace the prefilled email CTA with the selected first capture path. Recommended: form-to-email first.
+- Replace the structured mailto intake with a hosted form-to-email endpoint when the first permanent capture destination is chosen.
 - Add proof, case study, or demo evidence once a real client result or internal demo exists.
 
 ### Stage 3: Pipeline Activation
@@ -187,12 +188,15 @@ Next actions:
 4. Confirm sender mailbox and outreach batch size if outreach is approved.
 5. Run the website build check in an environment with npm registry access.
 6. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
-7. Replace the prefilled email intake with the selected capture path. Recommended: form-to-email first.
+7. Replace the structured mailto intake with a hosted form-to-email endpoint once a capture vendor or handler is chosen.
 8. Add proof, case study, or internal demo evidence to strengthen the public site.
 9. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
 
 ## Recently Completed
 
+- Upgraded `agency-ops/website/app/start/page.tsx` into a structured intake console that formats review requests before opening email.
+- Updated `agency-ops/website/app/armada.css` with intake-console styling, workflow choices, responsive form layout, and submission status styles.
+- Updated the website brief, website lead intake workflow, deployment readiness checklist, and inbound capture upgrade plan to reflect the structured mailto console.
 - Added `agency-ops/workflows/outreach-execution-control-sheet.md` as the first-batch control sheet for draft creation, send approval, reply handling, follow-up timing, and lead-record updates.
 - Added `agency-ops/ops/website-deployment-readiness.md` as the deployment, build verification, Vercel setup, QA, and launch checklist.
 - Added `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md` as the staged plan for moving from prefilled email to form, sheet, or CRM capture.
@@ -202,8 +206,6 @@ Next actions:
 - Created individual lead records for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md` with draft outreach for the first three leads.
 - Created `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` as the first real prospect list for Dallas/Fort Worth home-service businesses.
-- Added `agency-ops/website/app/start/page.tsx` as the guided website intake path.
-- Routed primary website CTAs to `/start` and created `agency-ops/workflows/website-lead-intake-workflow.md` as the inbound website lead qualification workflow.
 - Added `agency-ops/website/app/lead-intake/page.tsx` as the first offer-specific landing page.
 
 ## Operating Notes
