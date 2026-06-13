@@ -13,6 +13,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active website foundation: `agency-ops/website/`
 - Active website brief: `agency-ops/website/content/website-brief.md`
 - Active checklists: `agency-ops/ops/qualification-proposal-delivery-checklists.md`
+- Active website intake workflow: `agency-ops/workflows/website-lead-intake-workflow.md`
 - Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
 - Current offer library:
   - `agency-ops/offers/lead-intake-follow-up-automation.md`
@@ -62,20 +63,22 @@ Next actions:
 
 Goal: turn the business website into the public command center for the automation ecosystem.
 
-Status: foundation built; deployment and conversion plumbing next
+Status: intake path added; deployment and permanent capture plumbing next
 
 Completed:
 
 - Created a Vercel-friendly Next.js website foundation under `agency-ops/website/`.
-- Added home, services, about, and contact pages.
+- Added home, services, about, contact, and start pages.
 - Added a content brief for positioning, visual direction, CTA strategy, and next website improvements.
 - Connected the public message to the four current service packages.
+- Routed primary website CTAs to `/start`.
+- Documented the website lead intake workflow in `agency-ops/workflows/website-lead-intake-workflow.md`.
 
 Next actions:
 
 - Run `npm install` and `npm run build` in an environment with npm registry access.
 - Deploy from `agency-ops/website/` as the Vercel project root.
-- Replace the email-only CTA with the chosen scheduling or lead capture path.
+- Replace the prefilled email CTA with the chosen scheduling, form, or CRM capture path.
 - Add proof, case study, or demo evidence once a real client result or internal demo exists.
 - Create an offer-specific landing page for the strongest converting package.
 
@@ -83,11 +86,12 @@ Next actions:
 
 Goal: turn prospects into qualified opportunities and proposal-ready work.
 
-Status: outbound prospecting workflow created; pending first live lead
+Status: inbound intake path and outbound prospecting workflow created; pending first live lead
 
 Completed:
 
 - Created `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md` with target niches, qualification filters, prospect list structure, discovery trigger, outreach drafts, and lead-record creation rules.
+- Created `agency-ops/workflows/website-lead-intake-workflow.md` to translate website inquiries into structured lead qualification and next actions.
 
 Next actions:
 
@@ -152,7 +156,7 @@ Next actions:
 ## Current Priority Queue
 
 1. Deploy the website from `agency-ops/website/` once npm build access and Vercel setup are available.
-2. Replace the email-only contact CTA with the chosen scheduling or lead capture workflow.
+2. Replace the prefilled email intake with the chosen scheduling, form, or CRM capture workflow.
 3. Build the first real prospect list from the lead intake outbound prospecting kit.
 4. Add the first real lead record when a prospect is identified.
 5. Add an offer-specific landing page for the strongest converting package.
@@ -160,14 +164,15 @@ Next actions:
 
 ## Recently Completed
 
+- Added `agency-ops/website/app/start/page.tsx` as the guided website intake path.
+- Routed primary website CTAs to `/start` from the header, homepage, services page, contact page, and footer.
+- Created `agency-ops/workflows/website-lead-intake-workflow.md` as the inbound website lead qualification workflow.
+- Updated `agency-ops/website/content/website-brief.md` with the new intake route and capture strategy.
 - Created `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md` as the first reusable outbound workflow for the lead intake and follow-up automation offer.
 - Created proposal and delivery starter files for the appointment reminder automation offer.
 - Created proposal and delivery starter files for the lightweight reporting dashboard automation offer.
 - Built the first Vercel-friendly website foundation under `agency-ops/website/`.
-- Added the website content brief in `agency-ops/website/content/website-brief.md`.
 - Captured the AI Galactic Empire ecosystem strategy in `agency-ops/ops/ai-galactic-empire-ecosystem-strategy.md`.
-- Added the original website positioning brief in `agency-ops/website/README.md`.
-- Created the agency roadmap.
 - Created proposal and delivery starter files for the lead intake/follow-up automation offer.
 - Created proposal and delivery starter files for the client onboarding handoff automation offer.
 
