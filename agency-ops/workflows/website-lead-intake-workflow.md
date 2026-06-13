@@ -12,19 +12,35 @@ Convert website visitors with a manual workflow pain into structured automation 
 - Services page CTA: `/start`
 - Contact page primary CTA: `/start`
 - Footer CTA: `/start`
+- Lead Intake offer CTA: `/lead-intake`
 
 ## Current Intake Method
 
-The `/start` page guides the prospect through four common workflow categories and a short discovery prompt. The current submission path is a prefilled email to `Kelvarllc.com@outlook.com` with the following fields:
+The `/start` page now uses a structured intake console. The visitor chooses one workflow pain category, fills out contact and workflow fields, confirms consent to be contacted, and submits the form.
 
+Current behavior:
+
+- The form formats the submission into a prefilled email.
+- The email is addressed to `Kelvarllc.com@outlook.com`.
+- No third-party form vendor, CRM, sheet, or auto-send workflow is connected yet.
+- Human review is still required before any sales response or project commitment.
+
+Captured fields:
+
+- Name
+- Business
+- Email
+- Phone, optional
+- Website, optional
 - Workflow type
 - Current tools involved
 - What happens manually today
 - What gets missed or delayed
 - Best first win
 - Timeline or urgency
+- Consent to be contacted
 
-This is intentionally lightweight until a scheduling or form tool is selected.
+This is the current interim path: more structured than a plain email CTA, but still intentionally lightweight until a permanent form, sheet, or CRM destination is selected.
 
 ## Lead Qualification Rules
 
@@ -64,10 +80,10 @@ Classify incoming website leads using the repository pipeline stages.
 
 ## Recommended Future Automation
 
-When a form, scheduling tool, CRM, or email automation path is chosen, replace the prefilled email flow with a structured intake workflow:
+When a form service, scheduling tool, CRM, sheet, or email automation path is chosen, replace the mailto-based submission with a true structured intake workflow:
 
 1. Website form captures intake fields.
-2. Form submission creates a lead record or CRM row.
+2. Form submission creates a lead record, CRM row, or lead queue entry.
 3. Workflow assigns offer fit and preliminary stage.
 4. Owner receives a summary and recommended next action.
 5. Prospect receives a confirmation or scheduling prompt.
@@ -75,7 +91,7 @@ When a form, scheduling tool, CRM, or email automation path is chosen, replace t
 
 ## Required Future Decisions
 
-- Preferred form or scheduling tool.
+- Preferred form, scheduling, sheet, or CRM destination.
 - Whether submissions should enter a spreadsheet, CRM, issue tracker, or repository-backed lead record first.
 - Which mailbox should send confirmation messages.
 - Whether first responses should be draft-first or auto-sent after approval.
@@ -83,4 +99,4 @@ When a form, scheduling tool, CRM, or email automation path is chosen, replace t
 
 ## Current Next Step
 
-Use the `/start` page as the public intake path, then select the permanent capture tool when the website is ready to deploy.
+Use the structured `/start` intake console as the public intake path, then replace the mailto submission with the selected permanent capture path when the website is ready for broader traffic.
