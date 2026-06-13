@@ -13,6 +13,7 @@ The goal is simple: create real discovery conversations for the Lead Intake Comm
 - Website deployment readiness is documented in `agency-ops/ops/website-deployment-readiness.md`.
 - Inbound capture upgrade path is documented in `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`.
 - Hosted form-to-email implementation is specified in `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`.
+- Stage 1 intake handler decision scorecard is documented in `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`.
 - Stage 1 hosted intake work order is documented in `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md`.
 - Lead Intake / Follow-Up offer is packaged in `agency-ops/offers/lead-intake-follow-up-automation.md`.
 - Lead Intake scope menu is documented in `agency-ops/offers/lead-intake-scope-menu.md`.
@@ -44,6 +45,7 @@ These targets are operational, not guaranteed business outcomes.
 - Every sent outreach item logged against a lead record with follow-up due date.
 - Any reply converted into a structured lead update within one business day.
 - Any website inquiry can move from Stage 0 mailto to Stage 1 hosted form-to-email when a handler or vendor is chosen.
+- Stage 1 handler choice can be scored before implementation using the intake handler decision scorecard.
 - Stage 1 hosted intake implementation ticket is ready for a builder to execute once provider/deployment decisions are available.
 - Any reply handled through the reply response kit before discovery or closeout.
 - Pricing or scope questions routed through the Lead Intake scope menu instead of improvised numbers.
@@ -100,13 +102,14 @@ Primary move: keep `/start` as the structured intake console until a hosted form
 Recommended next upgrade after deployment:
 
 - Stage 1: hosted form-to-email.
+- Handler/vendor decision scorecard: `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`.
 - Implementation spec: `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`.
 - Implementation ticket: `agency-ops/workflows/stage-1-hosted-intake-implementation-ticket.md`.
 - Destination: `Kelvarllc.com@outlook.com`.
 - Human review remains required before any sales reply.
 - Repository lead records remain the system of record for qualified or meaningful inquiries.
 
-Do not mark Stage 1 complete until the form handler or vendor, required environment variables, submission notification, visitor confirmation state, failure state, and direct email fallback are tested.
+Do not mark Stage 1 complete until the handler/vendor decision is scored, the form handler or vendor is selected, required environment variables are configured, submission notification is tested, visitor confirmation state works, failure state works, and direct email fallback is tested.
 
 ### Priority 4: Reply, Discovery, And Proposal Readiness
 
@@ -169,7 +172,7 @@ When a project is won:
 - Use the proposal assembly kit to draft client-specific proposal outlines for qualified replies.
 - Prepare one scoped implementation path per qualified prospect.
 - Upgrade website intake only if deployment is ready or inbound volume justifies it.
-- Use the hosted form-to-email implementation spec and implementation ticket if the Stage 1 capture handler or vendor is selected.
+- Score the Stage 1 handler/vendor choice before using the hosted form-to-email implementation spec and implementation ticket.
 
 ### Week 4: Close And Compound
 
@@ -265,6 +268,7 @@ Track these manually until a dashboard exists:
 - Drafts created.
 - Emails sent after approval.
 - Website inquiries received.
+- Intake handler score.
 - Intake capture stage: Stage 0 mailto, Stage 1 hosted form-to-email, Stage 2 sheet queue, or Stage 3 CRM.
 - Replies received.
 - Reply categories.
