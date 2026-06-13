@@ -63,7 +63,7 @@ export default function StartPage() {
         </a>
       </section>
 
-      <section className="proof">
+      <section className="section proof">
         <div className="proof-copy">
           <p className="section-kicker">Choose the first system</p>
           <h2>Start with the workflow that has the clearest pain.</h2>
