@@ -13,6 +13,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active website foundation: `agency-ops/website/`
 - Active website brief: `agency-ops/website/content/website-brief.md`
 - Active checklists: `agency-ops/ops/qualification-proposal-delivery-checklists.md`
+- Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
 - Current offer library:
   - `agency-ops/offers/lead-intake-follow-up-automation.md`
   - `agency-ops/offers/client-onboarding-handoff-automation.md`
@@ -82,15 +83,19 @@ Next actions:
 
 Goal: turn prospects into qualified opportunities and proposal-ready work.
 
-Status: pending first live lead
+Status: outbound prospecting workflow created; pending first live lead
+
+Completed:
+
+- Created `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md` with target niches, qualification filters, prospect list structure, discovery trigger, outreach drafts, and lead-record creation rules.
 
 Next actions:
 
-- Add lead records under `agency-ops/leads/` using the lead record template.
+- Use the outbound prospecting kit to identify a real first prospect list.
+- Add lead records under `agency-ops/leads/` using the lead record template only for real or explicitly sample prospects.
 - Classify each opportunity into the clearest pipeline stage.
 - Draft discovery questions and follow-up copy for qualified or nurture leads.
 - Move proposal-ready leads into `agency-ops/proposals/` with bounded scopes and client inputs.
-- Build the first small outbound list around appointment-based service businesses, local service operators, or spreadsheet-heavy admin teams.
 
 ### Stage 4: Delivery Factory
 
@@ -148,13 +153,14 @@ Next actions:
 
 1. Deploy the website from `agency-ops/website/` once npm build access and Vercel setup are available.
 2. Replace the email-only contact CTA with the chosen scheduling or lead capture workflow.
-3. Add the first real lead record when a prospect is identified.
-4. Create a small outbound prospecting list and outreach angle for the strongest first offer.
+3. Build the first real prospect list from the lead intake outbound prospecting kit.
+4. Add the first real lead record when a prospect is identified.
 5. Add an offer-specific landing page for the strongest converting package.
 6. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
 
 ## Recently Completed
 
+- Created `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md` as the first reusable outbound workflow for the lead intake and follow-up automation offer.
 - Created proposal and delivery starter files for the appointment reminder automation offer.
 - Created proposal and delivery starter files for the lightweight reporting dashboard automation offer.
 - Built the first Vercel-friendly website foundation under `agency-ops/website/`.
