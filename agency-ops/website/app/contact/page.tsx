@@ -23,8 +23,8 @@ export default function ContactPage() {
           <Link className="primary-action dark" href="/start">
             Start the intake <ArrowRight size={18} />
           </Link>
-          <a className="secondary-action light" href="mailto:Kelvarllc.com@outlook.com?subject=Automation%20Discovery%20Request">
-            Email directly
+          <a className="text-link" href="mailto:Kelvarllc.com@outlook.com?subject=Automation%20Discovery%20Request">
+            Email directly <ArrowRight size={17} />
           </a>
         </div>
       </section>
