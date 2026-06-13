@@ -17,6 +17,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active website deployment checklist: `agency-ops/ops/website-deployment-readiness.md`
 - Active website intake workflow: `agency-ops/workflows/website-lead-intake-workflow.md`
 - Active intake upgrade plan: `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
+- Active hosted form-to-email implementation spec: `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
 - Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
 - Active Lead Intake offer: `agency-ops/offers/lead-intake-follow-up-automation.md`
 - Active Lead Intake scope menu: `agency-ops/offers/lead-intake-scope-menu.md`
@@ -34,13 +35,15 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 
 Internal ambition: build an Armada of AI Galactic Empire ecosystems.
 
-Operational translation: build a modular AI automation ecosystem where the website, offer library, lead pipeline, proposal assets, delivery plans, workflow specs, proof capture, and operating docs reinforce each other instead of existing as scattered one-off materials.
+Operational translation: build a modular AI automation ecosystem where the website, offer library, lead pipeline, intake capture, proposal assets, delivery plans, workflow specs, proof capture, and operating docs reinforce each other instead of existing as scattered one-off materials.
 
 Public translation: Kelvar builds practical AI automation ecosystems for service businesses that need faster follow-up, cleaner handoffs, fewer missed leads, and less manual admin work.
 
 Public voice rule: make the ambition visible through concrete systems, narrow first steps, useful proof, and human approval where judgment matters. Keep the empire language mostly internal unless it is deliberately polished for a specific public asset.
 
 Proof rule: demo proof stays labeled as demo proof; client results become public only after measurement status and client approval are recorded.
+
+Intake rule: Stage 0 mailto remains the safe fallback until Stage 1 hosted form-to-email has a selected handler or vendor, tested notification delivery, tested visitor states, and documented environment setup.
 
 ## Current Offer Library
 
@@ -71,6 +74,9 @@ Execution control:
 
 - `agency-ops/workflows/outreach-execution-control-sheet.md`
 - `agency-ops/ops/30-day-launch-command-plan.md`
+- `agency-ops/workflows/website-lead-intake-workflow.md`
+- `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`
+- `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`
 - `agency-ops/workflows/lead-intake-reply-response-kit.md`
 - `agency-ops/offers/lead-intake-scope-menu.md`
 - `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md`
@@ -85,7 +91,7 @@ No outreach has been sent. Sending still requires explicit approval.
 
 Goal: make the agency easy to understand, sell, and operate from the repository.
 
-Status: core offer packaging, brand voice foundation, and proof discipline complete; maintain and improve as evidence arrives.
+Status: core offer packaging, brand voice foundation, intake capture plan, and proof discipline complete; maintain and improve as evidence arrives.
 
 Completed:
 
@@ -94,11 +100,12 @@ Completed:
 - Created reusable proposal and delivery starter assets for all four current offers.
 - Created `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` to decide whether Lead Intake opportunities are proposal-ready, outline-ready, discovery-needed, or nurture/close.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` to turn qualified Lead Intake replies into bounded proposal drafts without improvising.
+- Created `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` to define the Stage 1 permanent intake capture path after deployment.
 - Created `agency-ops/workflows/client-proof-and-case-study-capture-system.md` to turn delivery evidence into safe, approval-based proof and case-study material.
 - Captured the AI ecosystem strategy and synchronized it with the website and offer library.
 - Created `agency-ops/ops/brand-doctrine-and-public-voice.md` to translate the user's high-ambition AI ecosystem language into practical public copy rules.
 - Created reusable operating checklists for qualification, proposal readiness, delivery planning, and closeout.
-- Created `agency-ops/ops/30-day-launch-command-plan.md` to tie website launch, outreach approval, pipeline handling, proposal readiness, proof capture, and delivery packaging into one 30-day operating cadence.
+- Created `agency-ops/ops/30-day-launch-command-plan.md` to tie website launch, outreach approval, pipeline handling, intake capture, proposal readiness, proof capture, and delivery packaging into one 30-day operating cadence.
 
 Next actions:
 
@@ -106,15 +113,16 @@ Next actions:
 - Use the Lead Intake scope menu when a prospect asks about price, package shape, or implementation size.
 - Use the Lead Intake proposal decision scorecard before assembling a proposal draft.
 - Use the Lead Intake proposal assembly kit when a prospect is qualified enough for a proposal outline or proposal draft.
+- Use the hosted form-to-email implementation spec when a Stage 1 form handler or vendor is chosen.
 - Use the proof capture system during delivery closeout before adding real client proof to the website, outreach, or proposals.
-- Keep operating docs synchronized with new offers, templates, delivery patterns, public brand language, and client-approved proof.
+- Keep operating docs synchronized with new offers, templates, intake capture choices, delivery patterns, public brand language, and client-approved proof.
 - Update offer language based on actual lead objections, discovery calls, and delivery evidence.
 
 ### Stage 2: Website Flagship
 
 Goal: turn the business website into the public command center for the automation ecosystem.
 
-Status: website foundation, structured intake console, offer proof/FAQ, About page ambition section, and proof-capture rules exist; deployment/build verification and permanent hosted capture remain next.
+Status: website foundation, structured intake console, Stage 1 hosted intake spec, offer proof/FAQ, About page ambition section, and proof-capture rules exist; deployment/build verification and actual hosted capture implementation remain next.
 
 Completed:
 
@@ -124,9 +132,10 @@ Completed:
 - Connected the public message to the current service packages.
 - Routed primary website CTAs to `/start` and the Lead Intake service CTA to `/lead-intake`.
 - Upgraded `/start` from a plain email CTA into a structured intake console that captures contact, workflow, tools, manual steps, missed items, first win, urgency, and consent before opening a formatted email.
+- Added `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` as the Stage 1 path from mailto to hosted form-to-email.
 - Upgraded `agency-ops/website/app/about/page.tsx` with an ambition and principles section aligned to the brand doctrine.
 - Documented the website lead intake workflow in `agency-ops/workflows/website-lead-intake-workflow.md`.
-- Added `agency-ops/ops/website-deployment-readiness.md` to define Vercel setup, build verification, content QA, lead-capture QA, launch checks, and known blockers.
+- Added `agency-ops/ops/website-deployment-readiness.md` to define Vercel setup, build verification, content QA, lead-capture QA, launch checks, hosted form readiness, and known blockers.
 - Added `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md` to define the staged path from structured mailto to hosted form, sheet, or CRM capture.
 - Added `agency-ops/workflows/client-proof-and-case-study-capture-system.md` to define how demo proof becomes delivery artifact proof, approved process proof, approved result proof, or a public case study.
 
@@ -134,7 +143,7 @@ Next actions:
 
 - Run `npm install` and `npm run build` in an environment with npm registry access.
 - Deploy from `agency-ops/website/` as the Vercel project root.
-- Replace the structured mailto intake with a hosted form-to-email endpoint when the first permanent capture destination is chosen.
+- Replace the structured mailto intake with a hosted form-to-email endpoint when the first permanent capture handler or vendor is chosen.
 - Keep About, offer, FAQ, demo-proof, and future case-study language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` and `agency-ops/workflows/client-proof-and-case-study-capture-system.md`.
 - Add proof, case study, or internal demo evidence only when approval and evidence level are clear.
 
@@ -164,6 +173,7 @@ Next actions:
 - Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 - Use `agency-ops/workflows/outreach-execution-control-sheet.md` as the operating checklist for draft creation, send approval, reply handling, and lead-record updates.
 - Use `agency-ops/workflows/lead-intake-reply-response-kit.md` after any positive, negative, pricing, CRM/tool, referral, or sensitive-data reply.
+- Use `agency-ops/workflows/website-lead-intake-workflow.md` and `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` for inbound website inquiries and Stage 1 capture handling.
 - Use `agency-ops/offers/lead-intake-scope-menu.md` when a prospect asks about pricing, implementation size, or what the first package includes.
 - Use `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` before moving a lead into proposal drafting.
 - Use `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` when a lead is ready for proposal outline or proposal draft assembly.
@@ -178,7 +188,7 @@ Next actions:
 
 Goal: make accepted work repeatable, easier to hand off, and easier to convert into safe proof.
 
-Status: first reusable Lead Intake implementation spec, scope menu, proposal scorecard, proposal assembly kit, and proof-capture system exist; pending won or implementation-ready engagement.
+Status: first reusable Lead Intake implementation spec, scope menu, proposal scorecard, proposal assembly kit, hosted intake spec, and proof-capture system exist; pending won or implementation-ready engagement.
 
 Completed:
 
@@ -188,6 +198,7 @@ Completed:
 - Created `agency-ops/offers/lead-intake-scope-menu.md` as the packaging bridge from discovery to proposal and delivery plan.
 - Created `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` as the proposal-readiness gate before proposal assembly.
 - Created `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` as the proposal bridge from qualified discovery to client-specific proposal draft.
+- Created `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` as the first permanent website intake implementation spec.
 - Created `agency-ops/workflows/client-proof-and-case-study-capture-system.md` as the delivery-closeout bridge from real work to approved public proof.
 
 Next actions:
@@ -197,6 +208,7 @@ Next actions:
 - Use the Lead Intake proposal decision scorecard before creating client-specific proposal files.
 - Use the Lead Intake proposal assembly kit before creating client-specific proposal files.
 - Use the Lead Intake workflow spec with the lead intake delivery starter when the first project is won.
+- Use the hosted form-to-email spec when implementing the website's first permanent capture path.
 - Use the proof capture system before adding real client proof to website, outreach, or proposal assets.
 - Build additional workflow specs only after a repeated delivery or sales pattern is clear.
 - Document trigger, inputs, outputs, failure paths, testing data, owner, and maintenance rules.
@@ -226,6 +238,7 @@ Next actions:
 
 - Review new repo artifacts for scope creep, unclear promises, missing assumptions, and unsafe automation behavior.
 - Review proof artifacts for consent, measurement clarity, privacy, and overclaim risk before public use.
+- Review intake capture changes for privacy, spam handling, secret safety, fallback behavior, and premature auto-reply risk.
 - Add simple validation checks or review checklists when workflows become code-backed.
 - Improve duplicated docs or templates only when the change makes future execution easier.
 - Maintain a rolling opportunities list for concrete upgrades.
@@ -240,7 +253,7 @@ Next actions:
 
 - Use this roadmap and the 30-day launch command plan as the coordination baseline.
 - Assign each agent a clear repo-contained workstream.
-- Track blockers, duplicated effort, unresolved handoffs, open approvals, and proof-permission status in operating notes.
+- Track blockers, duplicated effort, unresolved handoffs, open approvals, intake-capture status, and proof-permission status in operating notes.
 - Preserve a single source of truth for pipeline status and delivery state.
 
 ## Current Priority Queue
@@ -253,13 +266,19 @@ Next actions:
 6. Confirm sender mailbox and outreach batch size if outreach is approved.
 7. Run the website build check in an environment with npm registry access.
 8. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
-9. Replace the structured mailto intake with a hosted form-to-email endpoint once a capture vendor or handler is chosen.
+9. Replace the structured mailto intake with the Stage 1 hosted form-to-email path once a capture handler or vendor is chosen.
 10. Use `agency-ops/workflows/client-proof-and-case-study-capture-system.md` before adding real client proof or case-study language to public assets.
 11. Add proof, case study, or internal demo evidence to strengthen the public site only when evidence level and approval status are clear.
 12. Keep public site language synchronized with `agency-ops/ops/brand-doctrine-and-public-voice.md` as offers and proof evolve.
 
 ## Recently Completed
 
+- Added `agency-ops/workflows/hosted-form-to-email-implementation-spec.md` as the Stage 1 implementation spec for replacing the `/start` mailto path with a hosted form-to-email capture flow.
+- Updated `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md` to reference the hosted form-to-email implementation spec.
+- Updated `agency-ops/workflows/website-lead-intake-workflow.md` with Stage 1 hosted submission handling and lead-review rules.
+- Updated `agency-ops/website/content/website-brief.md` with the Stage 1 hosted intake path.
+- Updated `agency-ops/ops/website-deployment-readiness.md` with hosted form-to-email blockers, QA checks, environment variables, and launch rules.
+- Updated `agency-ops/ops/30-day-launch-command-plan.md` with hosted intake success targets, intake capture gate, metrics, and cadence updates.
 - Added `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md` as the proposal-readiness scorecard for positive Lead Intake replies and inquiries.
 - Updated `agency-ops/proposals/lead-intake-proposal-assembly-kit.md` so proposal assembly starts with the scorecard gate.
 - Updated `agency-ops/ops/30-day-launch-command-plan.md` so the scorecard is part of proposal readiness, weekly conversion handling, daily checks, and metrics.
@@ -297,4 +316,4 @@ Next actions:
 - Prefer practical assets that support revenue, delivery, or continuity.
 - Use the empire language internally as a strategic metaphor; keep public-facing copy professional and outcome-focused unless the user explicitly wants a more thematic brand.
 - Do not fabricate leads, client commitments, deployment status, outreach results, testimonials, or case-study outcomes.
-- Ask for approval before sending outreach, changing deployment settings, publishing client proof, or making high-risk operational changes.
+- Ask for approval before sending outreach, changing deployment settings, publishing client proof, changing live intake handlers, or making high-risk operational changes.
