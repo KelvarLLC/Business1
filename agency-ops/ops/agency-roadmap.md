@@ -9,6 +9,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Assigned repository: `KelvarLLC/Business1`
 - Business workspace: `agency-ops/`
 - Active operating guide: `agency-ops/ops/agency-operating-system.md`
+- Active 30-day launch plan: `agency-ops/ops/30-day-launch-command-plan.md`
 - Active ecosystem strategy: `agency-ops/ops/ai-galactic-empire-ecosystem-strategy.md`
 - Active website foundation: `agency-ops/website/`
 - Active website brief: `agency-ops/website/content/website-brief.md`
@@ -55,6 +56,7 @@ Draft-only outreach assets:
 Execution control:
 
 - `agency-ops/workflows/outreach-execution-control-sheet.md`
+- `agency-ops/ops/30-day-launch-command-plan.md`
 
 No outreach has been sent. Sending still requires explicit approval.
 
@@ -72,9 +74,11 @@ Completed:
 - Created reusable proposal and delivery starter assets for all four current offers.
 - Captured the AI ecosystem strategy and synchronized it with the website and offer library.
 - Created reusable operating checklists for qualification, proposal readiness, delivery planning, and closeout.
+- Created `agency-ops/ops/30-day-launch-command-plan.md` to tie website launch, outreach approval, pipeline handling, proposal readiness, and delivery packaging into one 30-day operating cadence.
 
 Next actions:
 
+- Use the 30-day launch command plan as the top-level execution cadence until the first qualified opportunity or won project changes priorities.
 - Keep operating docs synchronized with new offers, templates, and delivery patterns.
 - Update offer language based on actual lead objections, discovery calls, and delivery evidence.
 
@@ -124,6 +128,7 @@ Next actions:
 - Review and approve, revise, or reject the six Dallas outreach drafts before any sending.
 - Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
 - Use `agency-ops/workflows/outreach-execution-control-sheet.md` as the operating checklist for draft creation, send approval, reply handling, and lead-record updates.
+- Use `agency-ops/ops/30-day-launch-command-plan.md` as the launch cadence for weekly priorities, daily checks, and decision gates.
 - Confirm sender mailbox and outreach batch size if sending is approved.
 - Track replies and move leads to `discovery-needed`, `qualified`, `nurture`, or `closed-lost` as evidence arrives.
 - Add more lead records from the Dallas prospect list only after the first batch is reviewed.
@@ -175,25 +180,27 @@ Status: ready when additional agents join.
 
 Next actions:
 
-- Use this roadmap as the coordination baseline.
+- Use this roadmap and the 30-day launch command plan as the coordination baseline.
 - Assign each agent a clear repo-contained workstream.
 - Track blockers, duplicated effort, unresolved handoffs, and open approvals in operating notes.
 - Preserve a single source of truth for pipeline status and delivery state.
 
 ## Current Priority Queue
 
-1. Choose the first outreach path using `agency-ops/workflows/outreach-execution-control-sheet.md`.
-2. Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
-3. Review the six Dallas outreach drafts and approve, revise, or reject before sending.
-4. Confirm sender mailbox and outreach batch size if outreach is approved.
-5. Run the website build check in an environment with npm registry access.
-6. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
-7. Replace the structured mailto intake with a hosted form-to-email endpoint once a capture vendor or handler is chosen.
-8. Add proof, case study, or internal demo evidence to strengthen the public site.
-9. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
+1. Use `agency-ops/ops/30-day-launch-command-plan.md` as the top-level launch cadence.
+2. Choose the first outreach path using `agency-ops/workflows/outreach-execution-control-sheet.md`.
+3. Recommended first approval: create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems.
+4. Review the six Dallas outreach drafts and approve, revise, or reject before sending.
+5. Confirm sender mailbox and outreach batch size if outreach is approved.
+6. Run the website build check in an environment with npm registry access.
+7. Deploy the website from `agency-ops/website/` with that folder as the Vercel project root.
+8. Replace the structured mailto intake with a hosted form-to-email endpoint once a capture vendor or handler is chosen.
+9. Add proof, case study, or internal demo evidence to strengthen the public site.
+10. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
 
 ## Recently Completed
 
+- Added `agency-ops/ops/30-day-launch-command-plan.md` to define the 30-day launch thesis, success targets, execution priorities, weekly cadence, daily operating checklist, decision gates, and metrics.
 - Upgraded `agency-ops/website/app/start/page.tsx` into a structured intake console that formats review requests before opening email.
 - Updated `agency-ops/website/app/armada.css` with intake-console styling, workflow choices, responsive form layout, and submission status styles.
 - Updated the website brief, website lead intake workflow, deployment readiness checklist, and inbound capture upgrade plan to reflect the structured mailto console.
