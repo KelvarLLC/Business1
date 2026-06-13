@@ -41,10 +41,22 @@ Map the first workflow through the structured `/start` automation review console
 - Purpose: convert service-business visitors who recognize missed lead, slow follow-up, scattered intake, or unclear owner/status pain.
 - Connected from: Services page primary CTA and first service module CTA.
 
+## Current Demo Proof
+
+- Artifact: `agency-ops/website/content/lead-intake-demo-proof.md`
+- Demo: Roofing estimate request becomes a structured lead record with owner, next action, follow-up timing, and owner visibility.
+- Use: internal demo, proposal explanation, and website-safe proof copy.
+- Limitation: this is not a client case study and must not be described as a real customer result.
+
+Website-safe summary:
+
+"Demo workflow: a roofing estimate request becomes a structured lead record with an owner, next action, and follow-up reminder so the team can see what needs attention before the lead goes cold."
+
 ## Next Website Improvements
 
 1. Run a full build check in an environment with npm registry access.
 2. Connect deployment to Vercel from `agency-ops/website/`.
 3. Replace the mailto-based structured intake with a hosted form, sheet queue, or CRM capture path.
-4. Add a real scheduling link once the agency chooses its booking tool.
-5. Add proof once the first case study or internal demo result exists.
+4. Add the Lead Intake demo proof to the public site as a clearly labeled demo, not a client case study.
+5. Add a real scheduling link once the agency chooses its booking tool.
+6. Add true case-study proof once the first client result exists.
