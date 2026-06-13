@@ -47,8 +47,8 @@ Thanks,`);
 
 export default function StartPage() {
   return (
-    <main className="page-shell intake-page">
-      <section className="page-hero intake-hero">
+    <main className="page-shell">
+      <section className="page-hero">
         <p className="eyebrow">Start here</p>
         <h1>Turn one messy workflow into the first automation win.</h1>
         <p>
@@ -63,26 +63,26 @@ export default function StartPage() {
         </a>
       </section>
 
-      <section className="intake-band" aria-label="Workflow types">
-        <div>
+      <section className="proof">
+        <div className="proof-copy">
           <p className="section-kicker">Choose the first system</p>
           <h2>Start with the workflow that has the clearest pain.</h2>
         </div>
-        <div className="workflow-grid">
+        <div className="proof-metrics" aria-label="Workflow types">
           {workflowTypes.map((workflow) => {
             const Icon = workflow.icon;
             return (
-              <article className="workflow-option" key={workflow.title}>
+              <div key={workflow.title}>
                 <Icon aria-hidden="true" size={26} />
-                <h3>{workflow.title}</h3>
-                <p>{workflow.text}</p>
-              </article>
+                <strong>{workflow.title}</strong>
+                <span>{workflow.text}</span>
+              </div>
             );
           })}
         </div>
       </section>
 
-      <section className="intake-questions">
+      <section className="contact-grid">
         <div>
           <p className="section-kicker">Discovery intake</p>
           <h2>Send enough context to make the first review useful.</h2>
@@ -94,15 +94,12 @@ export default function StartPage() {
         </ol>
       </section>
 
-      <section className="intake-next-step">
-        <div>
-          <p className="section-kicker">What happens next</p>
-          <h2>A bounded automation plan, not a vague brainstorm.</h2>
-          <p>
-            The first review turns your notes into a recommended workflow scope, required inputs, likely risks, and the
-            smallest useful version to build first.
-          </p>
-        </div>
+      <section className="contact-note">
+        <h2>A bounded automation plan, not a vague brainstorm.</h2>
+        <p>
+          The first review turns your notes into a recommended workflow scope, required inputs, likely risks, and the
+          smallest useful version to build first.
+        </p>
         <Link className="text-link" href="/services">
           Compare service packages <ArrowRight size={17} />
         </Link>
