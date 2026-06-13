@@ -11,6 +11,7 @@ The goal is simple: create real discovery conversations for the Lead Intake Comm
 - Website exists under `agency-ops/website/` with home, services, lead-intake, about, contact, and start routes.
 - `/start` now functions as a structured intake console that opens a formatted email request.
 - Website deployment readiness is documented in `agency-ops/ops/website-deployment-readiness.md`.
+- Website deployment handoff ticket is documented in `agency-ops/ops/website-vercel-deployment-handoff-ticket.md`.
 - Inbound capture upgrade path is documented in `agency-ops/workflows/inbound-lead-capture-upgrade-plan.md`.
 - Hosted form-to-email implementation is specified in `agency-ops/workflows/hosted-form-to-email-implementation-spec.md`.
 - Stage 1 intake handler decision scorecard is documented in `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`.
@@ -41,6 +42,7 @@ The first offer should stay framed as a simple workflow map and lightweight buil
 These targets are operational, not guaranteed business outcomes.
 
 - Website build verified and deployment path ready.
+- Website deployment handoff ticket is ready for an operator with npm registry and Vercel access.
 - First outbound batch approved, drafted, and sent if the user gives explicit approval.
 - Every sent outreach item logged against a lead record with follow-up due date.
 - Any reply converted into a structured lead update within one business day.
@@ -78,6 +80,11 @@ Why this matters:
 ### Priority 2: Website Launch Readiness
 
 Primary move: verify and deploy the current site when environment access allows.
+
+Use:
+
+- `agency-ops/ops/website-deployment-readiness.md`
+- `agency-ops/ops/website-vercel-deployment-handoff-ticket.md`
 
 Required check:
 
@@ -152,6 +159,7 @@ When a project is won:
 - Confirm first outreach path.
 - Create approved mailbox drafts if authorized.
 - Run website build check when possible.
+- Use the website deployment handoff ticket when Vercel and registry access are available.
 - Use the reply response kit, discovery outline, workflow spec, scope menu, proposal scorecard, and proposal assembly kit as the ready kit for any response.
 - Do not expand prospecting until first-batch readiness is complete.
 
@@ -193,7 +201,7 @@ Use this during active launch periods.
 4. Move each active lead to the clearest pipeline stage.
 5. Score proposal readiness before drafting proposal materials.
 6. Capture one useful learning in the relevant lead, offer, or workflow file.
-7. Avoid creating new assets unless they reduce friction in outreach, discovery, proposal, delivery, intake capture, or proof capture.
+7. Avoid creating new assets unless they reduce friction in outreach, discovery, proposal, delivery, intake capture, deployment, or proof capture.
 
 ## Decision Gates
 
@@ -268,6 +276,8 @@ Track these manually until a dashboard exists:
 - Drafts created.
 - Emails sent after approval.
 - Website inquiries received.
+- Website build status.
+- Website deployment status.
 - Intake handler score.
 - Intake capture stage: Stage 0 mailto, Stage 1 hosted form-to-email, Stage 2 sheet queue, or Stage 3 CRM.
 - Replies received.
