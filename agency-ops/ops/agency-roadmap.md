@@ -15,6 +15,7 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Active checklists: `agency-ops/ops/qualification-proposal-delivery-checklists.md`
 - Active website intake workflow: `agency-ops/workflows/website-lead-intake-workflow.md`
 - Active outbound workflow: `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md`
+- Active prospect list: `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md`
 - Current offer library:
   - `agency-ops/offers/lead-intake-follow-up-automation.md`
   - `agency-ops/offers/client-onboarding-handoff-automation.md`
@@ -55,7 +56,7 @@ Completed:
 
 Next actions:
 
-- Create one example lead record when a real or sample prospect is available.
+- Create individual lead records when real prospects are selected for outreach.
 - Keep operating docs synchronized with new offers, templates, and delivery patterns.
 - Update offer language based on actual lead objections, discovery calls, and delivery evidence.
 
@@ -86,19 +87,20 @@ Next actions:
 
 Goal: turn prospects into qualified opportunities and proposal-ready work.
 
-Status: inbound intake path and outbound prospecting workflow created; pending first live lead
+Status: first real prospect list created; pending selected leads and outreach approval
 
 Completed:
 
 - Created `agency-ops/workflows/lead-intake-outbound-prospecting-kit.md` with target niches, qualification filters, prospect list structure, discovery trigger, outreach drafts, and lead-record creation rules.
 - Created `agency-ops/workflows/website-lead-intake-workflow.md` to translate website inquiries into structured lead qualification and next actions.
+- Created `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` with Dallas/Fort Worth home-service candidates, intake signals, likely pain, fit rating, and recommended next action.
 
 Next actions:
 
-- Use the outbound prospecting kit to identify a real first prospect list.
-- Add lead records under `agency-ops/leads/` using the lead record template only for real or explicitly sample prospects.
-- Classify each opportunity into the clearest pipeline stage.
-- Draft discovery questions and follow-up copy for qualified or nurture leads.
+- Pick 3 to 5 prospects from the Dallas home-services prospect list for deeper manual review.
+- Create individual lead records under `agency-ops/leads/` only for prospects selected for pursuit.
+- Draft tailored outreach for selected prospects and wait for user approval before sending.
+- Classify each selected opportunity into the clearest pipeline stage.
 - Move proposal-ready leads into `agency-ops/proposals/` with bounded scopes and client inputs.
 
 ### Stage 4: Delivery Factory
@@ -157,13 +159,14 @@ Next actions:
 
 1. Deploy the website from `agency-ops/website/` once npm build access and Vercel setup are available.
 2. Replace the prefilled email intake with the chosen scheduling, form, or CRM capture workflow.
-3. Build the first real prospect list from the lead intake outbound prospecting kit.
-4. Add the first real lead record when a prospect is identified.
+3. Pick 3 to 5 prospects from `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` for deeper review.
+4. Create individual lead records for selected prospects and draft tailored outreach for approval.
 5. Add an offer-specific landing page for the strongest converting package.
 6. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
 
 ## Recently Completed
 
+- Created `agency-ops/leads/2026-06-13-dallas-home-services-prospect-list.md` as the first real prospect list for Dallas/Fort Worth home-service businesses.
 - Added `agency-ops/website/app/start/page.tsx` as the guided website intake path.
 - Routed primary website CTAs to `/start` from the header, homepage, services page, contact page, and footer.
 - Created `agency-ops/workflows/website-lead-intake-workflow.md` as the inbound website lead qualification workflow.
