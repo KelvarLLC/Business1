@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import "./armada.css";
 
 export const metadata: Metadata = {
   title: "Kelvar LLC | AI Ecosystem Armada",
