@@ -10,7 +10,8 @@ This roadmap turns the standing master instruction set and the user's AI ecosyst
 - Business workspace: `agency-ops/`
 - Active operating guide: `agency-ops/ops/agency-operating-system.md`
 - Active ecosystem strategy: `agency-ops/ops/ai-galactic-empire-ecosystem-strategy.md`
-- Active website positioning brief: `agency-ops/website/README.md`
+- Active website foundation: `agency-ops/website/`
+- Active website brief: `agency-ops/website/content/website-brief.md`
 - Active checklists: `agency-ops/ops/qualification-proposal-delivery-checklists.md`
 - Current offer library:
   - `agency-ops/offers/lead-intake-follow-up-automation.md`
@@ -51,15 +52,22 @@ Next actions:
 
 Goal: turn the business website into the public command center for the automation ecosystem.
 
-Status: ready for build
+Status: foundation built; deployment and conversion plumbing next
+
+Completed:
+
+- Created a Vercel-friendly Next.js website foundation under `agency-ops/website/`.
+- Added home, services, about, and contact pages.
+- Added a content brief for positioning, visual direction, CTA strategy, and next website improvements.
+- Connected the public message to the four current service packages.
 
 Next actions:
 
-- Create a Vercel-friendly website skeleton under `agency-ops/website/`.
-- Use `agency-ops/website/README.md` as the website positioning brief.
-- Draft homepage and services page copy around practical AI automation ecosystems.
-- Feature the four current service packages without making the business sound unfocused.
-- Define the lead capture path for an automation audit or discovery request.
+- Run `npm install` and `npm run build` in an environment with npm registry access.
+- Deploy from `agency-ops/website/` as the Vercel project root.
+- Replace the email-only CTA with the chosen scheduling or lead capture path.
+- Add proof, case study, or demo evidence once a real client result or internal demo exists.
+- Create an offer-specific landing page for the strongest converting package.
 
 ### Stage 3: Pipeline Activation
 
@@ -128,16 +136,19 @@ Next actions:
 
 ## Current Priority Queue
 
-1. Build the Vercel-friendly website skeleton under `agency-ops/website/` using the ecosystem positioning brief.
-2. Create proposal and delivery starter sets for the appointment reminder automation offer.
-3. Create proposal and delivery starter sets for the lightweight reporting dashboard automation offer.
-4. Add the first real lead record when a prospect is identified.
-5. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
+1. Deploy the website from `agency-ops/website/` once npm build access and Vercel setup are available.
+2. Replace the email-only contact CTA with the chosen scheduling or lead capture workflow.
+3. Create proposal and delivery starter sets for the appointment reminder automation offer.
+4. Create proposal and delivery starter sets for the lightweight reporting dashboard automation offer.
+5. Add the first real lead record when a prospect is identified.
+6. Expand workflow specs for repeatable lead intake and follow-up automation patterns.
 
 ## Recently Completed
 
+- Built the first Vercel-friendly website foundation under `agency-ops/website/`.
+- Added the website content brief in `agency-ops/website/content/website-brief.md`.
 - Captured the AI Galactic Empire ecosystem strategy in `agency-ops/ops/ai-galactic-empire-ecosystem-strategy.md`.
-- Added the website positioning brief in `agency-ops/website/README.md`.
+- Added the original website positioning brief in `agency-ops/website/README.md`.
 - Created the agency roadmap.
 - Created proposal and delivery starter files for the lead intake/follow-up automation offer.
 - Created proposal and delivery starter files for the client onboarding handoff automation offer.
