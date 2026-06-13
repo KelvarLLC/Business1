@@ -76,7 +76,7 @@ export default function Home() {
             surface reporting signals, and keep delivery moving.
           </p>
           <div className="hero-actions">
-            <Link className="primary-action" href="/contact">
+            <Link className="primary-action" href="/start">
               Map your first workflow <ArrowRight size={18} />
             </Link>
             <Link className="secondary-action" href="/services">
@@ -189,7 +189,7 @@ export default function Home() {
           <p className="section-kicker">Ready when the workflow is costing you time</p>
           <h2>Bring one messy process. Leave with a scoped automation plan.</h2>
         </div>
-        <Link className="primary-action dark" href="/contact">
+        <Link className="primary-action dark" href="/start">
           Request a review <ArrowRight size={18} />
         </Link>
         <Orbit aria-hidden="true" className="cta-orbit" />
