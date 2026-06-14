@@ -1,12 +1,12 @@
 # Current Command Brief
 
-Last updated: 2026-06-14 03:36 CDT
+Last updated: 2026-06-14 03:48 CDT
 
 ## Purpose
 
-This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, 90-day growth flywheel, 30-day sprint board, autonomous safe run queue, launch plan, deployment handoff, pipeline files, evidence logs, approval register, capability map, proposal paths, delivery assets, QA checklists, KPI records, weekly review template, first-batch outreach review assets, Stage 0 intake QA assets, proposal QA assets, or first-send follow-up decisioning.
+This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, 90-day growth flywheel, 30-day sprint board, autonomous safe run queue, launch plan, deployment handoff, pipeline files, evidence logs, approval register, capability map, proposal paths, delivery assets, QA checklists, KPI records, weekly review template, first-batch outreach review assets, Stage 0 intake QA assets, proposal QA assets, first-send follow-up decisioning, or reply triage assets.
 
-It now includes the Lead Intake discovery-to-proposal handoff checklist, Dallas first-batch draft-review checklist, Dallas first-send follow-up decision packet, Stage 0 intake test-result record template, and Lead Intake proposal-draft internal QA checklist, connecting reply handling, outreach review, follow-up timing, website intake QA, proposal-readiness scoring, proposal draft QA, delivery planning, and launch evidence.
+It now includes the Lead Intake discovery-to-proposal handoff checklist, Dallas first-batch draft-review checklist, Dallas first-send follow-up decision packet, Dallas reply-triage board, Stage 0 intake test-result record template, and Lead Intake proposal-draft internal QA checklist, connecting reply handling, outreach review, follow-up timing, website intake QA, proposal-readiness scoring, proposal draft QA, delivery planning, and launch evidence.
 
 ## Current Operating Mode
 
@@ -18,7 +18,7 @@ It now includes the Lead Intake discovery-to-proposal handoff checklist, Dallas 
 - Public positioning: practical AI automation ecosystems for service businesses
 - Internal north star: AI ecosystem armada, translated into concrete buyer-facing workflow systems
 - Tool posture: GitHub and connected tools/apps are approved for directly relevant, repo-scoped work; action-level gates still apply for sensitive business moves.
-- Latest user direction: keep going and automate the situation inside the designated repo.
+- Latest user direction: continue showing capability and automate the situation inside the designated repo.
 
 ## What Is Ready
 
@@ -40,6 +40,7 @@ It now includes the Lead Intake discovery-to-proposal handoff checklist, Dallas 
 - First-batch Dallas revenue-readiness packet exists at `agency-ops/leads/2026-06-14-dallas-first-batch-revenue-readiness.md`.
 - First-batch Dallas draft-review checklist exists at `agency-ops/leads/2026-06-14-dallas-first-batch-draft-review-checklist.md`.
 - First-send follow-up decision packet exists at `agency-ops/leads/2026-06-14-dallas-first-send-follow-up-decision-packet.md`.
+- Dallas reply-triage board exists at `agency-ops/leads/2026-06-14-dallas-reply-triage-board.md`.
 - Second-batch Dallas revenue-readiness packet exists at `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md`.
 - Six-lead Dallas follow-up tracker exists at `agency-ops/leads/2026-06-14-dallas-six-lead-follow-up-tracker.md`.
 - Outreach execution control sheet and outreach learning log exist.
@@ -84,9 +85,9 @@ It now includes the Lead Intake discovery-to-proposal handoff checklist, Dallas 
 - Proof status: demo proof only; no public client result proof.
 - Stage 0 test-result record template is an evidence template only; it is not a completed QA run, preview-ready decision, launch decision, deployment action, or Stage 1 implementation.
 - Proposal-path and proposal-QA artifacts are internal/simulation-ready only; they are not real replies, sent outreach, mailbox drafts, proposals, pricing quotes, calendar invites, client commitments, public proof, launch actions, or auto-send approvals.
-- First-batch draft-review checklist and first-send follow-up decision packet are internal review/control artifacts only; they are not mailbox draft creation, sent outreach, send approval, follow-up approval, pricing approval, or approval to use a specific recipient address.
+- First-batch draft-review checklist, first-send follow-up decision packet, and Dallas reply-triage board are internal review/control artifacts only; they are not mailbox draft creation, sent outreach, send approval, follow-up approval, pricing approval, or approval to use a specific recipient address.
 - Delivery package and handoff/closeout packet are reusable internal planning assets only; they are not signed support agreements, client-specific closeout records, proof approvals, or client commitments.
-- 90-day flywheel, 30-day sprint board, autonomous safe run queue, discovery-to-proposal handoff checklist, first-batch draft-review checklist, first-send follow-up decision packet, Stage 0 intake test-result record template, and proposal-draft QA checklist are internal operating assets only; they do not grant permission to perform gated actions.
+- 90-day flywheel, 30-day sprint board, autonomous safe run queue, discovery-to-proposal handoff checklist, first-batch draft-review checklist, first-send follow-up decision packet, Dallas reply-triage board, Stage 0 intake test-result record template, and proposal-draft QA checklist are internal operating assets only; they do not grant permission to perform gated actions.
 
 ## Approval-Gated Decisions
 
@@ -117,6 +118,7 @@ Use these control files:
 - `agency-ops/leads/2026-06-14-dallas-first-batch-revenue-readiness.md`
 - `agency-ops/leads/2026-06-14-dallas-first-batch-draft-review-checklist.md`
 - `agency-ops/leads/2026-06-14-dallas-first-send-follow-up-decision-packet.md`
+- `agency-ops/leads/2026-06-14-dallas-reply-triage-board.md`
 - `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md`
 - `agency-ops/leads/2026-06-14-dallas-six-lead-follow-up-tracker.md`
 - `agency-ops/workflows/lead-intake-reply-response-kit.md`
@@ -133,8 +135,8 @@ Use these control files:
 
 If outreach remains unapproved, continue only with safe non-destructive work:
 
-1. Create a Dallas reply-triage board that maps replies to the pricing, call-request, CRM objection, discovery, nurture, or closeout paths.
-2. Create a second-batch draft-review checklist for Southern Botanical, Prestonwood Landscape Services, and Dane Roofing.
+1. Create a second-batch draft-review checklist for Southern Botanical, Prestonwood Landscape Services, and Dane Roofing.
+2. Create internal reply templates for the Dallas reply-triage board without creating mailbox drafts.
 3. Keep website launch status, deployment handoff, route QA checklist, preview issue log, Stage 0 test script, Stage 0 test-result template, launch blocker dashboard, and launch evidence documents current.
 4. Keep Stage 1 intake provider comparison and handler decisioning ready without choosing a paid provider.
 5. Use `agency-ops/ops/weekly-operator-review-template.md` after the first meaningful external action or at the end of an active operating week.
@@ -150,6 +152,7 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 
 ## Continuity Check
 
+- 2026-06-14 03:48 CDT reply-triage continuation: created `agency-ops/leads/2026-06-14-dallas-reply-triage-board.md` and updated this brief. The artifact maps Dallas replies to interested, call request, pricing, CRM/tool objection, not interested, referral, sensitive-data, vendor/tool, auto-send, vague positive, and out-of-scope routes, with stage updates, route artifacts, lead/tracker updates, learning-log signals, proposal routing, and approval gates. No email/mailbox draft/send/follow-up/pricing/calendar/proposal/deployment/provider/public-proof/auto-send/cross-repo/irreversible action was performed.
 - 2026-06-14 03:36 CDT follow-up automation continuation: created `agency-ops/leads/2026-06-14-dallas-first-send-follow-up-decision-packet.md` and updated this brief. The artifact defines first-send, no-reply follow-up, positive reply, pricing, call request, CRM/tool objection, clear no, follow-up due-date, lead-record, tracker, learning-log, and approval-gate rules for the first Dallas outreach batch. No email/mailbox draft/send/follow-up/pricing/calendar/proposal/deployment/provider/public-proof/auto-send/cross-repo/irreversible action was performed.
 - 2026-06-14 03:23 CDT proposal-QA continuation: created `agency-ops/proposals/2026-06-14-lead-intake-proposal-draft-internal-qa-checklist.md` and updated this brief. The artifact defines proposal-readiness, scope safety, business claim safety, pricing/timeline, delivery feasibility, communication/send-gate, required section, QA outcome, and approval prompt checks for Lead Intake proposal drafts. No proposal was drafted or sent, no email/mailbox draft/send/pricing/calendar/deployment/provider/public-proof/auto-send/cross-repo/irreversible action was performed.
 - 2026-06-14 03:20 CDT intake-readiness continuation: created `agency-ops/ops/stage-0-intake-test-result-record-template.md` and updated this brief. The artifact provides a fillable evidence record for `/start` Stage 0 intake QA, including preconditions, desktop/mobile checks, negative tests, CTA checks, issue logging, evidence-log summary, and status-change guardrails. No test was run, no launch status changed, no deployment action was taken, no provider was selected, no Stage 1 intake was implemented, no email/mailbox draft/send/pricing/proposal action was performed, no public proof was published, no auto-send behavior was approved, no cross-repo action was performed, and no irreversible action was performed.
@@ -173,7 +176,7 @@ On future runs, read this file first for the quick state, then inspect the speci
 
 For broad continuation or automation prompts, use `agency-ops/ops/autonomous-safe-run-queue.md`, then cross-check `agency-ops/ops/90-day-agency-growth-flywheel.md`, `agency-ops/ops/30-day-execution-sprint-board.md`, `agency-ops/ops/agency-automation-control-loop.md`, and `agency-ops/ops/next-move-command-board.md`.
 
-For first-batch outreach review and follow-up decisioning, use `agency-ops/leads/2026-06-14-dallas-first-batch-draft-review-checklist.md` and `agency-ops/leads/2026-06-14-dallas-first-send-follow-up-decision-packet.md` with the outreach execution control sheet, saved Dallas drafts, first-batch readiness packet, and six-lead follow-up tracker. Do not create mailbox drafts, send, or follow up until explicitly approved.
+For first-batch outreach review, follow-up decisioning, and reply triage, use `agency-ops/leads/2026-06-14-dallas-first-batch-draft-review-checklist.md`, `agency-ops/leads/2026-06-14-dallas-first-send-follow-up-decision-packet.md`, and `agency-ops/leads/2026-06-14-dallas-reply-triage-board.md` with the outreach execution control sheet, saved Dallas drafts, first-batch readiness packet, and six-lead follow-up tracker. Do not create mailbox drafts, send, reply, or follow up until explicitly approved.
 
 For Stage 0 intake QA, use `agency-ops/ops/stage-0-intake-test-script.md` and record results in `agency-ops/ops/stage-0-intake-test-result-record-template.md` before copying summary evidence into `agency-ops/ops/website-launch-evidence-log.md`. Do not change launch status from the test record alone.
 
