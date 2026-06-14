@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Bot,
   Check,
+  ClipboardCheck,
   Clock,
   DatabaseZap,
   FileCheck2,
@@ -11,7 +12,9 @@ import {
   MailCheck,
   Orbit,
   Radar,
-  Route
+  Route,
+  ShieldCheck,
+  Sparkles
 } from "lucide-react";
 
 const fleet = [
@@ -63,6 +66,29 @@ const ecosystemStages = [
   }
 ];
 
+const offerLadder = [
+  {
+    title: "Workflow map",
+    text: "A clear picture of where requests arrive, who owns the next step, what gets repeated, and what should be automated first."
+  },
+  {
+    title: "Launch build",
+    text: "A narrow working system for one intake, follow-up, onboarding, reminder, or reporting workflow."
+  },
+  {
+    title: "Operating layer",
+    text: "Documentation, QA notes, handoff steps, and improvement rules so the system can keep running after launch."
+  }
+];
+
+const commandSignals = [
+  "New request captured",
+  "Owner assigned",
+  "Follow-up due",
+  "Draft prepared",
+  "Status recorded"
+];
+
 export default function Home() {
   return (
     <main>
@@ -85,30 +111,31 @@ export default function Home() {
         </div>
         <div className="hero-scrim" />
         <div className="hero-content">
-          <p className="eyebrow">AI ecosystem armada for service operators</p>
+          <p className="eyebrow">AI automation systems for service operators</p>
           <h1>Kelvar LLC</h1>
           <p className="hero-line">
-            Build a connected fleet of practical AI systems that capture leads, coordinate follow-up, launch client work,
-            surface reporting signals, and keep delivery moving.
+            Build the first practical automation system your business can actually use, then connect each new workflow
+            into a cleaner operating ecosystem.
           </p>
           <div className="hero-actions">
             <Link className="primary-action" href="/start">
               Map your first workflow <ArrowRight size={18} />
             </Link>
-            <Link className="secondary-action" href="/services">
-              View the fleet
+            <Link className="secondary-action" href="/lead-intake">
+              See lead intake system
             </Link>
           </div>
         </div>
         <div className="hero-status" aria-label="Automation fleet status">
-          <span>Command layer online</span>
-          <span>5 launch modules</span>
-          <span>Built for small service teams</span>
+          <span>Lead intake</span>
+          <span>Follow-up</span>
+          <span>Onboarding</span>
+          <span>Reporting</span>
         </div>
       </section>
 
       <section className="section intro">
-        <div className="section-kicker">The operating problem</div>
+        <div className="section-kicker">The business problem</div>
         <div className="intro-grid">
           <h2>Most growth leaks through ordinary admin work.</h2>
           <p>
@@ -116,6 +143,22 @@ export default function Home() {
             not strategy problems. They are workflow problems. Kelvar turns those recurring tasks into a coordinated AI
             automation ecosystem that is easy to run, explain, and improve.
           </p>
+        </div>
+      </section>
+
+      <section className="section offer-ladder">
+        <div>
+          <p className="section-kicker">How the work starts</p>
+          <h2>One practical system first. A stronger business platform next.</h2>
+        </div>
+        <div className="ladder-list">
+          {offerLadder.map((offer, index) => (
+            <article key={offer.title}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <h3>{offer.title}</h3>
+              <p>{offer.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -135,6 +178,39 @@ export default function Home() {
               <Check aria-hidden="true" size={22} />
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="section operator-console">
+        <div className="console-copy">
+          <p className="section-kicker">Operator console</p>
+          <h2>The first build should show exactly what needs action.</h2>
+          <p>
+            The goal is not more software noise. It is a visible operating layer: what arrived, who owns it, what comes
+            next, what can be drafted, and where the record lives.
+          </p>
+          <Link className="text-link" href="/start">
+            Start the review path <ArrowRight size={17} />
+          </Link>
+        </div>
+        <div className="console-panel" aria-label="Example operating signals">
+          <div className="console-topline">
+            <span>Live workflow map</span>
+            <strong>Lead Intake Command</strong>
+          </div>
+          <div className="signal-list">
+            {commandSignals.map((signal, index) => (
+              <div key={signal}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <strong>{signal}</strong>
+                <Check aria-hidden="true" size={18} />
+              </div>
+            ))}
+          </div>
+          <p>
+            Example only: a simple operating view for intake status, owner assignment, follow-up timing, draft prep, and
+            decision records.
+          </p>
         </div>
       </section>
 
@@ -208,6 +284,30 @@ export default function Home() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      <section className="section trust-band">
+        <div>
+          <p className="section-kicker">How Kelvar keeps it usable</p>
+          <h2>Small systems, clear records, human control.</h2>
+        </div>
+        <div className="trust-list">
+          <div>
+            <ClipboardCheck size={24} />
+            <strong>Scoped before build</strong>
+            <span>The first deliverable is a bounded workflow map, not a vague automation promise.</span>
+          </div>
+          <div>
+            <ShieldCheck size={24} />
+            <strong>Human-reviewed by default</strong>
+            <span>Drafts, follow-ups, pricing, and client-facing automations stay approval-gated until intentionally changed.</span>
+          </div>
+          <div>
+            <Sparkles size={24} />
+            <strong>AI where it helps</strong>
+            <span>Use AI for classification, summaries, drafts, and prep work where it reduces repetitive admin load.</span>
+          </div>
         </div>
       </section>
 
