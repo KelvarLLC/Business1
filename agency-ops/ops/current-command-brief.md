@@ -1,10 +1,10 @@
 # Current Command Brief
 
-Last updated: 2026-06-14 02:02 CDT
+Last updated: 2026-06-14 02:19 CDT
 
 ## Purpose
 
-This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, launch plan, deployment handoff, or pipeline files.
+This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, launch plan, deployment handoff, pipeline files, or launch evidence log.
 
 ## Current Operating Mode
 
@@ -24,7 +24,7 @@ This brief gives the fastest current-state read for the automation agency withou
 - Lead Intake offer, scope menu, workflow spec, discovery outline, reply kit, proposal scorecard, and proposal assembly kit exist.
 - Six Dallas/Fort Worth lead records exist.
 - Two Dallas draft-only outreach batches exist.
-- Website deployment readiness, Vercel handoff, launch governance, and launch status documents exist.
+- Website deployment readiness, Vercel handoff, launch governance, launch status, and launch evidence log documents exist.
 - Stage 1 hosted intake is specified but not live.
 
 ## Current Truth
@@ -67,7 +67,7 @@ Use these control files:
 
 If outreach remains unapproved, continue only with safe non-destructive work:
 
-1. Keep website launch status and deployment handoff documents current.
+1. Keep website launch status, deployment handoff, and launch evidence documents current.
 2. Prepare build and preview QA records for the first environment that can install dependencies.
 3. Keep intake handler decisioning ready without choosing a paid provider.
 4. Improve proposal, delivery, proof-capture, or operating assets only when they reduce friction for real outreach, replies, deployment, intake, or delivery.
@@ -84,7 +84,8 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 
 - 2026-06-14 01:02 CDT scheduled run: master instruction set was reaffirmed and this brief was checked. No new approval was given for outreach, mailbox drafts, pricing, paid vendors, deployment settings, launch-status changes, public proof claims, or irreversible actions.
 - 2026-06-14 02:02 CDT scheduled run: master instruction set was reaffirmed and this brief was checked. No new approval was given for outreach, mailbox drafts, pricing, paid vendors, deployment settings, launch-status changes, public proof claims, or irreversible actions.
+- 2026-06-14 02:19 CDT manual continuation: repository `KelvarLLC/Business1` was confirmed through GitHub, `agency-ops/ops/website-launch-evidence-log.md` was created, and this brief was updated. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
 
 ## Resume Rule
 
-On future runs, read this file first for the quick state, then inspect the specific control document for the task being executed. If this brief conflicts with a more recently updated roadmap, launch-status record, lead record, deployment record, or user instruction, use the newer evidence and update this brief.
+On future runs, read this file first for the quick state, then inspect the specific control document for the task being executed. For website deployment or launch work, use `agency-ops/ops/website-launch-evidence-log.md` alongside the deployment handoff ticket and launch decision record template. If this brief conflicts with a more recently updated roadmap, launch-status record, lead record, deployment record, evidence log, or user instruction, use the newer evidence and update this brief.
