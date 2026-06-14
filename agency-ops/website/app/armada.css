@@ -150,6 +150,83 @@
   line-height: 1.5;
 }
 
+.ecosystem-roadmap {
+  background: var(--paper);
+  display: grid;
+  gap: 78px;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  overflow: hidden;
+  position: relative;
+}
+
+.ecosystem-roadmap::before {
+  background: linear-gradient(180deg, rgba(47, 125, 109, 0), rgba(47, 125, 109, 0.18), rgba(47, 125, 109, 0));
+  content: "";
+  height: 76%;
+  left: calc(50% + 66px);
+  position: absolute;
+  top: 12%;
+  width: 1px;
+}
+
+.roadmap-copy {
+  align-self: center;
+  max-width: 620px;
+}
+
+.roadmap-copy p:not(.section-kicker) {
+  color: var(--muted);
+  font-size: 1.14rem;
+  line-height: 1.65;
+}
+
+.roadmap-rail {
+  display: grid;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.roadmap-rail article {
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 44px minmax(0, 1fr);
+  padding: 24px;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.roadmap-rail article:hover {
+  border-color: rgba(47, 125, 109, 0.42);
+  transform: translateY(-2px);
+}
+
+.roadmap-rail article > span {
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 800;
+  grid-row: span 3;
+  padding-top: 4px;
+}
+
+.roadmap-rail svg {
+  color: var(--accent);
+}
+
+.roadmap-rail h3 {
+  font-size: 1.32rem;
+  margin: 0;
+}
+
+.roadmap-rail p {
+  color: var(--muted);
+  grid-column: 2;
+  line-height: 1.55;
+  margin: 0;
+}
+
 @media (max-width: 980px) {
   .hero-content {
     padding-bottom: 118px;
@@ -160,12 +237,18 @@
     right: 22px;
   }
 
-  .command-layer {
+  .command-layer,
+  .ecosystem-roadmap {
     gap: 28px;
     grid-template-columns: 1fr;
   }
 
-  .command-copy p {
+  .ecosystem-roadmap::before {
+    display: none;
+  }
+
+  .command-copy p,
+  .roadmap-copy p:not(.section-kicker) {
     font-size: 1.05rem;
   }
 
@@ -181,6 +264,18 @@
 @media (max-width: 520px) {
   .hero-status span {
     width: 100%;
+  }
+
+  .roadmap-rail article {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-rail article > span {
+    grid-row: auto;
+  }
+
+  .roadmap-rail p {
+    grid-column: 1;
   }
 }
 
