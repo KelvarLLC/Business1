@@ -1,12 +1,12 @@
 # Current Command Brief
 
-Last updated: 2026-06-14 16:02 CDT
+Last updated: 2026-06-14 17:02 CDT
 
 ## Purpose
 
-This brief gives the fastest current-state read for the Automation Agency Operator inside `KelvarLLC/Business1` and `agency-ops/`. It does not replace the roadmap, sprint board, safe-run queue, launch plan, deployment handoff, evidence logs, approval register, lead records, proposal paths, delivery templates, QA checklists, KPI records, weekly review template, proof-capture system, support-boundary guide, or the master instruction set.
+This brief gives the fastest current-state read for the Automation Agency Operator inside `KelvarLLC/Business1` and `agency-ops/`. It does not replace the roadmap, sprint board, safe-run queue, launch plan, deployment handoff, evidence logs, approval register, lead records, proposal paths, delivery templates, QA checklists, KPI records, weekly review template, proof-capture system, support-boundary guide, phase-two routing log, or the master instruction set.
 
-This refresh adds `agency-ops/delivery/lead-intake-tool-neutral-implementation-blueprint.md`, a delivery-readiness blueprint for one-source / one-tracker Lead Intake builds. It gives the agency a practical implementation map without selecting vendors, changing deployments, enabling auto-send or auto-write behavior, creating client commitments, or publishing proof.
+This refresh adds `agency-ops/delivery/lead-intake-phase-two-opportunity-routing-log.md`, an internal template for routing post-delivery expansion ideas from support notes, QA findings, 14-30 day reviews, client requests, proof capture, or prospect replies into the right next path without approving scope expansion, pricing, vendor selection, deployment changes, public proof, mailbox drafts, auto-send, or auto-write behavior.
 
 ## Current Operating Mode
 
@@ -60,6 +60,7 @@ This refresh adds `agency-ops/delivery/lead-intake-tool-neutral-implementation-b
 - Lead Intake delivery QA evidence record template exists.
 - Lead Intake support boundary and maintenance guide exists.
 - Lead Intake 14-30 day review record template exists.
+- Lead Intake phase-two opportunity routing log exists at `agency-ops/delivery/lead-intake-phase-two-opportunity-routing-log.md`.
 - Client proof and case study capture system exists.
 - 90-day agency growth flywheel, 30-day execution sprint board, autonomous safe-run queue, next-move command board, automation control loop, KPI tracker spec, weekly review template, tool access and approval register, and operator capability map exist.
 
@@ -74,7 +75,7 @@ This refresh adds `agency-ops/delivery/lead-intake-tool-neutral-implementation-b
 - Mailbox draft status: no current action-level approval to create drafts.
 - Pricing status: no public package pricing or final quote approved.
 - Proof status: demo proof only; no public client result proof.
-- Delivery blueprint, QA, handoff, closeout, support-boundary, and 14-30 day review assets are internal reusable assets only. They are not client acceptance, support agreements, proof approvals, client commitments, production deployment evidence, or scope-expansion approval.
+- Delivery blueprint, QA, handoff, closeout, support-boundary, 14-30 day review, and phase-two routing assets are internal reusable assets only. They are not client acceptance, support agreements, scope expansion, proof approvals, client commitments, production deployment evidence, or pricing approval.
 
 ## Approval-Gated Decisions
 
@@ -108,8 +109,9 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 1. Keep website launch status, deployment handoff, route QA checklist, preview issue log, Stage 0 test script, Stage 0 test-result template, launch blocker dashboard, and launch evidence documents current.
 2. Keep Stage 1 intake provider comparison and handler decisioning ready without choosing a paid provider.
 3. Use the tool-neutral implementation blueprint to prepare one-source / one-tracker delivery variants without committing to client tools, paid providers, auto-send, or auto-write behavior.
-4. Improve delivery QA, handoff, closeout, proof-capture, maintenance, support-boundary, post-delivery review, and phase-two opportunity routing without creating client commitments.
-5. Use `agency-ops/ops/weekly-operator-review-template.md` after the first meaningful external action or at the end of an active operating week.
+4. Use the phase-two opportunity routing log to sort post-delivery ideas into support adjustment, discovery-needed, scope-ready, proof-capture, monitor, or hold paths before any expansion is proposed.
+5. Improve delivery QA, handoff, closeout, proof-capture, maintenance, support-boundary, post-delivery review, and phase-two opportunity routing without creating client commitments.
+6. Use `agency-ops/ops/weekly-operator-review-template.md` after the first meaningful external action or at the end of an active operating week.
 
 ## Current Blockers
 
@@ -119,13 +121,14 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 - Outreach remains pending explicit action-level approval.
 - Stage 0 intake cannot be marked QA-verified until a local, preview, or production environment is available and tested.
 - Stage 1 hosted intake requires a scored handler/vendor decision and successful QA before implementation can be called live.
-- Delivery QA and post-delivery review records cannot become client-specific until a real or simulated engagement has a defined source, tracker, routing rule, owner, and review window.
+- Delivery QA, post-delivery review, and phase-two routing records cannot become client-specific until a real or simulated engagement has a defined source, tracker, routing rule, owner, and review window.
 - Support-boundary and maintenance guidance cannot become a client commitment until it is converted into a client-specific support agreement or approved scope record.
 
 ## Continuity Check
 
+- 2026-06-14 17:02 CDT scheduled delivery-readiness continuation: created `agency-ops/delivery/lead-intake-phase-two-opportunity-routing-log.md` and refreshed this brief. The artifact classifies support fixes, usability improvements, data-quality improvements, source expansion, routing expansion, follow-up expansion, reporting expansion, tool migration, and proof opportunities into safe next paths. No email, mailbox draft, send, follow-up, reply, pricing, calendar, proposal, deployment, provider, launch-status, public-proof, auto-send, auto-write, client commitment, cross-repo, or irreversible action was performed.
 - 2026-06-14 16:02 CDT scheduled delivery-readiness continuation: created `agency-ops/delivery/lead-intake-tool-neutral-implementation-blueprint.md` and refreshed this brief. The artifact defines the one-source / one-tracker implementation architecture, field mapping, tracker/routing/reminder layers, build sequence, QA handoff path, and approval gates. No email, mailbox draft, send, follow-up, reply, pricing, calendar, proposal, deployment, provider, launch-status, public-proof, auto-send, auto-write, client commitment, cross-repo, or irreversible action was performed.
-- 2026-06-14 15:02 CDT scheduled delivery-readiness continuation: created `agency-ops/delivery/lead-intake-support-boundary-and-maintenance-guide.md` and refreshed this brief. The artifact defines reusable maintenance categories, support request intake fields, triage rules, phase-two routing, closeout wording, and approval gates. No email, mailbox draft, send, follow-up, reply, pricing, calendar, proposal, deployment, provider, launch-status, public-proof, auto-send, auto-write, client commitment, cross-repo, or irreversible action was performed.
+- 2026-06-14 15:02 CDT scheduled delivery-readiness continuation: created `agency-ops/delivery/lead-intake-support-boundary-and-maintenance-guide.md` and refreshed this brief.
 - 2026-06-14 13:02 CDT scheduled delivery-readiness continuation: created `agency-ops/delivery/lead-intake-14-30-day-review-record-template.md` and refreshed this brief.
 - 2026-06-14 11:02 CDT scheduled delivery-readiness continuation: created `agency-ops/delivery/lead-intake-delivery-qa-evidence-record-template.md` and updated this brief.
 - Earlier 2026-06-14 continuations created Dallas outreach review, follow-up decisioning, reply triage, Stage 0 intake QA, proposal QA, delivery handoff, and simulated delivery assets. All remain internal readiness/control artifacts unless separately approved for an external action.
@@ -138,11 +141,11 @@ For Dallas outreach review, follow-up decisioning, and reply triage, use the fir
 
 For Stage 0 intake QA, use `agency-ops/ops/stage-0-intake-test-script.md` and record results in `agency-ops/ops/stage-0-intake-test-result-record-template.md` before copying summary evidence into `agency-ops/ops/website-launch-evidence-log.md`. Do not change launch status from the test record alone.
 
-For reply-to-proposal, pricing, CRM objection, call-request, or discovery-to-proposal work, use `agency-ops/proposals/2026-06-14-lead-intake-discovery-to-proposal-handoff-checklist.md` with the reply kit, discovery call script, scope menu, proposal scorecard, proposal assembly kit, simulated reply paths, delivery package, tool-neutral implementation blueprint, handoff/closeout packet, delivery QA evidence record template, support-boundary guide, and 14-30 day review record template.
+For reply-to-proposal, pricing, CRM objection, call-request, or discovery-to-proposal work, use `agency-ops/proposals/2026-06-14-lead-intake-discovery-to-proposal-handoff-checklist.md` with the reply kit, discovery call script, scope menu, proposal scorecard, proposal assembly kit, simulated reply paths, delivery package, tool-neutral implementation blueprint, handoff/closeout packet, delivery QA evidence record template, support-boundary guide, 14-30 day review record template, and phase-two opportunity routing log.
 
 For proposal draft QA, use `agency-ops/proposals/2026-06-14-lead-intake-proposal-draft-internal-qa-checklist.md` before treating any proposal outline or draft as review-ready, send-ready, pricing-ready, or delivery-ready.
 
-For Lead Intake delivery implementation, QA, handoff, support, proof-capture, and post-delivery review, use `agency-ops/delivery/lead-intake-tool-neutral-implementation-blueprint.md`, `agency-ops/delivery/lead-intake-delivery-qa-evidence-record-template.md`, `agency-ops/delivery/lead-intake-client-handoff-and-closeout-packet-template.md`, `agency-ops/delivery/lead-intake-support-boundary-and-maintenance-guide.md`, `agency-ops/delivery/lead-intake-14-30-day-review-record-template.md`, the simulated delivery package, and the proof-capture system. Do not treat these as client acceptance, support agreement, scope expansion, or public proof without client-specific evidence and approval.
+For Lead Intake delivery implementation, QA, handoff, support, proof-capture, post-delivery review, and expansion routing, use `agency-ops/delivery/lead-intake-tool-neutral-implementation-blueprint.md`, `agency-ops/delivery/lead-intake-delivery-qa-evidence-record-template.md`, `agency-ops/delivery/lead-intake-client-handoff-and-closeout-packet-template.md`, `agency-ops/delivery/lead-intake-support-boundary-and-maintenance-guide.md`, `agency-ops/delivery/lead-intake-14-30-day-review-record-template.md`, `agency-ops/delivery/lead-intake-phase-two-opportunity-routing-log.md`, the simulated delivery package, and the proof-capture system. Do not treat these as client acceptance, support agreement, scope expansion, public proof, or pricing approval without client-specific evidence and approval.
 
 For website deployment or launch work, use `agency-ops/ops/website-launch-evidence-log.md` alongside the deployment handoff ticket, website route QA checklist, preview issue log template, Stage 0 intake test script, Stage 0 intake test-result template, launch blocker dashboard, and launch decision record template.
 
