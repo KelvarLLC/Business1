@@ -18,7 +18,7 @@ This log does not mark the site launched. It records facts that can later suppor
 
 ## Current Evidence Snapshot
 
-Last reviewed: 2026-06-14 02:19 CDT
+Last reviewed: 2026-06-14 02:22 CDT
 
 ### Repository Confirmation
 
@@ -27,6 +27,7 @@ Last reviewed: 2026-06-14 02:19 CDT
 - Repository visibility: public
 - GitHub connector permissions observed: admin, maintain, pull, push, triage
 - Containment rule: all durable agency work stays inside `agency-ops/`
+- Latest user instruction confirms no work should occur in any repository other than the confirmed assigned repository.
 
 ### Website Source Evidence
 
@@ -108,6 +109,20 @@ Use this section for future build, preview, deployment, or launch checks.
 - Known issues: build verification remains blocked in this environment until dependency install and build can run in an environment with registry access.
 - Decision impact: no status change. Website remains not launched.
 - Follow-up action: use this log with `agency-ops/ops/website-launch-decision-record-template.md` when build, preview, intake, deployment, or launch evidence changes.
+
+## Repo-Only Continuation Entry
+
+- Date and time: 2026-06-14 02:22 CDT
+- Operator: Automation Agency Operator
+- Repo: `KelvarLLC/Business1`
+- Work area: `agency-ops/`
+- Action type: repository containment confirmation and resume checkpoint
+- Commands or platform actions performed: reconfirmed repository metadata through GitHub connector after the user instructed the operator to remain in the confirmed repository only and continue from the last task finish.
+- Result: repository scope confirmed as `KelvarLLC/Business1`; work remains contained to `agency-ops/`; launch evidence records were refreshed rather than changing launch status.
+- Evidence link or artifact: this log and `agency-ops/ops/current-command-brief.md`.
+- Known issues: build verification remains blocked locally by prior npm registry failure; direct clone remains blocked by prior 403 CONNECT tunnel response; Vercel setup and preview evidence remain unrecorded.
+- Decision impact: no status change. Website remains not launched.
+- Follow-up action: continue with the launch handoff ticket when registry, checkout, or Vercel access is available; otherwise keep safe non-destructive readiness artifacts current.
 
 ## Status Rules
 
