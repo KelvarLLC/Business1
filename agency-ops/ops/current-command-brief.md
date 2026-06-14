@@ -4,9 +4,9 @@ Last updated: 2026-06-14 03:24 CDT
 
 ## Purpose
 
-This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, 90-day growth flywheel, 30-day sprint board, autonomous safe run queue, launch plan, deployment handoff, pipeline files, evidence logs, approval register, capability map, proposal paths, delivery assets, QA checklists, KPI records, or weekly review template.
+This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, 90-day growth flywheel, 30-day sprint board, autonomous safe run queue, launch plan, deployment handoff, pipeline files, evidence logs, approval register, capability map, proposal paths, delivery assets, QA checklists, KPI records, weekly review template, or first-batch outreach review assets.
 
-It now includes the Lead Intake discovery-to-proposal handoff checklist, which connects positive replies, pricing questions, call requests, CRM objections, website intake, discovery notes, proposal-readiness scoring, and delivery planning.
+It now includes the Lead Intake discovery-to-proposal handoff checklist and the Dallas first-batch draft-review checklist, which connect positive replies, pricing questions, call requests, CRM objections, website intake, discovery notes, proposal-readiness scoring, delivery planning, and first outreach review.
 
 ## Current Operating Mode
 
@@ -18,7 +18,7 @@ It now includes the Lead Intake discovery-to-proposal handoff checklist, which c
 - Public positioning: practical AI automation ecosystems for service businesses
 - Internal north star: AI ecosystem armada, translated into concrete buyer-facing workflow systems
 - Tool posture: GitHub and connected tools/apps are approved for directly relevant, repo-scoped work; action-level gates still apply for sensitive business moves.
-- Latest user direction: keep going, push for best output, and finish today inside the designated repo.
+- Latest user direction: keep going in the same direction and finish today inside the designated repo.
 
 ## What Is Ready
 
@@ -37,6 +37,7 @@ It now includes the Lead Intake discovery-to-proposal handoff checklist, which c
 - Six Dallas/Fort Worth lead records exist.
 - Two Dallas draft-only outreach batches exist.
 - First-batch Dallas revenue-readiness packet exists at `agency-ops/leads/2026-06-14-dallas-first-batch-revenue-readiness.md`.
+- First-batch Dallas draft-review checklist exists at `agency-ops/leads/2026-06-14-dallas-first-batch-draft-review-checklist.md`.
 - Second-batch Dallas revenue-readiness packet exists at `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md`.
 - Six-lead Dallas follow-up tracker exists at `agency-ops/leads/2026-06-14-dallas-six-lead-follow-up-tracker.md`.
 - Outreach execution control sheet and outreach learning log exist.
@@ -78,8 +79,9 @@ It now includes the Lead Intake discovery-to-proposal handoff checklist, which c
 - Pricing status: no public package pricing or final quote approved.
 - Proof status: demo proof only; no public client result proof.
 - Proposal-path artifacts are internal/simulation-ready only; they are not real replies, sent outreach, mailbox drafts, proposals, pricing quotes, calendar invites, client commitments, public proof, launch actions, or auto-send approvals.
+- First-batch draft-review checklist is an internal review artifact only; it is not mailbox draft creation, sent outreach, send approval, follow-up approval, pricing approval, or approval to use a specific recipient address.
 - Delivery package and handoff/closeout packet are reusable internal planning assets only; they are not signed support agreements, client-specific closeout records, proof approvals, or client commitments.
-- 90-day flywheel, 30-day sprint board, autonomous safe run queue, and discovery-to-proposal handoff checklist are internal operating assets only; they do not grant permission to perform gated actions.
+- 90-day flywheel, 30-day sprint board, autonomous safe run queue, discovery-to-proposal handoff checklist, and first-batch draft-review checklist are internal operating assets only; they do not grant permission to perform gated actions.
 
 ## Approval-Gated Decisions
 
@@ -100,13 +102,15 @@ Tool/app access is approved for relevant repo-scoped work. Still do not proceed 
 
 Recommended first approval:
 
-> Create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems for review only. Do not send until a second explicit approval.
+> Create Outlook drafts for DFW HVAC, Cool Tech, and Lone-Star Roof Systems for review only. Do not send until a second explicit approval. Apply the small Cool Tech tone edit from the first-batch draft-review checklist; keep DFW HVAC and Lone-Star Roof Systems essentially as-is unless deeper copy revisions are requested.
 
 Use these control files:
 
 - `agency-ops/workflows/outreach-execution-control-sheet.md`
 - `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md`
+- `agency-ops/leads/2026-06-13-dallas-home-services-outreach-drafts.md`
 - `agency-ops/leads/2026-06-14-dallas-first-batch-revenue-readiness.md`
+- `agency-ops/leads/2026-06-14-dallas-first-batch-draft-review-checklist.md`
 - `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md`
 - `agency-ops/leads/2026-06-14-dallas-six-lead-follow-up-tracker.md`
 - `agency-ops/workflows/lead-intake-reply-response-kit.md`
@@ -122,12 +126,12 @@ Use these control files:
 
 If outreach remains unapproved, continue only with safe non-destructive work:
 
-1. Create a first-batch draft-review checklist that prepares DFW HVAC, Cool Tech, and Lone-Star Roof Systems for user review without creating mailbox drafts.
-2. Create a Stage 0 website intake test-result record template that can be filled once the site is runnable.
-3. Create a proposal-draft internal QA checklist using the discovery-to-proposal handoff checklist, scorecard, assembly kit, delivery package, and closeout packet.
-4. Keep website launch status, deployment handoff, route QA checklist, preview issue log, Stage 0 test script, launch blocker dashboard, and launch evidence documents current.
-5. Keep Stage 1 intake provider comparison and handler decisioning ready without choosing a paid provider.
-6. Prepare build and preview QA records for the first environment that can install dependencies.
+1. Create a Stage 0 website intake test-result record template that can be filled once the site is runnable.
+2. Create a proposal-draft internal QA checklist using the discovery-to-proposal handoff checklist, scorecard, assembly kit, delivery package, and closeout packet.
+3. Create a first-send follow-up decision packet for after the first batch is reviewed or sent.
+4. Create a Dallas reply-triage board that maps replies to the pricing, call-request, CRM objection, discovery, nurture, or closeout paths.
+5. Keep website launch status, deployment handoff, route QA checklist, preview issue log, Stage 0 test script, launch blocker dashboard, and launch evidence documents current.
+6. Keep Stage 1 intake provider comparison and handler decisioning ready without choosing a paid provider.
 7. Use `agency-ops/ops/weekly-operator-review-template.md` after the first meaningful external action or at the end of an active operating week.
 
 ## Current Blockers
@@ -140,6 +144,7 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 
 ## Continuity Check
 
+- 2026-06-14 03:17 CDT outreach-readiness continuation: created `agency-ops/leads/2026-06-14-dallas-first-batch-draft-review-checklist.md` and updated this brief. The artifact reviews DFW HVAC, Cool Tech, and Lone-Star Roof Systems draft readiness, recommends one Cool Tech tone edit, preserves Outlook-draft-only gating, and defines the next approval packet. No email, mailbox draft, calendar invite, sent outreach, pricing quote, proposal send, paid-provider selection, CRM/tool recommendation, deployment action, launch-status change, public proof, auto-send approval, cross-repo action, or irreversible action was performed.
 - 2026-06-14 03:10 CDT finish-today continuation: created `agency-ops/proposals/2026-06-14-lead-intake-discovery-to-proposal-handoff-checklist.md` and updated this brief. The artifact connects reply classification, discovery facts, scope-menu routing, proposal-readiness scoring, proposal action selection, and delivery preview. No email, mailbox draft, calendar invite, sent outreach, pricing quote, proposal send, paid-provider selection, CRM/tool recommendation, deployment action, launch-status change, public proof, auto-send approval, cross-repo action, or irreversible action was performed.
 - 2026-06-14 03:05 CDT wants-a-call continuation: created `agency-ops/proposals/2026-06-14-lead-intake-wants-a-call-response-path.md` and updated this brief.
 - 2026-06-14 03:02 CDT objection-path continuation: created `agency-ops/proposals/2026-06-14-lead-intake-already-has-crm-objection-path.md` and updated this brief.
@@ -158,6 +163,8 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 On future runs, read this file first for the quick state, then inspect the specific control document for the task being executed.
 
 For broad continuation or automation prompts, use `agency-ops/ops/autonomous-safe-run-queue.md`, then cross-check `agency-ops/ops/90-day-agency-growth-flywheel.md`, `agency-ops/ops/30-day-execution-sprint-board.md`, `agency-ops/ops/agency-automation-control-loop.md`, and `agency-ops/ops/next-move-command-board.md`.
+
+For first-batch outreach review, use `agency-ops/leads/2026-06-14-dallas-first-batch-draft-review-checklist.md` with the outreach execution control sheet, saved Dallas drafts, first-batch readiness packet, and six-lead follow-up tracker. Do not create mailbox drafts or send until explicitly approved.
 
 For reply-to-proposal, pricing, CRM objection, call-request, or discovery-to-proposal work, use `agency-ops/proposals/2026-06-14-lead-intake-discovery-to-proposal-handoff-checklist.md` with the reply kit, discovery call script, scope menu, proposal scorecard, proposal assembly kit, simulated reply paths, delivery package, and handoff/closeout packet.
 
