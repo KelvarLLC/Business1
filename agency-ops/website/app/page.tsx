@@ -7,6 +7,7 @@ import {
   DatabaseZap,
   FileCheck2,
   Gauge,
+  Layers3,
   MailCheck,
   Orbit,
   Radar,
@@ -45,6 +46,21 @@ const process = [
   "Build the smallest reliable launch version",
   "Document the handoff",
   "Tune the fleet after real usage"
+];
+
+const ecosystemStages = [
+  {
+    title: "First workflow",
+    text: "Pick the leak that costs the most time right now: missed leads, slow follow-up, scattered onboarding, reminders, or reporting."
+  },
+  {
+    title: "Shared signal layer",
+    text: "Standardize the status, owner, next step, and decision record so every automation speaks the same operating language."
+  },
+  {
+    title: "Connected fleet",
+    text: "Add the next module only when the first one is stable, documented, and producing useful visibility for the team."
+  }
 ];
 
 export default function Home() {
@@ -152,6 +168,27 @@ export default function Home() {
             <strong>Record</strong>
             <span>Where should the decision, status, and handoff live?</span>
           </div>
+        </div>
+      </section>
+
+      <section className="section ecosystem-roadmap">
+        <div className="roadmap-copy">
+          <p className="section-kicker">Ecosystem roadmap</p>
+          <h2>The empire grows by connecting useful systems, not by adding noise.</h2>
+          <p>
+            The first build should solve one painful workflow. The next builds should reuse the same signals, owner rules,
+            and handoff records so the whole operation becomes easier to command.
+          </p>
+        </div>
+        <div className="roadmap-rail" aria-label="AI ecosystem growth path">
+          {ecosystemStages.map((stage, index) => (
+            <article key={stage.title}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <Layers3 size={24} aria-hidden="true" />
+              <h3>{stage.title}</h3>
+              <p>{stage.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
