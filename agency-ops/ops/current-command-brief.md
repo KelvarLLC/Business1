@@ -15,6 +15,7 @@ This brief gives the fastest current-state read for the automation agency withou
 - Public positioning: practical AI automation ecosystems for service businesses
 - Internal north star: AI ecosystem armada, translated into concrete buyer-facing workflow systems
 - Tool posture: GitHub and connected tools/apps are approved for directly relevant, repo-scoped work; action-level gates still apply for sensitive business moves.
+- Latest user direction: continue from the last task finish and do not operate in any repository other than the confirmed assigned repository.
 
 ## What Is Ready
 
@@ -31,6 +32,9 @@ This brief gives the fastest current-state read for the automation agency withou
 
 ## Current Truth
 
+- Confirmed repository: `KelvarLLC/Business1`
+- Confirmed repository branch: `main`
+- Confirmed workspace boundary: `agency-ops/`
 - Website launch status: not launched.
 - Build verification status: not verified in this environment.
 - Vercel deployment status: not confirmed.
@@ -88,6 +92,7 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 - 2026-06-14 02:02 CDT scheduled run: master instruction set was reaffirmed and this brief was checked. No new approval was given for outreach, mailbox drafts, pricing, paid vendors, deployment settings, launch-status changes, public proof claims, or irreversible actions.
 - 2026-06-14 02:19 CDT manual continuation: repository `KelvarLLC/Business1` was confirmed through GitHub, `agency-ops/ops/website-launch-evidence-log.md` was created, and this brief was updated. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
 - 2026-06-14 02:22 CDT manual continuation: user reaffirmed that GitHub and available tools/apps may be used to keep moving. `agency-ops/ops/tool-access-and-approval-register.md` was created and this brief was updated. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
+- 2026-06-14 02:22 CDT repo-only continuation: user specifically instructed the operator not to mix repositories and to remain only in the confirmed repository. Repository metadata was reconfirmed and the launch evidence log was refreshed. No other repository was accessed or modified.
 
 ## Resume Rule
 
