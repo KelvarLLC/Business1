@@ -1,10 +1,10 @@
 # Current Command Brief
 
-Last updated: 2026-06-14 02:35 CDT
+Last updated: 2026-06-14 02:31 CDT
 
 ## Purpose
 
-This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, launch plan, deployment handoff, pipeline files, launch evidence log, tool access register, capability map, lead-readiness packets, or follow-up tracker.
+This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, launch plan, deployment handoff, pipeline files, launch evidence log, tool access register, capability map, lead-readiness packets, follow-up tracker, or discovery script.
 
 ## Current Operating Mode
 
@@ -15,7 +15,7 @@ This brief gives the fastest current-state read for the automation agency withou
 - Public positioning: practical AI automation ecosystems for service businesses
 - Internal north star: AI ecosystem armada, translated into concrete buyer-facing workflow systems
 - Tool posture: GitHub and connected tools/apps are approved for directly relevant, repo-scoped work; action-level gates still apply for sensitive business moves.
-- Latest user direction: continue from the last task finish, use available tools/apps, and remain inside the confirmed assigned repository only.
+- Latest user direction: continue from the last task finish, use available tools/apps, show more of what the operator can do, and remain inside the confirmed assigned repository only.
 
 ## What Is Ready
 
@@ -29,6 +29,7 @@ This brief gives the fastest current-state read for the automation agency withou
 - First-batch Dallas revenue-readiness packet exists at `agency-ops/leads/2026-06-14-dallas-first-batch-revenue-readiness.md`.
 - Second-batch Dallas revenue-readiness packet exists at `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md`.
 - Six-lead Dallas follow-up tracker exists at `agency-ops/leads/2026-06-14-dallas-six-lead-follow-up-tracker.md`.
+- Home-services discovery call script exists at `agency-ops/workflows/home-services-lead-intake-discovery-call-script.md`.
 - Website deployment readiness, Vercel handoff, launch governance, launch status, and launch evidence log documents exist.
 - Tool access and approval register exists at `agency-ops/ops/tool-access-and-approval-register.md`.
 - Operator capability map exists at `agency-ops/ops/operator-capability-map.md`.
@@ -75,16 +76,18 @@ Use these control files:
 - `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md`
 - `agency-ops/leads/2026-06-14-dallas-six-lead-follow-up-tracker.md`
 - `agency-ops/workflows/lead-intake-reply-response-kit.md`
+- `agency-ops/workflows/home-services-lead-intake-discovery-call-script.md`
 
 ## Recommended Non-Approval Work
 
 If outreach remains unapproved, continue only with safe non-destructive work:
 
-1. Create a discovery call script covering HVAC, roofing, and landscaping intake patterns.
-2. Keep website launch status, deployment handoff, and launch evidence documents current.
-3. Prepare build and preview QA records for the first environment that can install dependencies.
-4. Keep intake handler decisioning ready without choosing a paid provider.
-5. Improve proposal, delivery, proof-capture, or operating assets only when they reduce friction for real outreach, replies, deployment, intake, or delivery.
+1. Create a proposal-readiness snapshot template for the six Dallas leads.
+2. Create a route-by-route website QA checklist for desktop, mobile, CTA, and Stage 0 intake behavior.
+3. Keep website launch status, deployment handoff, and launch evidence documents current.
+4. Prepare build and preview QA records for the first environment that can install dependencies.
+5. Keep intake handler decisioning ready without choosing a paid provider.
+6. Improve proposal, delivery, proof-capture, or operating assets only when they reduce friction for real outreach, replies, deployment, intake, or delivery.
 
 ## Current Blockers
 
@@ -104,7 +107,8 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 - 2026-06-14 02:25 CDT capability demonstration: created `agency-ops/ops/operator-capability-map.md` and `agency-ops/leads/2026-06-14-dallas-first-batch-revenue-readiness.md`; updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
 - 2026-06-14 02:29 CDT repo-only continuation: created `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md` and updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
 - 2026-06-14 02:35 CDT repo-only continuation: created `agency-ops/leads/2026-06-14-dallas-six-lead-follow-up-tracker.md` and updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
+- 2026-06-14 02:31 CDT continuation: created `agency-ops/workflows/home-services-lead-intake-discovery-call-script.md` and updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
 
 ## Resume Rule
 
-On future runs, read this file first for the quick state, then inspect the specific control document for the task being executed. For website deployment or launch work, use `agency-ops/ops/website-launch-evidence-log.md` alongside the deployment handoff ticket and launch decision record template. For tool/app permission questions, use `agency-ops/ops/tool-access-and-approval-register.md`. For a menu of operator abilities and next demonstrations, use `agency-ops/ops/operator-capability-map.md`. If this brief conflicts with a more recently updated roadmap, launch-status record, lead record, deployment record, evidence log, approval register, capability map, readiness packet, follow-up tracker, or user instruction, use the newer evidence and update this brief.
+On future runs, read this file first for the quick state, then inspect the specific control document for the task being executed. For website deployment or launch work, use `agency-ops/ops/website-launch-evidence-log.md` alongside the deployment handoff ticket and launch decision record template. For tool/app permission questions, use `agency-ops/ops/tool-access-and-approval-register.md`. For a menu of operator abilities and next demonstrations, use `agency-ops/ops/operator-capability-map.md`. If this brief conflicts with a more recently updated roadmap, launch-status record, lead record, deployment record, evidence log, approval register, capability map, readiness packet, follow-up tracker, discovery script, or user instruction, use the newer evidence and update this brief.
