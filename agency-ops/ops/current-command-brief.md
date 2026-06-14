@@ -1,6 +1,6 @@
 # Current Command Brief
 
-Last updated: 2026-06-14 02:25 CDT
+Last updated: 2026-06-14 02:29 CDT
 
 ## Purpose
 
@@ -15,7 +15,7 @@ This brief gives the fastest current-state read for the automation agency withou
 - Public positioning: practical AI automation ecosystems for service businesses
 - Internal north star: AI ecosystem armada, translated into concrete buyer-facing workflow systems
 - Tool posture: GitHub and connected tools/apps are approved for directly relevant, repo-scoped work; action-level gates still apply for sensitive business moves.
-- Latest user direction: show more of what the operator can do while remaining inside the confirmed assigned repository.
+- Latest user direction: continue from the last task finish, show more of what the operator can do, and remain inside the confirmed assigned repository only.
 
 ## What Is Ready
 
@@ -27,6 +27,7 @@ This brief gives the fastest current-state read for the automation agency withou
 - Six Dallas/Fort Worth lead records exist.
 - Two Dallas draft-only outreach batches exist.
 - First-batch Dallas revenue-readiness packet exists at `agency-ops/leads/2026-06-14-dallas-first-batch-revenue-readiness.md`.
+- Second-batch Dallas revenue-readiness packet exists at `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md`.
 - Website deployment readiness, Vercel handoff, launch governance, launch status, and launch evidence log documents exist.
 - Tool access and approval register exists at `agency-ops/ops/tool-access-and-approval-register.md`.
 - Operator capability map exists at `agency-ops/ops/operator-capability-map.md`.
@@ -70,17 +71,19 @@ Use these control files:
 - `agency-ops/workflows/outreach-execution-control-sheet.md`
 - `agency-ops/leads/2026-06-13-outreach-review-and-send-plan.md`
 - `agency-ops/leads/2026-06-14-dallas-first-batch-revenue-readiness.md`
+- `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md`
 - `agency-ops/workflows/lead-intake-reply-response-kit.md`
 
 ## Recommended Non-Approval Work
 
 If outreach remains unapproved, continue only with safe non-destructive work:
 
-1. Build the second-batch readiness packet for Southern Botanical, Prestonwood Landscape Services, and Dane Roofing.
-2. Keep website launch status, deployment handoff, and launch evidence documents current.
-3. Prepare build and preview QA records for the first environment that can install dependencies.
-4. Keep intake handler decisioning ready without choosing a paid provider.
-5. Improve proposal, delivery, proof-capture, or operating assets only when they reduce friction for real outreach, replies, deployment, intake, or delivery.
+1. Create a follow-up due-date tracker template for the six Dallas leads.
+2. Create a discovery call script covering HVAC, roofing, and landscaping intake patterns.
+3. Keep website launch status, deployment handoff, and launch evidence documents current.
+4. Prepare build and preview QA records for the first environment that can install dependencies.
+5. Keep intake handler decisioning ready without choosing a paid provider.
+6. Improve proposal, delivery, proof-capture, or operating assets only when they reduce friction for real outreach, replies, deployment, intake, or delivery.
 
 ## Current Blockers
 
@@ -98,6 +101,7 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 - 2026-06-14 02:22 CDT manual continuation: user reaffirmed that GitHub and available tools/apps may be used to keep moving. `agency-ops/ops/tool-access-and-approval-register.md` was created and this brief was updated. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
 - 2026-06-14 02:22 CDT repo-only continuation: user specifically instructed the operator not to mix repositories and to remain only in the confirmed repository. Repository metadata was reconfirmed and the launch evidence log was refreshed. No other repository was accessed or modified.
 - 2026-06-14 02:25 CDT capability demonstration: created `agency-ops/ops/operator-capability-map.md` and `agency-ops/leads/2026-06-14-dallas-first-batch-revenue-readiness.md`; updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
+- 2026-06-14 02:29 CDT repo-only continuation: created `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md` and updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
 
 ## Resume Rule
 
