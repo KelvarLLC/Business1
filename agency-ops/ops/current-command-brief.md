@@ -4,9 +4,9 @@ Last updated: 2026-06-14 03:24 CDT
 
 ## Purpose
 
-This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, 90-day growth flywheel, 30-day sprint board, autonomous safe run queue, launch plan, deployment handoff, pipeline files, evidence logs, approval register, capability map, proposal paths, delivery assets, QA checklists, KPI records, weekly review template, first-batch outreach review assets, or Stage 0 intake QA assets.
+This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, 90-day growth flywheel, 30-day sprint board, autonomous safe run queue, launch plan, deployment handoff, pipeline files, evidence logs, approval register, capability map, proposal paths, delivery assets, QA checklists, KPI records, weekly review template, first-batch outreach review assets, Stage 0 intake QA assets, or proposal QA assets.
 
-It now includes the Lead Intake discovery-to-proposal handoff checklist, the Dallas first-batch draft-review checklist, and the Stage 0 intake test-result record template, connecting reply handling, outreach review, website intake QA, proposal-readiness scoring, delivery planning, and launch evidence.
+It now includes the Lead Intake discovery-to-proposal handoff checklist, Dallas first-batch draft-review checklist, Stage 0 intake test-result record template, and Lead Intake proposal-draft internal QA checklist, connecting reply handling, outreach review, website intake QA, proposal-readiness scoring, proposal draft QA, delivery planning, and launch evidence.
 
 ## Current Operating Mode
 
@@ -18,7 +18,7 @@ It now includes the Lead Intake discovery-to-proposal handoff checklist, the Dal
 - Public positioning: practical AI automation ecosystems for service businesses
 - Internal north star: AI ecosystem armada, translated into concrete buyer-facing workflow systems
 - Tool posture: GitHub and connected tools/apps are approved for directly relevant, repo-scoped work; action-level gates still apply for sensitive business moves.
-- Latest user direction: keep going with available tools/apps in the same direction until the system is finished, inside the designated repo.
+- Latest user direction: keep going and automate the situation inside the designated repo.
 
 ## What Is Ready
 
@@ -56,6 +56,7 @@ It now includes the Lead Intake discovery-to-proposal handoff checklist, the Dal
 - Lead Intake already-has-CRM objection path exists at `agency-ops/proposals/2026-06-14-lead-intake-already-has-crm-objection-path.md`.
 - Lead Intake wants-a-call response path exists at `agency-ops/proposals/2026-06-14-lead-intake-wants-a-call-response-path.md`.
 - Lead Intake discovery-to-proposal handoff checklist exists at `agency-ops/proposals/2026-06-14-lead-intake-discovery-to-proposal-handoff-checklist.md`.
+- Lead Intake proposal-draft internal QA checklist exists at `agency-ops/proposals/2026-06-14-lead-intake-proposal-draft-internal-qa-checklist.md`.
 
 ### Delivery And Operations
 
@@ -81,10 +82,10 @@ It now includes the Lead Intake discovery-to-proposal handoff checklist, the Dal
 - Pricing status: no public package pricing or final quote approved.
 - Proof status: demo proof only; no public client result proof.
 - Stage 0 test-result record template is an evidence template only; it is not a completed QA run, preview-ready decision, launch decision, deployment action, or Stage 1 implementation.
-- Proposal-path artifacts are internal/simulation-ready only; they are not real replies, sent outreach, mailbox drafts, proposals, pricing quotes, calendar invites, client commitments, public proof, launch actions, or auto-send approvals.
+- Proposal-path and proposal-QA artifacts are internal/simulation-ready only; they are not real replies, sent outreach, mailbox drafts, proposals, pricing quotes, calendar invites, client commitments, public proof, launch actions, or auto-send approvals.
 - First-batch draft-review checklist is an internal review artifact only; it is not mailbox draft creation, sent outreach, send approval, follow-up approval, pricing approval, or approval to use a specific recipient address.
 - Delivery package and handoff/closeout packet are reusable internal planning assets only; they are not signed support agreements, client-specific closeout records, proof approvals, or client commitments.
-- 90-day flywheel, 30-day sprint board, autonomous safe run queue, discovery-to-proposal handoff checklist, first-batch draft-review checklist, and Stage 0 intake test-result record template are internal operating assets only; they do not grant permission to perform gated actions.
+- 90-day flywheel, 30-day sprint board, autonomous safe run queue, discovery-to-proposal handoff checklist, first-batch draft-review checklist, Stage 0 intake test-result record template, and proposal-draft QA checklist are internal operating assets only; they do not grant permission to perform gated actions.
 
 ## Approval-Gated Decisions
 
@@ -122,6 +123,7 @@ Use these control files:
 - `agency-ops/proposals/2026-06-14-lead-intake-discovery-to-proposal-handoff-checklist.md`
 - `agency-ops/proposals/lead-intake-proposal-decision-scorecard.md`
 - `agency-ops/proposals/lead-intake-proposal-assembly-kit.md`
+- `agency-ops/proposals/2026-06-14-lead-intake-proposal-draft-internal-qa-checklist.md`
 - `agency-ops/offers/lead-intake-scope-menu.md`
 - `agency-ops/ops/tool-access-and-approval-register.md`
 
@@ -129,12 +131,11 @@ Use these control files:
 
 If outreach remains unapproved, continue only with safe non-destructive work:
 
-1. Create a proposal-draft internal QA checklist using the discovery-to-proposal handoff checklist, scorecard, assembly kit, delivery package, and closeout packet.
-2. Create a first-send follow-up decision packet for after the first batch is reviewed or sent.
-3. Create a Dallas reply-triage board that maps replies to the pricing, call-request, CRM objection, discovery, nurture, or closeout paths.
-4. Keep website launch status, deployment handoff, route QA checklist, preview issue log, Stage 0 test script, Stage 0 test-result template, launch blocker dashboard, and launch evidence documents current.
-5. Keep Stage 1 intake provider comparison and handler decisioning ready without choosing a paid provider.
-6. Use `agency-ops/ops/weekly-operator-review-template.md` after the first meaningful external action or at the end of an active operating week.
+1. Create a first-send follow-up decision packet for after the first batch is reviewed or sent.
+2. Create a Dallas reply-triage board that maps replies to the pricing, call-request, CRM objection, discovery, nurture, or closeout paths.
+3. Keep website launch status, deployment handoff, route QA checklist, preview issue log, Stage 0 test script, Stage 0 test-result template, launch blocker dashboard, and launch evidence documents current.
+4. Keep Stage 1 intake provider comparison and handler decisioning ready without choosing a paid provider.
+5. Use `agency-ops/ops/weekly-operator-review-template.md` after the first meaningful external action or at the end of an active operating week.
 
 ## Current Blockers
 
@@ -147,6 +148,7 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 
 ## Continuity Check
 
+- 2026-06-14 03:23 CDT proposal-QA continuation: created `agency-ops/proposals/2026-06-14-lead-intake-proposal-draft-internal-qa-checklist.md` and updated this brief. The artifact defines proposal-readiness, scope safety, business claim safety, pricing/timeline, delivery feasibility, communication/send-gate, required section, QA outcome, and approval prompt checks for Lead Intake proposal drafts. No proposal was drafted or sent, no email/mailbox draft/send/pricing/calendar/deployment/provider/public-proof/auto-send/cross-repo/irreversible action was performed.
 - 2026-06-14 03:20 CDT intake-readiness continuation: created `agency-ops/ops/stage-0-intake-test-result-record-template.md` and updated this brief. The artifact provides a fillable evidence record for `/start` Stage 0 intake QA, including preconditions, desktop/mobile checks, negative tests, CTA checks, issue logging, evidence-log summary, and status-change guardrails. No test was run, no launch status changed, no deployment action was taken, no provider was selected, no Stage 1 intake was implemented, no email/mailbox draft/send/pricing/proposal action was performed, no public proof was published, no auto-send behavior was approved, no cross-repo action was performed, and no irreversible action was performed.
 - 2026-06-14 03:17 CDT outreach-readiness continuation: created `agency-ops/leads/2026-06-14-dallas-first-batch-draft-review-checklist.md` and updated this brief. The artifact reviews DFW HVAC, Cool Tech, and Lone-Star Roof Systems draft readiness, recommends one Cool Tech tone edit, preserves Outlook-draft-only gating, and defines the next approval packet. No email, mailbox draft, calendar invite, sent outreach, pricing quote, proposal send, paid-provider selection, CRM/tool recommendation, deployment action, launch-status change, public proof, auto-send approval, cross-repo action, or irreversible action was performed.
 - 2026-06-14 03:10 CDT finish-today continuation: created `agency-ops/proposals/2026-06-14-lead-intake-discovery-to-proposal-handoff-checklist.md` and updated this brief. The artifact connects reply classification, discovery facts, scope-menu routing, proposal-readiness scoring, proposal action selection, and delivery preview. No email, mailbox draft, calendar invite, sent outreach, pricing quote, proposal send, paid-provider selection, CRM/tool recommendation, deployment action, launch-status change, public proof, auto-send approval, cross-repo action, or irreversible action was performed.
@@ -173,6 +175,8 @@ For first-batch outreach review, use `agency-ops/leads/2026-06-14-dallas-first-b
 For Stage 0 intake QA, use `agency-ops/ops/stage-0-intake-test-script.md` and record results in `agency-ops/ops/stage-0-intake-test-result-record-template.md` before copying summary evidence into `agency-ops/ops/website-launch-evidence-log.md`. Do not change launch status from the test record alone.
 
 For reply-to-proposal, pricing, CRM objection, call-request, or discovery-to-proposal work, use `agency-ops/proposals/2026-06-14-lead-intake-discovery-to-proposal-handoff-checklist.md` with the reply kit, discovery call script, scope menu, proposal scorecard, proposal assembly kit, simulated reply paths, delivery package, and handoff/closeout packet.
+
+For proposal draft QA, use `agency-ops/proposals/2026-06-14-lead-intake-proposal-draft-internal-qa-checklist.md` before treating any proposal outline or draft as review-ready, send-ready, pricing-ready, or delivery-ready.
 
 For website deployment or launch work, use `agency-ops/ops/website-launch-evidence-log.md` alongside the deployment handoff ticket, website route QA checklist, preview issue log template, Stage 0 intake test script, Stage 0 intake test-result template, launch blocker dashboard, and launch decision record template.
 
