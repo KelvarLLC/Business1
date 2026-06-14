@@ -1,10 +1,10 @@
 # Current Command Brief
 
-Last updated: 2026-06-14 02:58 CDT
+Last updated: 2026-06-14 03:01 CDT
 
 ## Purpose
 
-This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, launch plan, deployment handoff, pipeline files, launch evidence log, tool access register, capability map, next-move command board, automation control loop, lead-readiness packets, follow-up tracker, discovery script, proposal-readiness snapshot, simulated delivery package, website QA checklist, preview issue log, launch blocker dashboard, Stage 0 intake test script, Stage 1 provider comparison, outreach learning log, or KPI tracker spec.
+This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, launch plan, deployment handoff, pipeline files, launch evidence log, tool access register, capability map, next-move command board, automation control loop, lead-readiness packets, follow-up tracker, discovery script, proposal-readiness snapshot, simulated delivery package, website QA checklist, preview issue log, launch blocker dashboard, Stage 0 intake test script, Stage 1 provider comparison, outreach learning log, KPI tracker spec, or weekly operator review template.
 
 ## Current Operating Mode
 
@@ -41,6 +41,7 @@ This brief gives the fastest current-state read for the automation agency withou
 - Stage 1 intake provider comparison record exists at `agency-ops/ops/stage-1-intake-provider-comparison-record.md`.
 - Outreach learning log exists at `agency-ops/ops/outreach-learning-log.md`.
 - Agency KPI tracker spec exists at `agency-ops/ops/agency-kpi-tracker-spec.md`.
+- Weekly operator review template exists at `agency-ops/ops/weekly-operator-review-template.md`.
 - Website deployment readiness, Vercel handoff, launch governance, launch status, and launch evidence log documents exist.
 - Tool access and approval register exists at `agency-ops/ops/tool-access-and-approval-register.md`.
 - Operator capability map exists at `agency-ops/ops/operator-capability-map.md`.
@@ -102,7 +103,8 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 2. Keep website launch status, deployment handoff, route QA checklist, preview issue log, Stage 0 test script, launch blocker dashboard, and launch evidence documents current.
 3. Keep Stage 1 intake provider comparison and handler decisioning ready without choosing a paid provider.
 4. Prepare build and preview QA records for the first environment that can install dependencies.
-5. Improve proposal, delivery, proof-capture, KPI, learning, or operating assets only when they reduce friction for real outreach, replies, deployment, intake, or delivery.
+5. Use `agency-ops/ops/weekly-operator-review-template.md` after the first meaningful external action or at the end of an active operating week.
+6. Improve proposal, delivery, proof-capture, KPI, learning, or operating assets only when they reduce friction for real outreach, replies, deployment, intake, or delivery.
 
 ## Current Blockers
 
@@ -114,9 +116,9 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 
 ## Continuity Check
 
-- 2026-06-14 02:41 CDT delivery simulation continuation: created `agency-ops/delivery/simulated-home-services-lead-intake-delivery-package.md` and updated this brief. The package is explicitly simulation-only and not a client commitment, public proof item, pricing quote, deployment action, mailbox draft, sent outreach, paid-provider decision, launch-status change, auto-send approval, or irreversible action.
 - 2026-06-14 02:58 CDT progress continuation: created `agency-ops/ops/website-preview-issue-log-template.md` and `agency-ops/ops/stage-1-intake-provider-comparison-record.md`; updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, auto-send, or irreversible action was performed.
+- 2026-06-14 03:01 CDT progress continuation: created `agency-ops/ops/weekly-operator-review-template.md` and updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, auto-send, or irreversible action was performed.
 
 ## Resume Rule
 
-On future runs, read this file first for the quick state, then inspect the specific control document for the task being executed. For autonomous continuation, use `agency-ops/ops/agency-automation-control-loop.md` with `agency-ops/ops/next-move-command-board.md`. For website deployment or launch work, use `agency-ops/ops/website-launch-evidence-log.md` alongside the deployment handoff ticket, website route QA checklist, website preview issue log template, Stage 0 intake test script, launch blocker dashboard, and launch decision record template. For Stage 1 intake work, use `agency-ops/ops/stage-1-intake-provider-comparison-record.md` with `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`. For tool/app permission questions, use `agency-ops/ops/tool-access-and-approval-register.md`. For a menu of operator abilities and next demonstrations, use `agency-ops/ops/operator-capability-map.md`. For delivery planning or proposal walkthroughs, use `agency-ops/delivery/simulated-home-services-lead-intake-delivery-package.md` as a simulation-only package until a real client engagement is approved. If this brief conflicts with a more recently updated roadmap, launch-status record, lead record, deployment record, evidence log, approval register, capability map, command board, automation loop, readiness packet, follow-up tracker, discovery script, proposal-readiness snapshot, simulated delivery package, website QA checklist, preview issue log, launch blocker dashboard, Stage 0 intake test script, Stage 1 provider comparison, outreach learning log, KPI tracker, or user instruction, use the newer evidence and update this brief.
+On future runs, read this file first for the quick state, then inspect the specific control document for the task being executed. For autonomous continuation, use `agency-ops/ops/agency-automation-control-loop.md` with `agency-ops/ops/next-move-command-board.md`. For website deployment or launch work, use `agency-ops/ops/website-launch-evidence-log.md` alongside the deployment handoff ticket, website route QA checklist, website preview issue log template, Stage 0 intake test script, launch blocker dashboard, and launch decision record template. For Stage 1 intake work, use `agency-ops/ops/stage-1-intake-provider-comparison-record.md` with `agency-ops/workflows/stage-1-intake-handler-decision-scorecard.md`. For weekly review, use `agency-ops/ops/weekly-operator-review-template.md` with the KPI tracker spec and current command brief. For tool/app permission questions, use `agency-ops/ops/tool-access-and-approval-register.md`. For a menu of operator abilities and next demonstrations, use `agency-ops/ops/operator-capability-map.md`. For delivery planning or proposal walkthroughs, use `agency-ops/delivery/simulated-home-services-lead-intake-delivery-package.md` as a simulation-only package until a real client engagement is approved. If this brief conflicts with a more recently updated roadmap, launch-status record, lead record, deployment record, evidence log, approval register, capability map, command board, automation loop, readiness packet, follow-up tracker, discovery script, proposal-readiness snapshot, simulated delivery package, website QA checklist, preview issue log, launch blocker dashboard, Stage 0 intake test script, Stage 1 provider comparison, outreach learning log, KPI tracker, weekly review template, or user instruction, use the newer evidence and update this brief.
