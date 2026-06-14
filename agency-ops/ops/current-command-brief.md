@@ -1,10 +1,10 @@
 # Current Command Brief
 
-Last updated: 2026-06-14 02:36 CDT
+Last updated: 2026-06-14 02:52 CDT
 
 ## Purpose
 
-This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, launch plan, deployment handoff, pipeline files, launch evidence log, tool access register, capability map, next-move command board, lead-readiness packets, follow-up tracker, discovery script, proposal-readiness snapshot, website QA checklist, or launch blocker dashboard.
+This brief gives the fastest current-state read for the automation agency without replacing the longer roadmap, launch plan, deployment handoff, pipeline files, launch evidence log, tool access register, capability map, next-move command board, automation control loop, lead-readiness packets, follow-up tracker, discovery script, proposal-readiness snapshot, website QA checklist, launch blocker dashboard, Stage 0 intake test script, outreach learning log, or KPI tracker spec.
 
 ## Current Operating Mode
 
@@ -15,7 +15,7 @@ This brief gives the fastest current-state read for the automation agency withou
 - Public positioning: practical AI automation ecosystems for service businesses
 - Internal north star: AI ecosystem armada, translated into concrete buyer-facing workflow systems
 - Tool posture: GitHub and connected tools/apps are approved for directly relevant, repo-scoped work; action-level gates still apply for sensitive business moves.
-- Latest user direction: continue from the last task finish, use available tools/apps, show more of what the operator can do, and remain inside the confirmed assigned repository only.
+- Latest user direction: keep up the work, automate the situation, use available tools/apps, and remain inside the confirmed assigned repository only.
 
 ## What Is Ready
 
@@ -34,6 +34,10 @@ This brief gives the fastest current-state read for the automation agency withou
 - Website route QA checklist exists at `agency-ops/ops/website-route-qa-checklist.md`.
 - Website launch blocker dashboard exists at `agency-ops/ops/website-launch-blocker-dashboard.md`.
 - Next-move command board exists at `agency-ops/ops/next-move-command-board.md`.
+- Agency automation control loop exists at `agency-ops/ops/agency-automation-control-loop.md`.
+- Stage 0 intake test script exists at `agency-ops/ops/stage-0-intake-test-script.md`.
+- Outreach learning log exists at `agency-ops/ops/outreach-learning-log.md`.
+- Agency KPI tracker spec exists at `agency-ops/ops/agency-kpi-tracker-spec.md`.
 - Website deployment readiness, Vercel handoff, launch governance, launch status, and launch evidence log documents exist.
 - Tool access and approval register exists at `agency-ops/ops/tool-access-and-approval-register.md`.
 - Operator capability map exists at `agency-ops/ops/operator-capability-map.md`.
@@ -82,16 +86,18 @@ Use these control files:
 - `agency-ops/workflows/lead-intake-reply-response-kit.md`
 - `agency-ops/workflows/home-services-lead-intake-discovery-call-script.md`
 - `agency-ops/proposals/dallas-six-lead-proposal-readiness-snapshot.md`
+- `agency-ops/ops/outreach-learning-log.md`
+- `agency-ops/ops/agency-kpi-tracker-spec.md`
 
 ## Recommended Non-Approval Work
 
 If outreach remains unapproved, continue only with safe non-destructive work:
 
-1. Use `agency-ops/ops/next-move-command-board.md` to select the next safe artifact.
-2. Keep website launch status, deployment handoff, route QA checklist, launch blocker dashboard, and launch evidence documents current.
+1. Use `agency-ops/ops/agency-automation-control-loop.md` and `agency-ops/ops/next-move-command-board.md` to select the next safe artifact.
+2. Keep website launch status, deployment handoff, route QA checklist, Stage 0 test script, launch blocker dashboard, and launch evidence documents current.
 3. Prepare build and preview QA records for the first environment that can install dependencies.
 4. Keep intake handler decisioning ready without choosing a paid provider.
-5. Improve proposal, delivery, proof-capture, or operating assets only when they reduce friction for real outreach, replies, deployment, intake, or delivery.
+5. Improve proposal, delivery, proof-capture, KPI, learning, or operating assets only when they reduce friction for real outreach, replies, deployment, intake, or delivery.
 
 ## Current Blockers
 
@@ -103,19 +109,9 @@ If outreach remains unapproved, continue only with safe non-destructive work:
 
 ## Continuity Check
 
-- 2026-06-14 01:02 CDT scheduled run: master instruction set was reaffirmed and this brief was checked. No new approval was given for outreach, mailbox drafts, pricing, paid vendors, deployment settings, launch-status changes, public proof claims, or irreversible actions.
-- 2026-06-14 02:02 CDT scheduled run: master instruction set was reaffirmed and this brief was checked. No new approval was given for outreach, mailbox drafts, pricing, paid vendors, deployment settings, launch-status changes, public proof claims, or irreversible actions.
-- 2026-06-14 02:19 CDT manual continuation: repository `KelvarLLC/Business1` was confirmed through GitHub, `agency-ops/ops/website-launch-evidence-log.md` was created, and this brief was updated. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
-- 2026-06-14 02:22 CDT manual continuation: user reaffirmed that GitHub and available tools/apps may be used to keep moving. `agency-ops/ops/tool-access-and-approval-register.md` was created and this brief was updated. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
-- 2026-06-14 02:22 CDT repo-only continuation: user specifically instructed the operator not to mix repositories and to remain only in the confirmed repository. Repository metadata was reconfirmed and the launch evidence log was refreshed. No other repository was accessed or modified.
-- 2026-06-14 02:25 CDT capability demonstration: created `agency-ops/ops/operator-capability-map.md` and `agency-ops/leads/2026-06-14-dallas-first-batch-revenue-readiness.md`; updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
-- 2026-06-14 02:29 CDT repo-only continuation: created `agency-ops/leads/2026-06-14-dallas-second-batch-revenue-readiness.md` and updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
-- 2026-06-14 02:35 CDT repo-only continuation: created `agency-ops/leads/2026-06-14-dallas-six-lead-follow-up-tracker.md` and updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
-- 2026-06-14 02:31 CDT continuation: created `agency-ops/workflows/home-services-lead-intake-discovery-call-script.md` and updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
-- 2026-06-14 02:33 CDT continuation: created `agency-ops/proposals/dallas-six-lead-proposal-readiness-snapshot.md` and updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
-- 2026-06-14 02:45 CDT continuation: created `agency-ops/ops/website-route-qa-checklist.md` and updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
 - 2026-06-14 02:36 CDT continuation: created `agency-ops/ops/next-move-command-board.md` and `agency-ops/ops/website-launch-blocker-dashboard.md`; updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
+- 2026-06-14 02:52 CDT automation continuation: created `agency-ops/ops/agency-automation-control-loop.md`, `agency-ops/ops/stage-0-intake-test-script.md`, `agency-ops/ops/outreach-learning-log.md`, and `agency-ops/ops/agency-kpi-tracker-spec.md`; updated this brief. No email, mailbox draft, deployment, pricing, paid provider, launch-status, public proof, or irreversible action was performed.
 
 ## Resume Rule
 
-On future runs, read this file first for the quick state, then inspect the specific control document for the task being executed. For website deployment or launch work, use `agency-ops/ops/website-launch-evidence-log.md` alongside the deployment handoff ticket, website route QA checklist, launch blocker dashboard, and launch decision record template. For tool/app permission questions, use `agency-ops/ops/tool-access-and-approval-register.md`. For a menu of operator abilities and next demonstrations, use `agency-ops/ops/operator-capability-map.md` and `agency-ops/ops/next-move-command-board.md`. If this brief conflicts with a more recently updated roadmap, launch-status record, lead record, deployment record, evidence log, approval register, capability map, command board, readiness packet, follow-up tracker, discovery script, proposal-readiness snapshot, website QA checklist, launch blocker dashboard, or user instruction, use the newer evidence and update this brief.
+On future runs, read this file first for the quick state, then inspect the specific control document for the task being executed. For autonomous continuation, use `agency-ops/ops/agency-automation-control-loop.md` with `agency-ops/ops/next-move-command-board.md`. For website deployment or launch work, use `agency-ops/ops/website-launch-evidence-log.md` alongside the deployment handoff ticket, website route QA checklist, Stage 0 intake test script, launch blocker dashboard, and launch decision record template. For tool/app permission questions, use `agency-ops/ops/tool-access-and-approval-register.md`. For a menu of operator abilities and next demonstrations, use `agency-ops/ops/operator-capability-map.md`. If this brief conflicts with a more recently updated roadmap, launch-status record, lead record, deployment record, evidence log, approval register, capability map, command board, automation loop, readiness packet, follow-up tracker, discovery script, proposal-readiness snapshot, website QA checklist, launch blocker dashboard, Stage 0 intake test script, outreach learning log, KPI tracker, or user instruction, use the newer evidence and update this brief.
